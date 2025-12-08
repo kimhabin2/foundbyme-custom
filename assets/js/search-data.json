@@ -22,203 +22,203 @@
   },"3": {
     "doc": "About",
     "title": "🎨 Custom Theme Development Report",
-    "content": "이 웹사이트는 FoundByMe 프로젝트의 정체성을 나타내기 위해 직접 제작 및 재설계한 커스텀 Jekyll 테마를 사용하고 있습니다. 기존 테마를 단순히 적용하는 것에 그치지 않고, 구조와 디자인을 전면적으로 개편하여 독창성과 사용성을 높였습니다. 1. 테마 독립화 및 구조 재설계 (Theme Ejection &amp; Restructuring) . | 기존의 remote_theme 의존 방식을 제거하고, Just the Docs의 원본 소스 코드(_layouts, _includes, _sass, assets)를 로컬 환경으로 이관하여 직접 수정 가능한 독립적인 테마 구조를 구축했습니다. | _config.yml 및 Gemfile의 불필요한 외부 의존성을 최적화하고, 로컬 개발 환경에 맞게 설정을 재구성했습니다. | . 2. 타이포그래피 고도화 (Typography) . | 폰트 변경: 가독성이 뛰어나고 현대적인 느낌을 주는 구글 폰트 ‘Inter’를 적용하여 전문적인 기술 문서의 느낌을 강화했습니다. | 적용 파일: _includes/head.html (CDN 링크 추가), _sass/support/_variables.scss (SCSS 변수 재정의) | . 3. 브랜드 아이덴티티 확립 (Color System) . | 색상 변경: 기존 테마의 기본 색상(Purple)을 학교 상징색인 ‘크림슨 레드(#c3002f)’와 슬레이트 그레이(#51626f)로 전면 수정하여 프로젝트의 브랜드 정체성을 통일했습니다. | 적용 파일: _sass/support/_variables.scss (메인 테마 컬러 및 링크 색상 변수 수정) | . 4. 레이아웃 커스터마이징 (Layout Customization) . | 상단 공지 배너 추가: _layouts/default.html 뼈대 코드를 직접 수정하여, 사이트 전역에 중요한 메시지를 전달할 수 있는 상단 배너 영역을 신설했습니다. | 확장형 푸터(Footer) 개발: 기존의 단순한 푸터를 제거하고, 학교 정보, 팀원 연락처, GitHub 링크 등을 포함한 커스텀 푸터 컴포넌트(_includes/custom_footer.html)를 직접 코딩하여 적용했습니다. | . 5. UX/UI 구조 혁신 (UI Innovation) . | 히어로 배너(Hero Banner) 도입: 메인 페이지 상단에 프로젝트의 핵심 가치를 직관적으로 전달하는 대형 배너와 Get Started 버튼을 배치하여 시각적 임팩트를 강화했습니다. (Apache Hadoop 웹사이트 디자인 영감) | 카드형(Card) UI 적용: 밋밋한 텍스트 리스트 대신 Grid 레이아웃을 활용한 카드형 디자인을 기능 소개 및 커뮤니티 페이지에 적용하여 정보 전달력과 심미성을 높였습니다. (Django Community 디자인 영감) | . 6. 디테일 및 사용자 경험 강화 (Detail &amp; UX Enhancement) . | 기능 모듈화(JS Modularization): ‘맨 위로 가기(Back to Top)’ 기능의 자바스크립트 로직을 별도 파일(assets/js/backtotop.js)로 분리하여 유지보수성과 코드 재사용성을 높였습니다. | 파비콘(Favicon) 적용: 브라우저 탭에서도 서비스의 정체성(검색)을 드러낼 수 있도록 돋보기(🔍) 아이콘을 적용했습니다. (_includes/head.html) | 검색창 디자인 고도화: 프로젝트의 핵심 기능인 ‘검색’을 강조하기 위해 검색창에 둥근 모서리와 브랜드 컬러 포커스 효과를 추가했습니다. (_sass/custom/custom.scss) | 404 페이지 커스터마이징: 단순한 에러 메시지 대신, 사용자 친화적인 안내 문구와 홈으로 돌아가기 버튼을 배치한 커스텀 404 페이지를 제작했습니다. (404.html) | . 7. 헤더 디자인 전면 개편 (Header Redesign) . | 상단바 스타일 변경: 기존의 평범한 흰색 헤더를 학교 상징색(Crimson Red) 배경으로 과감하게 변경하여 사이트의 첫인상을 강렬하게 만들고 브랜드 정체성을 극대화했습니다. | 검색창 및 아이콘 최적화: 붉은 배경에 어울리도록 헤더 내 검색창을 반투명한 흰색 스타일로 변경하고, 로고와 아이콘 색상을 흰색으로 통일하여 가독성과 심미성을 동시에 확보했습니다. | . 📬 Contact &amp; Contribute . FoundByMe는 여러분의 기여를 환영합니다. GitHub 저장소에서 코드를 확인하거나, 이슈를 등록해 주세요. | GitHub: https://github.com/KNaeon/foundbyme | Team: 세종대학교 데이터사이언스학과 오픈소스SW개론 팀 | . ",
+    "content": "이 웹사이트는 FoundByMe 프로젝트의 정체성을 나타내기 위해 직접 제작 및 재설계한 커스텀 Jekyll 테마를 사용하고 있습니다. 기존 테마를 단순히 적용하는 것에 그치지 않고, 구조와 디자인을 전면적으로 개편하여 독창성과 사용성을 높였습니다. 1. 테마 독립화 및 구조 재설계 (Theme Ejection &amp; Restructuring) . | 기존의 remote_theme 의존 방식을 제거하고, Just the Docs의 원본 소스 코드(_layouts, _includes, _sass, assets)를 로컬 환경으로 이관하여 직접 수정 가능한 독립적인 테마 구조를 구축했습니다. | _config.yml 및 Gemfile의 불필요한 외부 의존성을 최적화하고, 로컬 개발 환경에 맞게 설정을 재구성했습니다. | . 2. 타이포그래피 고도화 (Typography) . | 폰트 변경: 가독성이 뛰어나고 현대적인 느낌을 주는 구글 폰트 ‘Inter’를 적용하여 전문적인 기술 문서의 느낌을 강화했습니다. | 적용 파일: _includes/head.html (CDN 링크 추가), _sass/support/_variables.scss (SCSS 변수 재정의) | . 3. 브랜드 아이덴티티 확립 (Color System) . | 색상 변경: 기존 테마의 기본 색상(Purple)을 학교 상징색인 ‘크림슨 레드(#c3002f)’와 슬레이트 그레이(#51626f)로 전면 수정하여 프로젝트의 브랜드 정체성을 통일했습니다. | 적용 파일: _sass/support/_variables.scss (메인 테마 컬러 및 링크 색상 변수 수정) | . 4. 레이아웃 커스터마이징 (Layout Customization) . | 상단 공지 배너 추가: _layouts/default.html 뼈대 코드를 직접 수정하여, 사이트 전역에 중요한 메시지를 전달할 수 있는 상단 배너 영역을 신설했습니다. | 확장형 푸터(Footer) 개발: 기존의 단순한 푸터를 제거하고, 학교 정보, 팀원 연락처, GitHub 링크 등을 포함한 커스텀 푸터 컴포넌트(_includes/custom_footer.html)를 직접 코딩하여 적용했습니다. | . 5. UX/UI 구조 혁신 (UI Innovation) . | Dynamic Landing Page (홈페이지 전면 개편): 기존의 정적인 텍스트 위주 대문을 탈피하고, 데이터의 연결성을 시각화한 커스텀 SVG 애니메이션(hero_animation.svg)을 메인 화면(index.md)에 구현했습니다. 중앙 정렬 레이아웃과 브랜드 컬러 그라데이션을 적용하여 몰입감을 극대화했습니다. | Card UI (카드형 디자인): 밋밋한 텍스트 리스트 대신 Grid 레이아웃 기반의 카드형 디자인을 기능 소개 및 커뮤니티 페이지에 적용하여 정보 전달력과 심미성을 높였습니다. (Django Community 디자인 영감) | . 6. 디테일 및 사용자 경험 강화 (Detail &amp; UX Enhancement) . | 기능 모듈화 (JS Modularization): ‘맨 위로 가기(Back to Top)’ 기능의 자바스크립트 로직을 별도 파일(assets/js/backtotop.js)로 분리하여 유지보수성과 코드 재사용성을 높였습니다. | 파비콘(Favicon) 적용: 브라우저 탭에서도 서비스의 정체성(검색)을 드러낼 수 있도록 돋보기(🔍) 아이콘을 적용했습니다. (_includes/head.html) | 검색창 디자인 고도화: 프로젝트의 핵심 기능인 ‘검색’을 강조하기 위해 검색창에 둥근 모서리와 브랜드 컬러 포커스 효과를 추가했습니다. (_sass/custom/custom.scss) | 404 페이지 커스터마이징: 단순한 에러 메시지 대신, 사용자 친화적인 안내 문구와 홈으로 돌아가기 버튼을 배치한 커스텀 404 페이지를 제작했습니다. (404.html) | . 7. 헤더 디자인 전면 개편 (Header Redesign) . | 상단바 스타일 변경: 기존의 평범한 흰색 헤더를 학교 상징색(Crimson Red) 배경으로 과감하게 변경하여 사이트의 첫인상을 강렬하게 만들고 브랜드 정체성을 극대화했습니다. | 검색창 및 아이콘 최적화: 붉은 배경에 어울리도록 헤더 내 검색창을 반투명한 흰색 스타일로 변경하고, 로고와 아이콘 색상을 흰색으로 통일하여 가독성과 심미성을 동시에 확보했습니다. | . 📬 Contact &amp; Contribute . FoundByMe는 여러분의 기여를 환영합니다. GitHub 저장소에서 코드를 확인하거나, 이슈를 등록해 주세요. | GitHub: https://github.com/KNaeon/foundbyme | Team: 세종대학교 데이터사이언스학과 오픈소스SW개론 팀 ",
     "url": "/foundbyme-custom/about/#-custom-theme-development-report",
     
     "relUrl": "/about/#-custom-theme-development-report"
   },"4": {
+    "doc": "About",
+    "title": "📅 Project History",
+    "content": "| 기간: 2025.10 ~ 2025.12 | 목표: 학습 효율을 극대화하는 로컬 RAG 검색 도구 개발 | . ",
+    "url": "/foundbyme-custom/about/#-project-history",
+    
+    "relUrl": "/about/#-project-history"
+  },"5": {
     "doc": "About",
     "title": "About",
     "content": " ",
     "url": "/foundbyme-custom/about/",
     
     "relUrl": "/about/"
-  },"5": {
+  },"6": {
     "doc": "Community",
     "title": "Community",
     "content": "FoundByMe 사용자 및 개발자와 함께 소통하고 성장하는 공간입니다. 기능 제안, 버그 리포트, 코드 기여 등 어떤 주제든 환영합니다! . 💬 Discussions . 새로운 아이디어가 있나요? 자유롭게 의견을 나누고 기능을 제안해주세요. 토론 참여하기 &rarr; 🛠️ Contribute . 버그를 발견하셨거나 코드를 개선하고 싶으신가요? 이슈 등록과 PR은 언제나 환영입니다. 이슈 등록하기 &rarr; 📧 Contact Team . 비공개 문의나 협업 제안이 있으신가요? 프로젝트 팀에게 직접 메일을 보내주세요. 문의 메일 보내기 &rarr; . ",
     "url": "/foundbyme-custom/docs/community.html",
     
     "relUrl": "/docs/community.html"
-  },"6": {
+  },"7": {
     "doc": "Community",
     "title": "👥 Project Team",
     "content": ". | Project Lead: iameon@sju.ac.kr | Project member: kimhabin5@sju.ac.kr | Project member: leejh00610@gmail.com | . ",
     "url": "/foundbyme-custom/docs/community.html#-project-team",
     
     "relUrl": "/docs/community.html#-project-team"
-  },"7": {
+  },"8": {
     "doc": "Community",
     "title": "Community",
     "content": " ",
     "url": "/foundbyme-custom/docs/community.html",
     
     "relUrl": "/docs/community.html"
-  },"8": {
+  },"9": {
     "doc": "Contact",
     "title": "Contact",
     "content": "아래 채널을 통해 프로젝트 관련 문의나 제안을 전달할 수 있습니다. ",
     "url": "/foundbyme-custom/docs/contact.html",
     
     "relUrl": "/docs/contact.html"
-  },"9": {
+  },"10": {
     "doc": "Contact",
     "title": "문의 종류",
     "content": ". | 기능 관련 질문 | 설치/사용 이슈 | 협업 관련 제안 | 문서 기여 관련 문의 | . ",
     "url": "/foundbyme-custom/docs/contact.html#%EB%AC%B8%EC%9D%98-%EC%A2%85%EB%A5%98",
     
     "relUrl": "/docs/contact.html#문의-종류"
-  },"10": {
+  },"11": {
     "doc": "Contact",
     "title": "연락처",
     "content": ". | GitHub: https://github.com/kimhabin2 | Email: kimhabin5@sju.ac.kr | . ",
     "url": "/foundbyme-custom/docs/contact.html#%EC%97%B0%EB%9D%BD%EC%B2%98",
     
     "relUrl": "/docs/contact.html#연락처"
-  },"11": {
+  },"12": {
     "doc": "Documentation",
     "title": "Documentation",
     "content": "프로젝트 문서 페이지입니다. ",
     "url": "/foundbyme-custom/docs/",
     
     "relUrl": "/docs/"
-  },"12": {
+  },"13": {
     "doc": "Examples",
     "title": "예제 (Examples)",
     "content": "실제로 FoundByMe를 사용하는 구체적인 예시와 워크플로우를 안내합니다. ",
     "url": "/foundbyme-custom/docs/example/#%EC%98%88%EC%A0%9C-examples",
     
     "relUrl": "/docs/example/#예제-examples"
-  },"13": {
+  },"14": {
     "doc": "Examples",
     "title": "예제 1. 단일 파일 검색 예제",
     "content": "python search.py \"머신러닝 기초\" --ext pdf . ",
     "url": "/foundbyme-custom/docs/example/#%EC%98%88%EC%A0%9C-1-%EB%8B%A8%EC%9D%BC-%ED%8C%8C%EC%9D%BC-%EA%B2%80%EC%83%89-%EC%98%88%EC%A0%9C",
     
     "relUrl": "/docs/example/#예제-1-단일-파일-검색-예제"
-  },"14": {
+  },"15": {
     "doc": "Examples",
     "title": "예제 2. 폴더 내 여러 파일 검색",
     "content": "python search.py \"시험 자료\" --path \"C:/my-documents/CS101\" . ",
     "url": "/foundbyme-custom/docs/example/#%EC%98%88%EC%A0%9C-2-%ED%8F%B4%EB%8D%94-%EB%82%B4-%EC%97%AC%EB%9F%AC-%ED%8C%8C%EC%9D%BC-%EA%B2%80%EC%83%89",
     
     "relUrl": "/docs/example/#예제-2-폴더-내-여러-파일-검색"
-  },"15": {
+  },"16": {
     "doc": "Examples",
     "title": "예제 3. RAG API 예제",
     "content": "RAG API 호출 테스트 import requests data = {\"query\": \"딥러닝 프로젝트 예제\"} response = requests.post(\"http://localhost:8000/search\", json=data) print(response.json()) . ",
     "url": "/foundbyme-custom/docs/example/#%EC%98%88%EC%A0%9C-3-rag-api-%EC%98%88%EC%A0%9C",
     
     "relUrl": "/docs/example/#예제-3-rag-api-예제"
-  },"16": {
+  },"17": {
     "doc": "Examples",
     "title": "예제 4. 백터 시각화 예제",
     "content": ". | visualize_embeddings.py 실행 예제 | 문서 간 유사도 맵 확인 가능 | . ",
     "url": "/foundbyme-custom/docs/example/#%EC%98%88%EC%A0%9C-4-%EB%B0%B1%ED%84%B0-%EC%8B%9C%EA%B0%81%ED%99%94-%EC%98%88%EC%A0%9C",
     
     "relUrl": "/docs/example/#예제-4-백터-시각화-예제"
-  },"17": {
+  },"18": {
     "doc": "Examples",
     "title": "Examples",
     "content": " ",
     "url": "/foundbyme-custom/docs/example/",
     
     "relUrl": "/docs/example/"
-  },"18": {
+  },"19": {
     "doc": "Features",
     "title": "Feature Showcase",
-    "content": "주요 기능 정리해두기! . 🔍 Local File Indexing . Automatically scans and indexes your local documents including PDF, Images, and Code. 🤖 RAG-based Search . Ask questions in natural language and get answers based on your own data. 📊 Vector Visualization . Visualize relationships between documents with embedding maps. ",
+    "content": "🔍 Segment-Level Indexing . 문서를 통째로 저장하지 않고 의미 단위(Chunk)로 분할하여 ChromaDB에 저장합니다. 파일명뿐만 아니라 페이지 번호까지 정확히 찾아냅니다. 🤖 Hybrid Backend . ChromaDB(벡터)와 PostgreSQL(메타데이터)을 결합하여 강력한 검색 성능과 데이터 무결성을 보장합니다. 📊 3D PCA Visualization . Scikit-learn의 PCA를 활용하여 고차원 임베딩 벡터를 3차원으로 축소, 검색 결과와 문서 간의 관계를 시각적으로 보여줍니다. ",
     "url": "/foundbyme-custom/docs/features.html#feature-showcase",
     
     "relUrl": "/docs/features.html#feature-showcase"
-  },"19": {
+  },"20": {
     "doc": "Features",
     "title": "Features",
     "content": " ",
     "url": "/foundbyme-custom/docs/features.html",
     
     "relUrl": "/docs/features.html"
-  },"20": {
+  },"21": {
     "doc": "Getting Started",
     "title": "Getting Started",
-    "content": "FoundByMe를 처음 사용하는 사용자들을 위해 설치와 기본 설정 방법을 안내합니다. 이것은 일반적인 텍스트입니다. 여기에 중요한 참고 사항을 적습니다. RAG 기술을 사용하려면 데이터베이스 설정이 필요합니다. 이것은 주의 사항입니다. API 키가 노출되지 않도록 조심하세요! . ",
+    "content": "FoundByMe를 처음 사용하는 사용자들을 위해 설치와 기본 설정 방법을 안내합니다. 이것은 일반적인 텍스트입니다. 여기에 중요한 참고 사항을 적습니다. RAG 기술을 사용하려면 데이터베이스(PostgreSQL, ChromaDB) 설정이 필요합니다. 이것은 주의 사항입니다. API 키나 DB 접속 정보가 노출되지 않도록 조심하세요! . ",
     "url": "/foundbyme-custom/docs/getting-started/",
     
     "relUrl": "/docs/getting-started/"
-  },"21": {
-    "doc": "Getting Started",
-    "title": "1. 설치",
-    "content": "GitHub Repository에서 설치 파일 다운로드 pip install -r requirements.txt . Python 3.8 이상 버전을 권장합니다. 가상환경(Virtualenv)을 사용하면 패키지 충돌을 방지할 수 있어 더욱 안전합니다. ",
-    "url": "/foundbyme-custom/docs/getting-started/#1-%EC%84%A4%EC%B9%98",
-    
-    "relUrl": "/docs/getting-started/#1-설치"
   },"22": {
     "doc": "Getting Started",
-    "title": "2. 로컬 파일 인덱싱",
-    "content": "python indexer.py --path \"C:/my-documents\" . 대용량 파일이 많을 경우 시간이 소요될 수 있습니다. 처음 실행 시에는 모든 파일을 스캔하므로, 파일 수에 따라 수 분 정도 걸릴 수 있습니다. ",
-    "url": "/foundbyme-custom/docs/getting-started/#2-%EB%A1%9C%EC%BB%AC-%ED%8C%8C%EC%9D%BC-%EC%9D%B8%EB%8D%B1%EC%8B%B1",
+    "title": "1. 설치 및 환경 구성",
+    "content": "GitHub Repository에서 설치 파일 다운로드 필수 요구사항 . | Python 3.8+ | PostgreSQL Database | . pip install -r requirements.txt . Python 가상환경(Virtualenv) 사용을 권장합니다. db/db.py 등에서 PostgreSQL 접속 정보를 본인의 환경에 맞게 수정해야 할 수 있습니다. | 로컬 파일 인덱싱 | . python indexer.py --path \"C:/my-documents\" . 파일을 세그먼트 단위로 분할(Chunking)하고 벡터화하는 과정이 포함되어 있어, 대용량 파일이 많을 경우 시간이 소요될 수 있습니다. | 서버 실행 및 검색 uvicorn app:app --reload . 브라우저에서 http://localhost:8000/docs로 접속하여 API를 테스트하거나, 프론트엔드 대시보드를 통해 검색을 수행하세요. | . ",
+    "url": "/foundbyme-custom/docs/getting-started/#1-%EC%84%A4%EC%B9%98-%EB%B0%8F-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1",
     
-    "relUrl": "/docs/getting-started/#2-로컬-파일-인덱싱"
+    "relUrl": "/docs/getting-started/#1-설치-및-환경-구성"
   },"23": {
-    "doc": "Getting Started",
-    "title": "3. 검색 실행",
-    "content": "python search.py \"딥러닝 표준화\" . ",
-    "url": "/foundbyme-custom/docs/getting-started/#3-%EA%B2%80%EC%83%89-%EC%8B%A4%ED%96%89",
-    
-    "relUrl": "/docs/getting-started/#3-검색-실행"
-  },"24": {
     "doc": "Home",
     "title": "\n      FoundByMe\n    ",
     "content": "내 PC의 흩어진 지식을 하나로 연결하는 차세대 RAG 검색 엔진 . 🚀 Start Journey | | | | PDF DOCS &lt;/&gt; CODE IMG TXT ",
     "url": "/foundbyme-custom/",
     
     "relUrl": "/"
-  },"25": {
+  },"24": {
     "doc": "Home",
-    "title": "Why FoundByMe?",
-    "content": "⚡ Fast Indexing . PDF, 이미지, 코드까지.로컬 파일을 실시간으로 인덱싱합니다. 🔒 Private &amp; Secure . 데이터가 외부로 전송되지 않습니다.모든 처리는 당신의 PC에서. 🧠 Context Aware . 단순 키워드 매칭이 아닙니다.문맥을 이해하고 답변을 생성합니다. ",
+    "title": "🚀 Why Use FoundByMe?",
+    "content": "⚡ Fast Indexing . PDF, 이미지, 코드까지.로컬 파일을 실시간으로 인덱싱합니다. 🔒 Private &amp; Secure . 데이터가 외부로 전송되지 않습니다.모든 처리는 당신의 PC에서. 🧠 Context Aware . 단순 키워드 매칭이 아닙니다.문맥을 이해하고 답변을 생성합니다. 👀 Vector Visualization . 원리를 파악하기 쉽습니다.흥미로운 관찰! . | 기능 | PDF-X change(viewer) | AI 챗봇 서비스 | FoundByMe | . | 로컬 완전 실행 (보안) | O | X | O | . | 의미(맥락) 기반 검색 | X | O | O | . | 여러 파일 통합 검색 | △ | O(업로드 필요) | O | . | 벡터 시각화 (원리 파악) | X | X | O | . | 멀티 포맷 지원 | X | △ | O | . | 완전 오픈소스 | X | X | O | . ",
     "url": "/foundbyme-custom/",
     
     "relUrl": "/"
-  },"26": {
+  },"25": {
     "doc": "Home",
     "title": "Project Introduction",
     "content": "로컬에 흩어져 있는 강의 자료, PDF, 코드 파일, 과제 문서 등을 빠르게 검색하고 학습에 활용할 수 있도록 돕는 프로젝트입니다. 개인 작업 환경에서도, 스터디나 팀 프로젝트에서도 필요한 자료를 즉시 찾을 수 있도록 설계되었습니다. ",
     "url": "/foundbyme-custom/#project-introduction",
     
     "relUrl": "/#project-introduction"
-  },"27": {
+  },"26": {
     "doc": "Home",
     "title": "제작 배경",
     "content": ". | 시험 기간 시간 절약: 여러 형태의 문서 파일을 매번 열어서 찾는데 시간이 많이 소요 | 반복 탐색: 자료가 여러 파일로 흩어져 있어 같은 용어가 어디에 있었는지 기억나지 않아 반복 탐색하게 됨. | 공부 집중력 감소: 파일을 하나씩 열어보면서 흐름이 끊기고, 정신이 산만해져 집중력이 떨어짐. | 맥락 이해 불가: 키워드 검색은 의미(맥락)을 이해하지 못해 정확한 내용을 못 찾는 문제가 발생 | . ",
     "url": "/foundbyme-custom/#%EC%A0%9C%EC%9E%91-%EB%B0%B0%EA%B2%BD",
     
     "relUrl": "/#제작-배경"
-  },"28": {
+  },"27": {
     "doc": "Home",
     "title": "🚀 목적",
     "content": ". | 검색 시간을 줄이고, 학습 효율을 높이기 위한 개인용 로컬 지식 검색 도구 | 자료 이름을 정확히 기억하지 않아도, 자연어 기반으로 필요한 자료를 찾아주는 시스템 | 텍스트뿐 아니라 PDF, 이미지, 코드 등 다양한 파일까지 찾을 수 있는 통합 검색 | . ",
     "url": "/foundbyme-custom/#-%EB%AA%A9%EC%A0%81",
     
     "relUrl": "/#-목적"
-  },"29": {
+  },"28": {
     "doc": "Home",
     "title": "🔍 주요 기능",
     "content": "1) 로컬 파일 인덱싱 . 폴더 전체를 스캔해 문서·이미지·코드 등의 메타데이터를 자동으로 정리합니다. 2) RAG 기반 검색 . | 프로젝트에서 구현 중인 API와 연동하여 자연어로 질문하면 | 로컬 파일 중 가장 관련 있는 내용을 찾고 요약하거나 문맥 기반으로 정리해 제공합니다. | . 3) 벡터 시각화(Embedding Visualization) . ",
     "url": "/foundbyme-custom/#-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5",
     
     "relUrl": "/#-주요-기능"
-  },"30": {
+  },"29": {
     "doc": "Home",
     "title": "🧩 프로젝트 구성 요소",
     "content": ". | 로컬 검색 시스템 / 사용 설명서 / 예제 페이지 / API 문서 제공 | 백엔드용 RAG API 구현 → sentence-transformers 기반 embedding → 문서 요약/검색 엔드포인트 제공 | . ",
     "url": "/foundbyme-custom/#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C",
     
     "relUrl": "/#-프로젝트-구성-요소"
+  },"30": {
+    "doc": "Home",
+    "title": "💡 Key Highlights",
+    "content": ". | 🔒 Secure: 인터넷 연결 없이 로컬에서 안전하게 작동합니다. | 🧠 Smart: 단순 단어 매칭이 아닌, 문맥을 이해하는 Semantic Search를 제공합니다. | 📂 Universal: PDF뿐만 아니라 PPT, Word 파일까지 한 번에 검색하세요. | 📊 Visual: 검색 결과와 문서 간의 관계를 시각적으로 확인하세요. | . ",
+    "url": "/foundbyme-custom/#-key-highlights",
+    
+    "relUrl": "/#-key-highlights"
   },"31": {
     "doc": "Home",
     "title": "📁 빠른 시작",
-    "content": "pip install -r requirements.txt python indexer.py --path \"C:/my-documents\" python search.py \"딥러닝 표준화\" . | 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html . | 💻 GitHub Repository: https://github.com/KNaeon/foundbyme . | . ",
+    "content": "pip install -r requirements.txt python indexer.py --path \"C:/my-documents\" python search.py \"딥러닝 표준화\" . | 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html . | 💻 GitHub Repository: https://github.com/KNaeon/foundbyme . | . View on GitHub . ",
     "url": "/foundbyme-custom/#-%EB%B9%A0%EB%A5%B8-%EC%8B%9C%EC%9E%91",
     
     "relUrl": "/#-빠른-시작"
@@ -239,32 +239,18 @@
   },"34": {
     "doc": "Usage",
     "title": "1️⃣ 기본 사용",
-    "content": "로컬 폴더 전체 검색 . python search.py \"자료 키워드\" . 특정 파일 형식만 검색 . python search.py \"딥러닝\" --ext pdf,txt . 특정 폴더 제외 . python search.py \"과제\" --exclude \"backup\" . ",
+    "content": "로컬 폴더 인덱싱 및 서버 실행 . 인덱싱을 먼저 수행하여 데이터를 ChromaDB와 PostgreSQL에 적재해야 합니다. # 데이터 인덱싱 python indexer.py --path \"C:/my-documents\" . ",
     "url": "/foundbyme-custom/docs/usage/#1%EF%B8%8F%E2%83%A3-%EA%B8%B0%EB%B3%B8-%EC%82%AC%EC%9A%A9",
     
     "relUrl": "/docs/usage/#1️⃣-기본-사용"
   },"35": {
     "doc": "Usage",
-    "title": "2️⃣ RAG API 사용하기",
-    "content": "로컬 RAG API 테스트 FoundByMe RAG API를 이용하면 자연어 기반 검색 결과를 쉽게 얻을 수 있습니다. API 요청 전 서버가 실행 중이어야 합니다. 터미널에서 uvicorn main:app –reload 명령어로 서버를 먼저 실행해 주세요. Python 예시 . import requests url = \"http://localhost:8000/search\" data = {\"query\": \"딥러닝 표준화\"} response = requests.post(url, json=data) print(response.json()) . API Response 예시 . { \"results\": [ {\"file\": \"C:/my-documents/deep_learning.pdf\", \"summary\": \"딥러닝 표준화 관련 내용 요약...\"} ] } . ",
-    "url": "/foundbyme-custom/docs/usage/#2%EF%B8%8F%E2%83%A3-rag-api-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0",
+    "title": "검색 서버 실행 (FastAPI)",
+    "content": "uvicorn app:app –reload 2️⃣ RAG API 사용하기 . Swagger API 문서 보기 FoundByMe RAG API는 문서의 내용을 세그먼트(Chunk) 단위로 검색하여 파일명, 페이지, 유사도 점수, 3D 벡터 좌표를 반환합니다. {: .callout-note } . Python 요청 예시 . import requests url = \"http://localhost:8000/search\" params = {\"q\": \"딥러닝 표준화\"} response = requests.get(url, params=params) print(response.json()) . API Response 예시 (JSON) 검색 결과는 쿼리의 3D 좌표(query_vector_3d)와 상위 5개의 문서 세그먼트 정보를 포함합니다. { \"query\": \"딥러닝 표준화\", \"query_vector_3d\": [0.12, -0.56, 0.89], \"results\": [ { \"id\": \"550e8400-e29b...\", \"filename\": \"deep_learning_standard.pdf\", \"ext\": \"pdf\", \"page\": 15, \"score\": 0.4512, \"vector_3d\": [0.10, -0.54, 0.91] }, { \"id\": \"713f9511-a31c...\", \"filename\": \"lecture_note_03.pptx\", \"ext\": \"pptx\", \"page\": 7, \"score\": 0.5123, \"vector_3d\": [0.33, -0.12, 0.45] } ] } . | page: 해당 내용이 위치한 문서의 페이지 번호 | score: 질문과의 유사도 거리 (낮을수록 유사함, L2 Distance 등 설정에 따름) | vector_3d: PCA로 축소된 3차원 좌표 (시각화용) | . 3️⃣ 검색 기능과 결과 활용 🔍 정밀 검색 (Segment Search) 단순히 파일을 찾아주는 것이 아니라, 파일 내부의 특정 구간(Segment)을 찾아줍니다. Input: 자연어 질문 (“트랜스포머 모델의 어텐션 메커니즘 설명해줘”) . Process: 질문을 벡터화(Embedding)하여 ChromaDB 내의 문서 청크와 비교 . Output: 가장 가까운 벡터(Nearest Neighbor)의 스칼라 값과 메타데이터 반환 . 📄 결과 확인 검색 결과에는 다음 정보가 포함되어 있어 즉시 원문을 찾아갈 수 있습니다. 파일명 (Filename) . 페이지 번호 (Page Number): PDF나 PPT의 경우 슬라이드 번호 . 문서 ID (Doc ID): 내부 관리용 고유 식별자 . 4️⃣ 고급 기능: 3D 벡터 시각화 API가 반환하는 query_vector_3d와 vector_3d 데이터를 활용하여 검색 결과를 3차원 공간에 시각화합니다. 사용자는 질문(점)과 문서(점) 사이의 거리를 눈으로 확인할 수 있습니다. 관련된 문서들이 군집(Cluster)을 이루는 형태를 관찰할 수 있습니다. ",
+    "url": "/foundbyme-custom/docs/usage/#%EA%B2%80%EC%83%89-%EC%84%9C%EB%B2%84-%EC%8B%A4%ED%96%89-fastapi",
     
-    "relUrl": "/docs/usage/#2️⃣-rag-api-사용하기"
+    "relUrl": "/docs/usage/#검색-서버-실행-fastapi"
   },"36": {
-    "doc": "Usage",
-    "title": "3️⃣ 검색 기능과 결과 활용",
-    "content": "검색 기능 . | 키워드 검색 | 자연어 기반 질문 | PDF / 이미지 / 코드 파일 검색 | . 검색 결과 활용 . | 결과 미리보기 | 바로 열기 | 요약 내용 확인 | . ",
-    "url": "/foundbyme-custom/docs/usage/#3%EF%B8%8F%E2%83%A3-%EA%B2%80%EC%83%89-%EA%B8%B0%EB%8A%A5%EA%B3%BC-%EA%B2%B0%EA%B3%BC-%ED%99%9C%EC%9A%A9",
-    
-    "relUrl": "/docs/usage/#3️⃣-검색-기능과-결과-활용"
-  },"37": {
-    "doc": "Usage",
-    "title": "4️⃣ 고급 기능",
-    "content": "벡터 시각화 Embedding . 멀티파일 동시 검색 . 문서 요약 기능 . ",
-    "url": "/foundbyme-custom/docs/usage/#4%EF%B8%8F%E2%83%A3-%EA%B3%A0%EA%B8%89-%EA%B8%B0%EB%8A%A5",
-    
-    "relUrl": "/docs/usage/#4️⃣-고급-기능"
-  },"38": {
     "doc": "Usage",
     "title": "Usage",
     "content": " ",

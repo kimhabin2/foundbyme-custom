@@ -26,14 +26,14 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(2) > ul > li:nth-child(1) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > a {
       font-weight: 600;
       text-decoration: none;
-    }.site-nav > ul.nav-list:first-child > li:nth-child(2) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(2) > ul > li:nth-child(1) > button svg {
+    }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > button svg {
       transform: rotate(-90deg);
-    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(2) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(2) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list {
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list {
       display: block;
     }
   </style>
@@ -171,9 +171,9 @@
   <nav aria-label="Main" id="site-nav" class="site-nav">
   
   
-    <ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Documentation category" aria-pressed="false">
+    <ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/" class="nav-list-link">Home</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/features.html" class="nav-list-link">Features</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Documentation category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/foundbyme-custom/docs/" class="nav-list-link">Documentation</a><ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/docs/getting-started/" class="nav-list-link">Getting Started</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/usage/" class="nav-list-link">Usage</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/example/" class="nav-list-link">Examples</a></li></ul></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/features.html" class="nav-list-link">Features</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/community.html" class="nav-list-link">Community</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/contact.html" class="nav-list-link">Contact</a></li><li class="nav-list-item"><a href="/foundbyme-custom/about/" class="nav-list-link">About</a></li><li class="nav-list-item"><a href="/foundbyme-custom/404.html" class="nav-list-link">Page Not Found</a></li></ul>
+      </button><a href="/foundbyme-custom/docs/" class="nav-list-link">Documentation</a><ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/docs/getting-started/" class="nav-list-link">Getting Started</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/usage/" class="nav-list-link">Usage</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/example/" class="nav-list-link">Examples</a></li></ul></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/contact.html" class="nav-list-link">Contact</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/community.html" class="nav-list-link">Community</a></li><li class="nav-list-item"><a href="/foundbyme-custom/about/" class="nav-list-link">About</a></li></ul>
   
 </nav>
 
@@ -182,12 +182,7 @@
 
   
   
-    <footer class="site-footer">
-      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
-    </footer>
-  
 </div>
-
   
 
   <div class="main" id="top">
@@ -234,14 +229,14 @@
 <p>이것은 일반적인 텍스트입니다.</p>
 
 <p class="callout-note">여기에 중요한 참고 사항을 적습니다. 
-RAG 기술을 사용하려면 데이터베이스 설정이 필요합니다.</p>
+RAG 기술을 사용하려면 데이터베이스(PostgreSQL, ChromaDB) 설정이 필요합니다.</p>
 
 <p class="callout-warning">이것은 주의 사항입니다.
-API 키가 노출되지 않도록 조심하세요!</p>
-<h2 id="1-설치">
+API 키나 DB 접속 정보가 노출되지 않도록 조심하세요!</p>
+<h2 id="1-설치-및-환경-구성">
   
   
-    <a href="#1-설치" class="anchor-heading" aria-labelledby="1-설치"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. 설치
+    <a href="#1-설치-및-환경-구성" class="anchor-heading" aria-labelledby="1-설치-및-환경-구성"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. 설치 및 환경 구성
   
   
 </h2>
@@ -250,31 +245,38 @@ API 키가 노출되지 않도록 조심하세요!</p>
 <div class="button">
   <a href="https://github.com/KNaeon/foundbyme" target="_blank">GitHub Repository에서 설치 파일 다운로드</a>
 </div>
+<h3 id="필수-요구사항">
+  
+  
+    <a href="#필수-요구사항" class="anchor-heading" aria-labelledby="필수-요구사항"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 필수 요구사항
+  
+  
+</h3>
+    
+<ul>
+  <li>Python 3.8+</li>
+  <li>PostgreSQL Database</li>
+</ul>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
 </code></pre></div></div>
-<p class="callout-note">Python 3.8 이상 버전을 권장합니다. 가상환경(Virtualenv)을 사용하면 패키지 충돌을 방지할 수 있어 더욱 안전합니다.</p>
-<h2 id="2-로컬-파일-인덱싱">
-  
-  
-    <a href="#2-로컬-파일-인덱싱" class="anchor-heading" aria-labelledby="2-로컬-파일-인덱싱"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. 로컬 파일 인덱싱
-  
-  
-</h2>
-    
+<p class="callout-note">Python 가상환경(Virtualenv) 사용을 권장합니다. db/db.py 등에서 PostgreSQL 접속 정보를 본인의 환경에 맞게 수정해야 할 수 있습니다.</p>
+
+<ol>
+  <li>로컬 파일 인덱싱</li>
+</ol>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python indexer.py <span class="nt">--path</span> <span class="s2">"C:/my-documents"</span>
 </code></pre></div></div>
-<p class="callout-warning">대용량 파일이 많을 경우 시간이 소요될 수 있습니다. 처음 실행 시에는 모든 파일을 스캔하므로, 파일 수에 따라 수 분 정도 걸릴 수 있습니다.</p>
-<h2 id="3-검색-실행">
-  
-  
-    <a href="#3-검색-실행" class="anchor-heading" aria-labelledby="3-검색-실행"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. 검색 실행
-  
-  
-</h2>
-    
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python search.py <span class="s2">"딥러닝 표준화"</span>
-</code></pre></div></div><hr />
+<p class="callout-warning">파일을 세그먼트 단위로 분할(Chunking)하고 벡터화하는 과정이 포함되어 있어, 대용량 파일이 많을 경우 시간이 소요될 수 있습니다.</p>
+
+<ol>
+  <li>서버 실행 및 검색
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uvicorn app:app <span class="nt">--reload</span>
+</code></pre></div>    </div>
+    <p>브라우저에서 http://localhost:8000/docs로 접속하여 API를 테스트하거나, 프론트엔드 대시보드를 통해 검색을 수행하세요.</p>
+  </li>
+</ol>
 
           
 

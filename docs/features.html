@@ -15,7 +15,7 @@
   
 
     
-    .site-nav > ul.nav-list:first-child > li:not(:nth-child(3)) > a,
+    .site-nav > ul.nav-list:first-child > li:not(:nth-child(2)) > a,
     .site-nav > ul.nav-list:first-child > li > ul > li a {
       background-image: none;
     }
@@ -25,12 +25,12 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(2) > a {
       font-weight: 600;
       text-decoration: none;
-    }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg {
+    }.site-nav > ul.nav-list:first-child > li:nth-child(2) > button svg {
       transform: rotate(-90deg);
-    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list {
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(2) > ul.nav-list {
       display: block;
     }
   </style>
@@ -168,9 +168,9 @@
   <nav aria-label="Main" id="site-nav" class="site-nav">
   
   
-    <ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Documentation category" aria-pressed="false">
+    <ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/" class="nav-list-link">Home</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/features.html" class="nav-list-link">Features</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Documentation category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/foundbyme-custom/docs/" class="nav-list-link">Documentation</a><ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/docs/getting-started/" class="nav-list-link">Getting Started</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/usage/" class="nav-list-link">Usage</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/example/" class="nav-list-link">Examples</a></li></ul></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/features.html" class="nav-list-link">Features</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/community.html" class="nav-list-link">Community</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/contact.html" class="nav-list-link">Contact</a></li><li class="nav-list-item"><a href="/foundbyme-custom/about/" class="nav-list-link">About</a></li><li class="nav-list-item"><a href="/foundbyme-custom/404.html" class="nav-list-link">Page Not Found</a></li></ul>
+      </button><a href="/foundbyme-custom/docs/" class="nav-list-link">Documentation</a><ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/docs/getting-started/" class="nav-list-link">Getting Started</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/usage/" class="nav-list-link">Usage</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/example/" class="nav-list-link">Examples</a></li></ul></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/contact.html" class="nav-list-link">Contact</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/community.html" class="nav-list-link">Community</a></li><li class="nav-list-item"><a href="/foundbyme-custom/about/" class="nav-list-link">About</a></li></ul>
   
 </nav>
 
@@ -179,12 +179,7 @@
 
   
   
-    <footer class="site-footer">
-      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
-    </footer>
-  
 </div>
-
   
 
   <div class="main" id="top">
@@ -219,41 +214,39 @@
 </h1>
     
 
-<p>주요 기능 정리해두기!</p>
-
 <div class="feature-grid">
   <div class="feature-card">
 <h3>
   
   
-    <a href="#feature-showcase" class="anchor-heading" aria-labelledby="feature-showcase"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🔍 Local File Indexing
+    <a href="#feature-showcase" class="anchor-heading" aria-labelledby="feature-showcase"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🔍 Segment-Level Indexing
   
   
 </h3>
     
-    <p>Automatically scans and indexes your local documents including PDF, Images, and Code.</p>
+    <p>문서를 통째로 저장하지 않고 의미 단위(Chunk)로 분할하여 ChromaDB에 저장합니다. 파일명뿐만 아니라 페이지 번호까지 정확히 찾아냅니다.</p>
   </div>
   <div class="feature-card">
 <h3>
   
   
-    <a href="#feature-showcase" class="anchor-heading" aria-labelledby="feature-showcase"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🤖 RAG-based Search
+    <a href="#feature-showcase" class="anchor-heading" aria-labelledby="feature-showcase"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🤖 Hybrid Backend
   
   
 </h3>
     
-    <p>Ask questions in natural language and get answers based on your own data.</p>
+    <p>ChromaDB(벡터)와 PostgreSQL(메타데이터)을 결합하여 강력한 검색 성능과 데이터 무결성을 보장합니다.</p>
   </div>
   <div class="feature-card">
 <h3>
   
   
-    <a href="#feature-showcase" class="anchor-heading" aria-labelledby="feature-showcase"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 📊 Vector Visualization
+    <a href="#feature-showcase" class="anchor-heading" aria-labelledby="feature-showcase"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 📊 3D PCA Visualization
   
   
 </h3>
     
-    <p>Visualize relationships between documents with embedding maps.</p>
+    <p>Scikit-learn의 PCA를 활용하여 고차원 임베딩 벡터를 3차원으로 축소, 검색 결과와 문서 간의 관계를 시각적으로 보여줍니다.</p>
   </div>
 </div>
 
