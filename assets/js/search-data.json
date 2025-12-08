@@ -216,41 +216,62 @@
     
     "relUrl": "/"
   },"31": {
+    "doc": "Showcase",
+    "title": "\n      FoundByMe\n    ",
+    "content": "The Future of Semantic Search. Experience the power of RAG technology right now. Start Journey &rarr; ",
+    "url": "/foundbyme-custom/docs/showcase/",
+    
+    "relUrl": "/docs/showcase/"
+  },"32": {
+    "doc": "Showcase",
+    "title": "Why FoundByMe?",
+    "content": "복잡한 설정 없이, 당신의 로컬 데이터를 가장 스마트하게 검색하세요. 🚀 Fast . Optimized for local environments. 🔒 Secure . Your data never leaves your device. 💡 Smart . Context-aware search results. ",
+    "url": "/foundbyme-custom/docs/showcase/",
+    
+    "relUrl": "/docs/showcase/"
+  },"33": {
+    "doc": "Showcase",
+    "title": "Showcase",
+    "content": " ",
+    "url": "/foundbyme-custom/docs/showcase/",
+    
+    "relUrl": "/docs/showcase/"
+  },"34": {
     "doc": "Usage",
     "title": "사용법 (Usage)",
     "content": "FoundByMe의 상세 기능들과 실제 활용 방법을 설명합니다. ",
     "url": "/foundbyme-custom/docs/usage/#%EC%82%AC%EC%9A%A9%EB%B2%95-usage",
     
     "relUrl": "/docs/usage/#사용법-usage"
-  },"32": {
+  },"35": {
     "doc": "Usage",
     "title": "1️⃣ 기본 사용",
     "content": "로컬 폴더 전체 검색 . python search.py \"자료 키워드\" . 특정 파일 형식만 검색 . python search.py \"딥러닝\" --ext pdf,txt . 특정 폴더 제외 . python search.py \"과제\" --exclude \"backup\" . ",
     "url": "/foundbyme-custom/docs/usage/#1%EF%B8%8F%E2%83%A3-%EA%B8%B0%EB%B3%B8-%EC%82%AC%EC%9A%A9",
     
     "relUrl": "/docs/usage/#1️⃣-기본-사용"
-  },"33": {
+  },"36": {
     "doc": "Usage",
     "title": "2️⃣ RAG API 사용하기",
     "content": "로컬 RAG API 테스트 FoundByMe RAG API를 이용하면 자연어 기반 검색 결과를 쉽게 얻을 수 있습니다. API 요청 전 서버가 실행 중이어야 합니다. 터미널에서 uvicorn main:app –reload 명령어로 서버를 먼저 실행해 주세요. Python 예시 . import requests url = \"http://localhost:8000/search\" data = {\"query\": \"딥러닝 표준화\"} response = requests.post(url, json=data) print(response.json()) . API Response 예시 . { \"results\": [ {\"file\": \"C:/my-documents/deep_learning.pdf\", \"summary\": \"딥러닝 표준화 관련 내용 요약...\"} ] } . ",
     "url": "/foundbyme-custom/docs/usage/#2%EF%B8%8F%E2%83%A3-rag-api-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0",
     
     "relUrl": "/docs/usage/#2️⃣-rag-api-사용하기"
-  },"34": {
+  },"37": {
     "doc": "Usage",
     "title": "3️⃣ 검색 기능과 결과 활용",
     "content": "검색 기능 . | 키워드 검색 | 자연어 기반 질문 | PDF / 이미지 / 코드 파일 검색 | . 검색 결과 활용 . | 결과 미리보기 | 바로 열기 | 요약 내용 확인 | . ",
     "url": "/foundbyme-custom/docs/usage/#3%EF%B8%8F%E2%83%A3-%EA%B2%80%EC%83%89-%EA%B8%B0%EB%8A%A5%EA%B3%BC-%EA%B2%B0%EA%B3%BC-%ED%99%9C%EC%9A%A9",
     
     "relUrl": "/docs/usage/#3️⃣-검색-기능과-결과-활용"
-  },"35": {
+  },"38": {
     "doc": "Usage",
     "title": "4️⃣ 고급 기능",
     "content": "벡터 시각화 Embedding . 멀티파일 동시 검색 . 문서 요약 기능 . ",
     "url": "/foundbyme-custom/docs/usage/#4%EF%B8%8F%E2%83%A3-%EA%B3%A0%EA%B8%89-%EA%B8%B0%EB%8A%A5",
     
     "relUrl": "/docs/usage/#4️⃣-고급-기능"
-  },"36": {
+  },"39": {
     "doc": "Usage",
     "title": "Usage",
     "content": " ",

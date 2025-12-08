@@ -7455,6 +7455,77 @@ a.skip-to-main:active {
   color: #ffffff !important;
 }
 
+/* [Showcase] 애니메이션 페이지 전용 스타일 */
+.showcase-hero {
+  background: linear-gradient(-45deg, #1a1c23, #51626f, #c3002f, #3d000b);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite; /* 15초 동안 색상이 천천히 흐름 */
+  height: 80vh; /* 화면 높이의 80% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.animate-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+} /* 첫 줄 0.3초 뒤 등장 */
+.delay-2 {
+  animation-delay: 0.6s;
+} /* 둘째 줄 0.6초 뒤 등장 */
+.delay-3 {
+  animation-delay: 0.9s;
+} /* 버튼 0.9초 뒤 등장 */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.btn-showcase {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+.btn-showcase:hover {
+  background: white;
+  color: #c3002f;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
 /* 커스텀 디자인을 불러옵니다! */
 
 /*# sourceMappingURL=just-the-docs-light.css.map */
