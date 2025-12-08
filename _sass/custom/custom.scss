@@ -101,5 +101,42 @@
     margin-bottom: 5px;
     text-transform: uppercase;
     font-size: 0.8rem;
-  }
+  }  
+}
+/* [추가] 상단 헤더 디자인 전면 수정 (학교 테마 적용) */
+
+// 1. 헤더 배경을 크림슨 레드로 변경
+.site-header {
+  background-color: #c3002f !important; /* 학교 상징색 */
+  border-bottom: none !important;       /* 지저분한 밑줄 제거 */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 살짝 그림자 줘서 입체감 */
+}
+
+// 2. 사이트 제목(로고) 글씨를 흰색으로
+.site-title {
+  color: #ffffff !important;
+  font-weight: 700; /* 좀 더 굵게 */
+}
+
+// 3. 헤더 안의 검색창 디자인 변경 (배경에 맞춰서)
+.site-header .search-input {
+  background-color: rgba(255, 255, 255, 0.15) !important; /* 반투명 흰색 */
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important; /* 글씨 흰색 */
+  border-radius: 4px !important;
+}
+
+// 4. 검색창 플레이스홀더(안내 문구) 색상
+.site-header .search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+// 5. 검색 아이콘 색상 변경
+.site-header .search-label .search-icon {
+  color: #ffffff !important;
+}
+
+// 6. 우측 상단 링크(GitHub 등)가 있다면 흰색으로
+.aux-nav-list-item {
+  color: #ffffff !important;
 }
