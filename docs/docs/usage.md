@@ -32,6 +32,8 @@ python search.py "과제" --exclude "backup"
 ## 2️⃣ RAG API 사용하기
 <div class="link-box"> <a href="http://localhost:8000/search" target="_blank">로컬 RAG API 테스트</a> </div>
 FoundByMe RAG API를 이용하면 자연어 기반 검색 결과를 쉽게 얻을 수 있습니다.
+API 요청 전 서버가 실행 중이어야 합니다. 터미널에서 uvicorn main:app --reload 명령어로 서버를 먼저 실행해 주세요. 
+{: .callout-warning }
 
 ### Python 예시
 

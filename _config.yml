@@ -9,4 +9,5 @@ plugins:
 url: "https://kimhabin2.github.io"  # 사용자 깃허브 주소
 baseurl: "/foundbyme-custom"
 
-color_scheme: light
+enable_copy_code_button: true # 코드 복사 버튼도 켜주면 좋습니다
+#color_scheme: light
