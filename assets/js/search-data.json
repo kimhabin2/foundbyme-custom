@@ -141,21 +141,21 @@
   },"20": {
     "doc": "Getting Started",
     "title": "Getting Started",
-    "content": "FoundByMe를 처음 사용하는 사용자들을 위해 설치와 기본 설정 방법을 안내합니다. ",
+    "content": "FoundByMe를 처음 사용하는 사용자들을 위해 설치와 기본 설정 방법을 안내합니다. 이것은 일반적인 텍스트입니다. 여기에 중요한 참고 사항을 적습니다. RAG 기술을 사용하려면 데이터베이스 설정이 필요합니다. 이것은 주의 사항입니다. API 키가 노출되지 않도록 조심하세요! . ",
     "url": "/foundbyme-custom/docs/getting-started/",
     
     "relUrl": "/docs/getting-started/"
   },"21": {
     "doc": "Getting Started",
     "title": "1. 설치",
-    "content": "GitHub Repository에서 설치 파일 다운로드 pip install -r requirements.txt . ",
+    "content": "GitHub Repository에서 설치 파일 다운로드 pip install -r requirements.txt . Python 3.8 이상 버전을 권장합니다. 가상환경(Virtualenv)을 사용하면 패키지 충돌을 방지할 수 있어 더욱 안전합니다. ",
     "url": "/foundbyme-custom/docs/getting-started/#1-%EC%84%A4%EC%B9%98",
     
     "relUrl": "/docs/getting-started/#1-설치"
   },"22": {
     "doc": "Getting Started",
     "title": "2. 로컬 파일 인덱싱",
-    "content": "python indexer.py --path \"C:/my-documents\" . ",
+    "content": "python indexer.py --path \"C:/my-documents\" . 대용량 파일이 많을 경우 시간이 소요될 수 있습니다. 처음 실행 시에는 모든 파일을 스캔하므로, 파일 수에 따라 수 분 정도 걸릴 수 있습니다. ",
     "url": "/foundbyme-custom/docs/getting-started/#2-%EB%A1%9C%EC%BB%AC-%ED%8C%8C%EC%9D%BC-%EC%9D%B8%EB%8D%B1%EC%8B%B1",
     
     "relUrl": "/docs/getting-started/#2-로컬-파일-인덱싱"
@@ -232,7 +232,7 @@
   },"33": {
     "doc": "Usage",
     "title": "2️⃣ RAG API 사용하기",
-    "content": "로컬 RAG API 테스트 FoundByMe RAG API를 이용하면 자연어 기반 검색 결과를 쉽게 얻을 수 있습니다. Python 예시 . import requests url = \"http://localhost:8000/search\" data = {\"query\": \"딥러닝 표준화\"} response = requests.post(url, json=data) print(response.json()) . API Response 예시 . { \"results\": [ {\"file\": \"C:/my-documents/deep_learning.pdf\", \"summary\": \"딥러닝 표준화 관련 내용 요약...\"} ] } . ",
+    "content": "로컬 RAG API 테스트 FoundByMe RAG API를 이용하면 자연어 기반 검색 결과를 쉽게 얻을 수 있습니다. API 요청 전 서버가 실행 중이어야 합니다. 터미널에서 uvicorn main:app –reload 명령어로 서버를 먼저 실행해 주세요. Python 예시 . import requests url = \"http://localhost:8000/search\" data = {\"query\": \"딥러닝 표준화\"} response = requests.post(url, json=data) print(response.json()) . API Response 예시 . { \"results\": [ {\"file\": \"C:/my-documents/deep_learning.pdf\", \"summary\": \"딥러닝 표준화 관련 내용 요약...\"} ] } . ",
     "url": "/foundbyme-custom/docs/usage/#2%EF%B8%8F%E2%83%A3-rag-api-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0",
     
     "relUrl": "/docs/usage/#2️⃣-rag-api-사용하기"
