@@ -7419,6 +7419,37 @@ a.skip-to-main:active {
   font-size: 0.8rem;
 }
 
+/* [추가] 상단 헤더 디자인 전면 수정 (학교 테마 적용) */
+.site-header {
+  background-color: #c3002f !important; /* 학교 상징색 */
+  border-bottom: none !important; /* 지저분한 밑줄 제거 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 살짝 그림자 줘서 입체감 */
+}
+
+.site-title {
+  color: #ffffff !important;
+  font-weight: 700; /* 좀 더 굵게 */
+}
+
+.site-header .search-input {
+  background-color: rgba(255, 255, 255, 0.15) !important; /* 반투명 흰색 */
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important; /* 글씨 흰색 */
+  border-radius: 4px !important;
+}
+
+.site-header .search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.site-header .search-label .search-icon {
+  color: #ffffff !important;
+}
+
+.aux-nav-list-item {
+  color: #ffffff !important;
+}
+
 /* 👈 커스텀 디자인 연결 */
 
 /*# sourceMappingURL=just-the-docs-dark.css.map */
