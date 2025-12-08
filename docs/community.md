@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Community
-nav_order: 3
+nav_order: 5
 ---
 
 <div class="hero-section" style="text-align: center; padding: 40px 0;">

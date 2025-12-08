@@ -33,7 +33,7 @@ permalink: /
 </div>
 
 <div style="margin-top: 80px; margin-bottom: 40px; text-align: center;">
-  <h2 style="color: #3d4a54; font-weight: 700;">Why FoundByMe?</h2>
+  <h2 style="color: #3d4a54; font-weight: 700;">🚀 Why Use FoundByMe?</h2>
 </div>
 
 <div class="feature-grid">
@@ -49,9 +49,21 @@ permalink: /
     <h3>🧠 Context Aware</h3>
     <p>단순 키워드 매칭이 아닙니다.<br>문맥을 이해하고 답변을 생성합니다.</p>
   </div>
+  <div class="feature-card">
+    <h3>👀 Vector Visualization</h3>
+    <p>원리를 파악하기 쉽습니다.<br>흥미로운 관찰!</p>
+  </div>
 </div>
 
 <hr style="margin: 60px 0;">
+| 기능 | PDF-X change(viewer) | AI 챗봇 서비스 | **FoundByMe** |
+| :--- | :---: | :---: | :---: |
+| **로컬 완전 실행 (보안)** | O | X | **O** |
+| **의미(맥락) 기반 검색** | X | O | **O** |
+| **여러 파일 통합 검색** | △ | O(업로드 필요) | **O** |
+| **벡터 시각화 (원리 파악)** | X | X | **O** |
+| **멀티 포맷 지원** | X | △ | **O** |
+| **완전 오픈소스** | X | X | **O** |
 
 # Project Introduction
 로컬에 흩어져 있는 강의 자료, PDF, 코드 파일, 과제 문서 등을 빠르게 검색하고 학습에 활용할 수 있도록 돕는 프로젝트입니다.  
@@ -89,6 +101,15 @@ permalink: /
 
 ---
 
+## 💡 Key Highlights
+
+* **🔒 Secure:** 인터넷 연결 없이 로컬에서 안전하게 작동합니다.
+* **🧠 Smart:** 단순 단어 매칭이 아닌, 문맥을 이해하는 **Semantic Search**를 제공합니다.
+* **📂 Universal:** PDF뿐만 아니라 PPT, Word 파일까지 한 번에 검색하세요.
+* **📊 Visual:** 검색 결과와 문서 간의 관계를 시각적으로 확인하세요.
+
+---
+
 ## 📁 빠른 시작
 
 ```bash
@@ -100,3 +121,6 @@ python search.py "딥러닝 표준화"
 - 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html
 
 - 💻 GitHub Repository: https://github.com/KNaeon/foundbyme
+
+[View on GitHub](https://github.com/KNaeon/foundbyme){: .btn .btn-outline-primary .fs-5 .mb-4 .mb-md-0 }
+
