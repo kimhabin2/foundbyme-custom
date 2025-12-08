@@ -1,13 +1,12 @@
 title: "FoundByMe"
 description: "FoundByMe Documentation"
-remote_theme: just-the-docs/just-the-docs
+#remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-remote-theme
 
 url: "https://KNaeon.github.io"  # 사용자 깃허브 주소
-baseurl: "/foundbyme"
+baseurl: "/foundbyme-custom"
 
 color_scheme: light
 

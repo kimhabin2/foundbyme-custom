@@ -45,11 +45,6 @@ GEM
       webrick (~> 1.7)
     jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
-    jekyll-remote-theme (0.4.3)
-      addressable (~> 2.0)
-      jekyll (>= 3.5, < 5.0)
-      jekyll-sass-converter (>= 1.0, <= 3.0.0, != 2.0.0)
-      rubyzip (>= 1.3.0, < 3.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
@@ -82,7 +77,6 @@ GEM
       ffi (~> 1.0)
     rexml (3.4.4)
     rouge (4.6.1)
-    rubyzip (2.4.1)
     safe_yaml (1.0.5)
     sass-embedded (1.94.2-x64-mingw-ucrt)
       google-protobuf (~> 4.31)
@@ -99,7 +93,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.4.0)
-  jekyll-remote-theme
+  jekyll-include-cache
   jekyll-sass-converter (= 3.0.0)
   jekyll-seo-tag
   jekyll-sitemap
@@ -123,7 +117,6 @@ CHECKSUMS
   i18n (1.14.7) sha256=ceba573f8138ff2c0915427f1fc5bdf4aa3ab8ae88c8ce255eb3ecf0a11a5d0f
   jekyll (4.4.1) sha256=4c1144d857a5b2b80d45b8cf5138289579a9f8136aadfa6dd684b31fe2bc18c1
   jekyll-include-cache (0.2.1) sha256=c7d4b9e551732a27442cb2ce853ba36a2f69c66603694b8c1184c99ab1a1a205
-  jekyll-remote-theme (0.4.3) sha256=d3fde726484fb3df04de9e347baf75aaa3d5bfea771a330412e0c52608e54b40
   jekyll-sass-converter (3.0.0) sha256=e2e7674f186e906b9d99b8066e13f9b4d5cb9f806d36f7bc8cf2610053d8c902
   jekyll-seo-tag (2.8.0) sha256=3f2ed1916d56f14ebfa38e24acde9b7c946df70cb183af2cb5f0598f21ae6818
   jekyll-sitemap (1.4.0) sha256=0de08c5debc185ea5a8f980e1025c7cd3f8e0c35c8b6ef592f15c46235cf4218
@@ -142,7 +135,6 @@ CHECKSUMS
   rb-inotify (0.11.1) sha256=a0a700441239b0ff18eb65e3866236cd78613d6b9f78fea1f9ac47a85e47be6e
   rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
   rouge (4.6.1) sha256=5075346d5797d6864be93f7adc75a16047a7dbfa572c63c502419ffa582c77de
-  rubyzip (2.4.1) sha256=8577c88edc1fde8935eb91064c5cb1aef9ad5494b940cf19c775ee833e075615
   safe_yaml (1.0.5) sha256=a6ac2d64b7eb027bdeeca1851fe7e7af0d668e133e8a88066a0c6f7087d9f848
   sass-embedded (1.94.2-x64-mingw-ucrt) sha256=c64a5b2d77941096ddc248f022a436c916803755f9c24b0150b16c0cf8b0a2c0
   sass-embedded (1.94.2-x86_64-linux-gnu) sha256=64d2fd651277ed316dee1e7896ae2f2f0914cc55ef419357814b9aed1b9cc0ad
