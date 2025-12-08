@@ -1,3 +1,7 @@
 ---
 ---
-{% include css/just-the-docs.scss.liquid color_scheme="light" %}
+@import "./support/support";
+@import "./custom/setup";
+@import "./color_schemes/light";
+@import "./modules";
+@import "./custom/custom";  /* 커스텀 디자인을 불러옵니다! */
