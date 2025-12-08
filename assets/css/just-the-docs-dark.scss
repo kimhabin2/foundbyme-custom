@@ -1,3 +1,7 @@
 ---
 ---
-{% include css/just-the-docs.scss.liquid color_scheme="dark" %}
+@import "./support/support";
+@import "./custom/setup";
+@import "./color_schemes/dark";  /* 👈 다크 테마 불러오기 */
+@import "./modules";
+@import "./custom/custom";       /* 👈 커스텀 디자인 연결 */

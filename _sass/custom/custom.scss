@@ -8,14 +8,14 @@
 
 // 기능 소개 카드 디자인 (애니메이션 포함)
 .feature-card {
-  background: #fff;
-  border: 1px solid #eee;
+  background: $body-background-color; // 배경색 테마 따라가기
+  border: 1px solid $border-color;    // 테두리도 테마 따라가기
   border-radius: 8px;
   padding: 25px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   
   &:hover {
-    transform: translateY(-5px); /* 위로 떠오르는 애니메이션 */
+    transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     border-color: #c3002f; /* 학교 상징색 */
   }
@@ -26,16 +26,17 @@
   }
 }
 
-// [검색창 디자인 업그레이드] - 이제 카드 밖으로 나왔습니다!
+// [검색창 디자인 업그레이드]
 .search-input {
-  border: 2px solid #e6e1e8 !important;
+  border: 2px solid $border-color !important;
   border-radius: 50px !important;
   transition: all 0.3s ease !important;
+  background-color: $body-background-color !important; // 다크모드 대응
+  color: $body-text-color !important;
   
   &:focus {
     border-color: #c3002f !important;
     box-shadow: 0 0 15px rgba(195, 0, 47, 0.2) !important;
-    background-color: #fff !important;
   }
 }
 
@@ -44,46 +45,59 @@
   color: #c3002f !important;
 }
 
-/* [추가] 경고/팁 박스 (Callouts) 커스텀 디자인 */
+/* [추가] 경고/팁 박스 (Callouts) - 다크 모드 대응 추가 */
 
-// 1. 참고(Note) 박스 - 학교 그레이 색상
+// 1. 참고(Note) 박스
 .callout-note {
-  background-color: rgba(81, 98, 111, 0.08); /* 연한 그레이 배경 */
-  border-left: 4px solid #51626f;            /* 진한 그레이 테두리 */
-  color: #3d4a54;                            /* 글자색 */
-  padding: 15px 20px;
+  border-left: 4px solid #51626f;
   border-radius: 4px;
+  padding: 15px 20px;
   margin: 20px 0;
   font-size: 0.95rem;
+
+  // 다크 모드인지 확인하여 색상 분기 처리
+  @if $color-scheme == "dark" {
+    background-color: rgba(81, 98, 111, 0.2); // 다크모드에선 배경을 좀 더 진하게
+    color: #e2e2e2; // 글자색 밝게 (흰색 계열)
+  } @else {
+    background-color: rgba(81, 98, 111, 0.08);
+    color: #3d4a54; // 라이트모드에선 어둡게
+  }
   
-  // 박스 안에 'Note'라는 작은 제목 달기
   &::before {
     content: "💡 Note";
     display: block;
     font-weight: bold;
-    color: #51626f;
+    color: #51626f; // 다크모드에서도 잘 보이는 회색
+    @if $color-scheme == "dark" { color: #aebdc7; } // 다크모드에선 조금 더 밝게
     margin-bottom: 5px;
     text-transform: uppercase;
     font-size: 0.8rem;
   }
 }
 
-// 2. 주의(Warning) 박스 - 학교 크림슨 레드 색상
+// 2. 주의(Warning) 박스
 .callout-warning {
-  background-color: rgba(195, 0, 47, 0.08); /* 연한 레드 배경 */
-  border-left: 4px solid #c3002f;           /* 진한 레드 테두리 */
-  color: #8a0e25;                           /* 글자색 */
-  padding: 15px 20px;
+  border-left: 4px solid #c3002f;
   border-radius: 4px;
+  padding: 15px 20px;
   margin: 20px 0;
   font-size: 0.95rem;
 
-  // 박스 안에 'Warning'이라는 작은 제목 달기
+  @if $color-scheme == "dark" {
+    background-color: rgba(195, 0, 47, 0.15);
+    color: #ffcdd2; // 다크모드에선 옅은 붉은색 글씨
+  } @else {
+    background-color: rgba(195, 0, 47, 0.08);
+    color: #8a0e25;
+  }
+
   &::before {
     content: "⚠️ Warning";
     display: block;
     font-weight: bold;
     color: #c3002f;
+    @if $color-scheme == "dark" { color: #ff5252; } // 다크모드에선 밝은 빨강
     margin-bottom: 5px;
     text-transform: uppercase;
     font-size: 0.8rem;
