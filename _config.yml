@@ -4,6 +4,7 @@ description: "FoundByMe Documentation"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache
 
 url: "https://kimhabin2.github.io"  # 사용자 깃허브 주소
 baseurl: "/foundbyme-custom"
