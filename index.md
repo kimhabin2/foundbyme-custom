@@ -2,9 +2,47 @@
 layout: default
 title: Home
 nav_order: 1
+description: "FoundByMe - Context-Based Local Document Search System"
+permalink: /
 ---
 
-# FoundByMe
+<div class="showcase-hero">
+  <div style="z-index: 2;">
+    <h1 class="animate-text delay-1" style="font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; color: white;">
+      FoundByMe
+    </h1>
+    <p class="animate-text delay-2" style="font-size: 1.5rem; color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+      Stop searching, start finding.<br>
+      내 PC의 모든 지식을 연결하는 RAG 검색 엔진.
+    </p>
+    <div class="animate-text delay-3">
+      <a href="{{ '/docs/getting-started/' | relative_url }}" class="btn-showcase">
+        🚀 Get Started
+      </a>
+    </div>
+  </div>
+</div>
+<div style="margin-top: 80px; margin-bottom: 40px; text-align: center;">
+  <h2 style="color: #3d4a54; font-weight: 700;">Why FoundByMe?</h2>
+</div>
+
+<div class="feature-grid">
+  <div class="feature-card">
+    <h3>⚡ Fast Indexing</h3>
+    <p>PDF, 이미지, 코드까지.<br>로컬 파일을 실시간으로 인덱싱합니다.</p>
+  </div>
+  <div class="feature-card">
+    <h3>🔒 Private & Secure</h3>
+    <p>데이터가 외부로 전송되지 않습니다.<br>모든 처리는 당신의 PC에서.</p>
+  </div>
+  <div class="feature-card">
+    <h3>🧠 Context Aware</h3>
+    <p>단순 키워드 매칭이 아닙니다.<br>문맥을 이해하고 답변을 생성합니다.</p>
+  </div>
+</div>
+<hr style="margin: 60px 0;">
+
+# Project Introduction
 로컬에 흩어져 있는 강의 자료, PDF, 코드 파일, 과제 문서 등을 빠르게 검색하고 학습에 활용할 수 있도록 돕는 프로젝트입니다.  
 
 개인 작업 환경에서도, 스터디나 팀 프로젝트에서도 필요한 자료를 즉시 찾을 수 있도록 설계되었습니다.
