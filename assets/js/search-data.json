@@ -1,0 +1,233 @@
+{"0": {
+    "doc": "About",
+    "title": "About",
+    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll . ",
+    "url": "/foundbyme/about/",
+    
+    "relUrl": "/about/"
+  },"1": {
+    "doc": "Community",
+    "title": "Community",
+    "content": "프로젝트 사용자와 개발자를 위한 커뮤니티 페이지입니다. ",
+    "url": "/foundbyme/docs/community.html",
+    
+    "relUrl": "/docs/community.html"
+  },"2": {
+    "doc": "Community",
+    "title": "무엇을 공유할 수 있나요?",
+    "content": ". | 기능 제안 | 버그 리포트 | 사용 후기 | 새로운 아이디어 | 개선 요청 | . ",
+    "url": "/foundbyme/docs/community.html#%EB%AC%B4%EC%97%87%EC%9D%84-%EA%B3%B5%EC%9C%A0%ED%95%A0-%EC%88%98-%EC%9E%88%EB%82%98%EC%9A%94",
+    
+    "relUrl": "/docs/community.html#무엇을-공유할-수-있나요"
+  },"3": {
+    "doc": "Community",
+    "title": "참여 방법",
+    "content": ". | GitHub 이슈에 의견 남기기 | 새로운 기능이 필요하면 Feature Request 생성 | 버그 발견 시 재현 절차와 함께 Bug Report 작성 | PR로 직접 코드 기여하기 | . | GitHub Discussions | . https://github.com/KNaeon/foundbyme . | team member | . iameon@sju.ac.kr, kimhabin5@sju.ac.kr, leejh00610@gmail.com . ",
+    "url": "/foundbyme/docs/community.html#%EC%B0%B8%EC%97%AC-%EB%B0%A9%EB%B2%95",
+    
+    "relUrl": "/docs/community.html#참여-방법"
+  },"4": {
+    "doc": "Contact",
+    "title": "Contact",
+    "content": "아래 채널을 통해 프로젝트 관련 문의나 제안을 전달할 수 있습니다. ",
+    "url": "/foundbyme/docs/contact.html",
+    
+    "relUrl": "/docs/contact.html"
+  },"5": {
+    "doc": "Contact",
+    "title": "문의 종류",
+    "content": ". | 기능 관련 질문 | 설치/사용 이슈 | 협업 관련 제안 | 문서 기여 관련 문의 | . ",
+    "url": "/foundbyme/docs/contact.html#%EB%AC%B8%EC%9D%98-%EC%A2%85%EB%A5%98",
+    
+    "relUrl": "/docs/contact.html#문의-종류"
+  },"6": {
+    "doc": "Contact",
+    "title": "연락처",
+    "content": ". | GitHub: https://github.com/kimhabin2 | Email: kimhabin5@sju.ac.kr | . ",
+    "url": "/foundbyme/docs/contact.html#%EC%97%B0%EB%9D%BD%EC%B2%98",
+    
+    "relUrl": "/docs/contact.html#연락처"
+  },"7": {
+    "doc": "Documentation",
+    "title": "Documentation",
+    "content": "프로젝트 문서 페이지입니다. ",
+    "url": "/foundbyme/docs/",
+    
+    "relUrl": "/docs/"
+  },"8": {
+    "doc": "Examples",
+    "title": "예제 (Examples)",
+    "content": "실제로 FoundByMe를 사용하는 구체적인 예시와 워크플로우를 안내합니다. ",
+    "url": "/foundbyme/docs/example/#%EC%98%88%EC%A0%9C-examples",
+    
+    "relUrl": "/docs/example/#예제-examples"
+  },"9": {
+    "doc": "Examples",
+    "title": "예제 1. 단일 파일 검색 예제",
+    "content": "python search.py \"머신러닝 기초\" --ext pdf . ",
+    "url": "/foundbyme/docs/example/#%EC%98%88%EC%A0%9C-1-%EB%8B%A8%EC%9D%BC-%ED%8C%8C%EC%9D%BC-%EA%B2%80%EC%83%89-%EC%98%88%EC%A0%9C",
+    
+    "relUrl": "/docs/example/#예제-1-단일-파일-검색-예제"
+  },"10": {
+    "doc": "Examples",
+    "title": "예제 2. 폴더 내 여러 파일 검색",
+    "content": "python search.py \"시험 자료\" --path \"C:/my-documents/CS101\" . ",
+    "url": "/foundbyme/docs/example/#%EC%98%88%EC%A0%9C-2-%ED%8F%B4%EB%8D%94-%EB%82%B4-%EC%97%AC%EB%9F%AC-%ED%8C%8C%EC%9D%BC-%EA%B2%80%EC%83%89",
+    
+    "relUrl": "/docs/example/#예제-2-폴더-내-여러-파일-검색"
+  },"11": {
+    "doc": "Examples",
+    "title": "예제 3. RAG API 예제",
+    "content": "RAG API 호출 테스트 import requests data = {\"query\": \"딥러닝 프로젝트 예제\"} response = requests.post(\"http://localhost:8000/search\", json=data) print(response.json()) . ",
+    "url": "/foundbyme/docs/example/#%EC%98%88%EC%A0%9C-3-rag-api-%EC%98%88%EC%A0%9C",
+    
+    "relUrl": "/docs/example/#예제-3-rag-api-예제"
+  },"12": {
+    "doc": "Examples",
+    "title": "예제 4. 백터 시각화 예제",
+    "content": ". | visualize_embeddings.py 실행 예제 | 문서 간 유사도 맵 확인 가능 | . ",
+    "url": "/foundbyme/docs/example/#%EC%98%88%EC%A0%9C-4-%EB%B0%B1%ED%84%B0-%EC%8B%9C%EA%B0%81%ED%99%94-%EC%98%88%EC%A0%9C",
+    
+    "relUrl": "/docs/example/#예제-4-백터-시각화-예제"
+  },"13": {
+    "doc": "Examples",
+    "title": "Examples",
+    "content": " ",
+    "url": "/foundbyme/docs/example/",
+    
+    "relUrl": "/docs/example/"
+  },"14": {
+    "doc": "Features",
+    "title": "Feature Showcase",
+    "content": "주요 기능 정리해두기! . ",
+    "url": "/foundbyme/docs/features.html#feature-showcase",
+    
+    "relUrl": "/docs/features.html#feature-showcase"
+  },"15": {
+    "doc": "Features",
+    "title": "Features",
+    "content": " ",
+    "url": "/foundbyme/docs/features.html",
+    
+    "relUrl": "/docs/features.html"
+  },"16": {
+    "doc": "Getting Started",
+    "title": "Getting Started",
+    "content": "FoundByMe를 처음 사용하는 사용자들을 위해 설치와 기본 설정 방법을 안내합니다. ",
+    "url": "/foundbyme/docs/getting-started/",
+    
+    "relUrl": "/docs/getting-started/"
+  },"17": {
+    "doc": "Getting Started",
+    "title": "1. 설치",
+    "content": "GitHub Repository에서 설치 파일 다운로드 pip install -r requirements.txt . ",
+    "url": "/foundbyme/docs/getting-started/#1-%EC%84%A4%EC%B9%98",
+    
+    "relUrl": "/docs/getting-started/#1-설치"
+  },"18": {
+    "doc": "Getting Started",
+    "title": "2. 로컬 파일 인덱싱",
+    "content": "python indexer.py --path \"C:/my-documents\" . ",
+    "url": "/foundbyme/docs/getting-started/#2-%EB%A1%9C%EC%BB%AC-%ED%8C%8C%EC%9D%BC-%EC%9D%B8%EB%8D%B1%EC%8B%B1",
+    
+    "relUrl": "/docs/getting-started/#2-로컬-파일-인덱싱"
+  },"19": {
+    "doc": "Getting Started",
+    "title": "3. 검색 실행",
+    "content": "python search.py \"딥러닝 표준화\" . ",
+    "url": "/foundbyme/docs/getting-started/#3-%EA%B2%80%EC%83%89-%EC%8B%A4%ED%96%89",
+    
+    "relUrl": "/docs/getting-started/#3-검색-실행"
+  },"20": {
+    "doc": "Home",
+    "title": "FoundByMe",
+    "content": "로컬에 흩어져 있는 강의 자료, PDF, 코드 파일, 과제 문서 등을 빠르게 검색하고 학습에 활용할 수 있도록 돕는 프로젝트입니다. 개인 작업 환경에서도, 스터디나 팀 프로젝트에서도 필요한 자료를 즉시 찾을 수 있도록 설계되었습니다. ",
+    "url": "/foundbyme/#foundbyme",
+    
+    "relUrl": "/#foundbyme"
+  },"21": {
+    "doc": "Home",
+    "title": "제작 배경",
+    "content": ". | 시험 기간 시간 절약 : 여러 형태의 문서 파일을 매번 열어서 찾는데 시간이 많이 소요 | 반복 탐색 : 자료가 여러 파일로 흩어져 있어 같은 용어가 어디에 있었는지 기억나지 않아 반복 탐색하게 됨. | 공부 집중력 감소 : 파일을 하나씩 열어보면서 흐름이 끊기고, 정신이 산만해져 집중력이 떨어짐. | 맥락 이해 불가 : 키워드 검색은 의미(맥락)을 이해하지 못해 정확한 내용을 못 찾는 문제가 발생 | . ",
+    "url": "/foundbyme/#%EC%A0%9C%EC%9E%91-%EB%B0%B0%EA%B2%BD",
+    
+    "relUrl": "/#제작-배경"
+  },"22": {
+    "doc": "Home",
+    "title": "🚀 목적",
+    "content": ". | 검색 시간을 줄이고, 학습 효율을 높이기 위한 개인용 로컬 지식 검색 도구 | 자료 이름을 정확히 기억하지 않아도, 자연어 기반으로 필요한 자료를 찾아주는 시스템 | 텍스트뿐 아니라 PDF, 이미지, 코드 등 다양한 파일까지 찾을 수 있는 통합 검색 | . ",
+    "url": "/foundbyme/#-%EB%AA%A9%EC%A0%81",
+    
+    "relUrl": "/#-목적"
+  },"23": {
+    "doc": "Home",
+    "title": "🔍 주요 기능",
+    "content": "1) 로컬 파일 인덱싱 . 폴더 전체를 스캔해 문서·이미지·코드 등의 메타데이터를 자동으로 정리합니다. 2) RAG 기반 검색 . | 프로젝트에서 구현 중인 API와 연동하여 자연어로 질문하면 | 로컬 파일 중 가장 관련 있는 내용을 찾고 요약하거나 문맥 기반으로 정리해 제공합니다. | . 3) 벡터 시각화(Embedding Visualization) . ",
+    "url": "/foundbyme/#-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5",
+    
+    "relUrl": "/#-주요-기능"
+  },"24": {
+    "doc": "Home",
+    "title": "🧩 프로젝트 구성 요소",
+    "content": ". | 로컬 검색 시스템 / 사용 설명서 / 예제 페이지 / API 문서 제공 . | 백엔드용 RAG API 구현 → sentence-transformers 기반 embedding → 문서 요약/검색 엔드포인트 제공 . | . ",
+    "url": "/foundbyme/#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C",
+    
+    "relUrl": "/#-프로젝트-구성-요소"
+  },"25": {
+    "doc": "Home",
+    "title": "📁 빠른 시작",
+    "content": "pip install -r requirements.txt python indexer.py --path \"C:/my-documents\" python search.py \"딥러닝 표준화\" . | 📘 Documentation(ReadTheDocs): https://foundbyme.readthedocs.io/en/latest/about.html | 💻 GitHub Repository: https://github.com/KNaeon/foundbyme | . ",
+    "url": "/foundbyme/#-%EB%B9%A0%EB%A5%B8-%EC%8B%9C%EC%9E%91",
+    
+    "relUrl": "/#-빠른-시작"
+  },"26": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/foundbyme/",
+    
+    "relUrl": "/"
+  },"27": {
+    "doc": "Usage",
+    "title": "사용법 (Usage)",
+    "content": "FoundByMe의 상세 기능들과 실제 활용 방법을 설명합니다. ",
+    "url": "/foundbyme/docs/usage/#%EC%82%AC%EC%9A%A9%EB%B2%95-usage",
+    
+    "relUrl": "/docs/usage/#사용법-usage"
+  },"28": {
+    "doc": "Usage",
+    "title": "1️⃣ 기본 사용",
+    "content": "로컬 폴더 전체 검색 . python search.py \"자료 키워드\" . 특정 파일 형식만 검색 . python search.py \"딥러닝\" --ext pdf,txt . 특정 폴더 제외 . python search.py \"과제\" --exclude \"backup\" . ",
+    "url": "/foundbyme/docs/usage/#1%EF%B8%8F%E2%83%A3-%EA%B8%B0%EB%B3%B8-%EC%82%AC%EC%9A%A9",
+    
+    "relUrl": "/docs/usage/#1️⃣-기본-사용"
+  },"29": {
+    "doc": "Usage",
+    "title": "2️⃣ RAG API 사용하기",
+    "content": "로컬 RAG API 테스트 FoundByMe RAG API를 이용하면 자연어 기반 검색 결과를 쉽게 얻을 수 있습니다. Python 예시 . import requests url = \"http://localhost:8000/search\" data = {\"query\": \"딥러닝 표준화\"} response = requests.post(url, json=data) print(response.json()) . API Response 예시 . { \"results\": [ {\"file\": \"C:/my-documents/deep_learning.pdf\", \"summary\": \"딥러닝 표준화 관련 내용 요약...\"} ] } . ",
+    "url": "/foundbyme/docs/usage/#2%EF%B8%8F%E2%83%A3-rag-api-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0",
+    
+    "relUrl": "/docs/usage/#2️⃣-rag-api-사용하기"
+  },"30": {
+    "doc": "Usage",
+    "title": "3️⃣ 검색 기능과 결과 활용",
+    "content": "검색 기능 . | 키워드 검색 | 자연어 기반 질문 | PDF / 이미지 / 코드 파일 검색 | . 검색 결과 활용 . | 결과 미리보기 | 바로 열기 | 요약 내용 확인 | . ",
+    "url": "/foundbyme/docs/usage/#3%EF%B8%8F%E2%83%A3-%EA%B2%80%EC%83%89-%EA%B8%B0%EB%8A%A5%EA%B3%BC-%EA%B2%B0%EA%B3%BC-%ED%99%9C%EC%9A%A9",
+    
+    "relUrl": "/docs/usage/#3️⃣-검색-기능과-결과-활용"
+  },"31": {
+    "doc": "Usage",
+    "title": "4️⃣ 고급 기능",
+    "content": "벡터 시각화 Embedding . 멀티파일 동시 검색 . 문서 요약 기능 . ",
+    "url": "/foundbyme/docs/usage/#4%EF%B8%8F%E2%83%A3-%EA%B3%A0%EA%B8%89-%EA%B8%B0%EB%8A%A5",
+    
+    "relUrl": "/docs/usage/#4️⃣-고급-기능"
+  },"32": {
+    "doc": "Usage",
+    "title": "Usage",
+    "content": " ",
+    "url": "/foundbyme/docs/usage/",
+    
+    "relUrl": "/docs/usage/"
+  }
+}
