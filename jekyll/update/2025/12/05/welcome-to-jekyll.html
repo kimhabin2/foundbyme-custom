@@ -57,6 +57,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      var cssLink = document.querySelector('link[href*="just-the-docs-default.css"]');
+      if (cssLink) {
+        cssLink.href = cssLink.href.replace('just-the-docs-default.css', 'just-the-docs-dark.css');
+      }
+    }
+  </script>
 </head>
 
 <body>

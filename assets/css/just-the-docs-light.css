@@ -7354,13 +7354,13 @@ a.skip-to-main:active {
 
 .feature-card {
   background: #fff;
-  border: 1px solid #eee;
+  border: 1px solid #eeebee;
   border-radius: 8px;
   padding: 25px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .feature-card:hover {
-  transform: translateY(-5px); /* 위로 떠오르는 애니메이션 */
+  transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-color: #c3002f; /* 학교 상징색 */
 }
@@ -7370,29 +7370,30 @@ a.skip-to-main:active {
 }
 
 .search-input {
-  border: 2px solid #e6e1e8 !important;
+  border: 2px solid #eeebee !important;
   border-radius: 50px !important;
   transition: all 0.3s ease !important;
+  background-color: #fff !important;
+  color: #51626f !important;
 }
 .search-input:focus {
   border-color: #c3002f !important;
   box-shadow: 0 0 15px rgba(195, 0, 47, 0.2) !important;
-  background-color: #fff !important;
 }
 
 .search-label .search-icon {
   color: #c3002f !important;
 }
 
-/* [추가] 경고/팁 박스 (Callouts) 커스텀 디자인 */
+/* [추가] 경고/팁 박스 (Callouts) - 다크 모드 대응 추가 */
 .callout-note {
-  background-color: rgba(81, 98, 111, 0.08); /* 연한 그레이 배경 */
-  border-left: 4px solid #51626f; /* 진한 그레이 테두리 */
-  color: #3d4a54; /* 글자색 */
-  padding: 15px 20px;
+  border-left: 4px solid #51626f;
   border-radius: 4px;
+  padding: 15px 20px;
   margin: 20px 0;
   font-size: 0.95rem;
+  background-color: rgba(81, 98, 111, 0.08);
+  color: #3d4a54;
 }
 .callout-note::before {
   content: "💡 Note";
@@ -7405,13 +7406,13 @@ a.skip-to-main:active {
 }
 
 .callout-warning {
-  background-color: rgba(195, 0, 47, 0.08); /* 연한 레드 배경 */
-  border-left: 4px solid #c3002f; /* 진한 레드 테두리 */
-  color: #8a0e25; /* 글자색 */
-  padding: 15px 20px;
+  border-left: 4px solid #c3002f;
   border-radius: 4px;
+  padding: 15px 20px;
   margin: 20px 0;
   font-size: 0.95rem;
+  background-color: rgba(195, 0, 47, 0.08);
+  color: #8a0e25;
 }
 .callout-warning::before {
   content: "⚠️ Warning";
