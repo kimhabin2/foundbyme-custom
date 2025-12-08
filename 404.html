@@ -13,10 +13,26 @@
 
   <style id="jtd-nav-activation">
   
-    .site-nav ul li a {
+
+    
+    .site-nav > ul.nav-list:first-child > li:not(:nth-child(7)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li a {
       background-image: none;
     }
 
+    .site-nav > ul.nav-list:not(:first-child) a,
+    .site-nav li.external a {
+      background-image: none;
+    }
+
+    .site-nav > ul.nav-list:first-child > li:nth-child(7) > a {
+      font-weight: 600;
+      text-decoration: none;
+    }.site-nav > ul.nav-list:first-child > li:nth-child(7) > button svg {
+      transform: rotate(-90deg);
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(7) > ul.nav-list {
+      display: block;
+    }
   </style>
 
   
@@ -34,9 +50,9 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>FoundByMe | FoundByMe Documentation</title>
+<title>Page Not Found | FoundByMe</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="FoundByMe" />
+<meta property="og:title" content="Page Not Found" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="FoundByMe Documentation" />
 <meta property="og:description" content="FoundByMe Documentation" />
@@ -45,13 +61,14 @@
 <meta property="og:site_name" content="FoundByMe" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="FoundByMe" />
+<meta property="twitter:title" content="Page Not Found" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"FoundByMe Documentation","headline":"FoundByMe","url":"https://kimhabin2.github.io/foundbyme-custom/404.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"FoundByMe Documentation","headline":"Page Not Found","url":"https://kimhabin2.github.io/foundbyme-custom/404.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
   
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔍</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -145,7 +162,7 @@
   
     <ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Documentation category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/foundbyme-custom/docs/" class="nav-list-link">Documentation</a><ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/docs/getting-started/" class="nav-list-link">Getting Started</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/usage/" class="nav-list-link">Usage</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/example/" class="nav-list-link">Examples</a></li></ul></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/features.html" class="nav-list-link">Features</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/community.html" class="nav-list-link">Community</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/contact.html" class="nav-list-link">Contact</a></li><li class="nav-list-item"><a href="/foundbyme-custom/about/" class="nav-list-link">About</a></li></ul>
+      </button><a href="/foundbyme-custom/docs/" class="nav-list-link">Documentation</a><ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/docs/getting-started/" class="nav-list-link">Getting Started</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/usage/" class="nav-list-link">Usage</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/example/" class="nav-list-link">Examples</a></li></ul></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/features.html" class="nav-list-link">Features</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/community.html" class="nav-list-link">Community</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/contact.html" class="nav-list-link">Contact</a></li><li class="nav-list-item"><a href="/foundbyme-custom/about/" class="nav-list-link">About</a></li><li class="nav-list-item"><a href="/foundbyme-custom/404.html" class="nav-list-link">Page Not Found</a></li></ul>
   
 </nav>
 
@@ -185,22 +202,8 @@
       <div id="main-content" class="main-content">
         <main>
           
-            <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-<h1>
+            <div style="text-align: center; padding: 100px 20px;">
+<h1 style="font-size: 6rem; color: #c3002f; margin-bottom: 0;">
   
   
     404
@@ -208,9 +211,17 @@
   
 </h1>
     
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p style="font-size: 1.5rem; font-weight: bold; color: #3d4a54;">
+    Oops! Are you lost??
+  </p>
+  <p style="color: #51626f; margin-bottom: 40px;">
+    요청하신 페이지를 찾을 수 없습니다.<br>
+    But with <strong>FoundByMe</strong> you'll be able to find the data you need in no time!
+  </p>
+  
+  <a href="/foundbyme-custom/" class="btn btn-primary" style="background-color: #c3002f; padding: 12px 30px; border-radius: 50px; text-decoration: none;">
+    🏠 홈으로 돌아가기
+  </a>
 </div>
 
           
