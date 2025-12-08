@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="overflow: visible;">
+  <defs>
+    <filter id="glow-white">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <linearGradient id="line-white" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    /* 중앙 돋보기 호흡 애니메이션 */
+    .core { animation: breathe 4s ease-in-out infinite; transform-origin: 600px 300px; }
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3)); }
+      50% { transform: scale(1.05); filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.6)); }
+    }
+
+    /* 데이터 노드 움직임 */
+    .floating-content { animation: float 6s ease-in-out infinite; cursor: pointer; }
+    .floating-content:hover { transform: scale(1.1); transition: transform 0.3s; }
+    
+    .n1 .floating-content { animation-delay: 0s; }
+    .n2 .floating-content { animation-delay: 1.5s; }
+    .n3 .floating-content { animation-delay: 3s; }
+    .n4 .floating-content { animation-delay: 4.5s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    /* 연결선 신호 */
+    .signal {
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400;
+      animation: signalFlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      opacity: 0;
+    }
+    .s1 { animation-delay: 0.5s; }
+    .s2 { animation-delay: 1.2s; }
+    .s3 { animation-delay: 2.0s; }
+    .s4 { animation-delay: 0.8s; }
+
+    @keyframes signalFlow {
+      0% { stroke-dashoffset: 400; opacity: 0; }
+      20% { opacity: 1; }
+      80% { stroke-dashoffset: 0; opacity: 1; }
+      100% { stroke-dashoffset: -100; opacity: 0; }
+    }
+
+    /* 텍스트 스타일 */
+    .node-text { font-family: sans-serif; font-weight: bold; fill: #333; }
+    .node-label { font-family: sans-serif; font-weight: bold; fill: white; font-size: 16px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); letter-spacing: 1px; }
+  </style>
+
+  <line class="signal s1" x1="600" y1="300" x2="150" y2="100" stroke="url(#line-white)" stroke-width="2" stroke-linecap="round" />
+  <line class="signal s2" x1="600" y1="300" x2="1050" y2="100" stroke="url(#line-white)" stroke-width="2" stroke-linecap="round" />
+  <line class="signal s3" x1="600" y1="300" x2="200" y2="500" stroke="url(#line-white)" stroke-width="2" stroke-linecap="round" />
+  <line class="signal s4" x1="600" y1="300" x2="1000" y2="500" stroke="url(#line-white)" stroke-width="2" stroke-linecap="round" />
+
+  <g class="core">
+    <circle cx="600" cy="300" r="90" fill="none" stroke="white" stroke-width="1" opacity="0.3" stroke-dasharray="8,8" />
+    
+    <circle cx="600" cy="300" r="50" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="4" />
+    
+    <line x1="635" y1="335" x2="660" y2="360" stroke="white" stroke-width="8" stroke-linecap="round" />
+    
+    <path d="M 570 280 Q 580 260 600 260" stroke="white" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round" />
+  </g>
+
+  <g transform="translate(150, 100)" class="n1">
+    <g class="floating-content">
+      <rect x="-35" y="-40" width="70" height="80" rx="10" fill="white" filter="url(#glow-white)" />
+      <text x="0" y="5" text-anchor="middle" class="node-text" font-size="20">PDF</text>
+      <text x="0" y="60" text-anchor="middle" class="node-label">DOCS</text>
+    </g>
+  </g>
+
+  <g transform="translate(1050, 100)" class="n2">
+    <g class="floating-content">
+      <rect x="-40" y="-35" width="80" height="70" rx="10" fill="white" filter="url(#glow-white)" />
+      <text x="0" y="5" text-anchor="middle" class="node-text" font-size="22">&lt;/&gt;</text>
+      <text x="0" y="55" text-anchor="middle" class="node-label">CODE</text>
+    </g>
+  </g>
+
+  <g transform="translate(200, 500)" class="n3">
+    <g class="floating-content">
+      <circle r="45" fill="white" filter="url(#glow-white)" />
+      <text x="0" y="5" text-anchor="middle" class="node-text" font-size="16">IMG</text>
+    </g>
+  </g>
+
+  <g transform="translate(1000, 500)" class="n4">
+    <g class="floating-content">
+      <rect x="-30" y="-35" width="60" height="70" rx="8" fill="white" filter="url(#glow-white)" />
+      <text x="0" y="5" text-anchor="middle" class="node-text" font-size="16">TXT</text>
+    </g>
+  </g>
+
+</svg>

@@ -6,22 +6,32 @@ description: "FoundByMe - Context-Based Local Document Search System"
 permalink: /
 ---
 
-<div class="showcase-hero">
-  <div style="z-index: 2;">
-    <h1 class="animate-text delay-1" style="font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; color: white;">
+<div class="showcase-hero" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 120px 20px 0px; min-height: 130vh; background: radial-gradient(circle at 50% 30%, #c3002f 0%, #a30027 40%, #3d000b 90%); position: relative; overflow: hidden;">
+  
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: radial-gradient(white 1px, transparent 1px); background-size: 50px 50px; opacity: 0.1; pointer-events: none;"></div>
+
+  <div style="z-index: 2; margin-bottom: 60px; max-width: 900px; position: relative; text-align: center;">
+    <h1 class="animate-text delay-1" style="font-size: 4.5rem; font-weight: 900; margin-bottom: 20px; color: white; letter-spacing: -1px; text-shadow: 0 4px 20px rgba(0,0,0,0.3);">
       FoundByMe
     </h1>
-    <p class="animate-text delay-2" style="font-size: 1.5rem; color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto; line-height: 1.6;">
-      Stop searching, start finding.<br>
-      내 PC의 모든 지식을 연결하는 RAG 검색 엔진.
+    <p class="animate-text delay-2" style="font-size: 1.8rem; color: rgba(255,255,255,0.95); margin-bottom: 40px; line-height: 1.5; font-weight: 500;">
+      내 PC의 흩어진 지식을 하나로 연결하는<br>
+      차세대 RAG 검색 엔진
     </p>
+    
     <div class="animate-text delay-3">
-      <a href="{{ '/docs/getting-started/' | relative_url }}" class="btn-showcase">
-        🚀 Get Started
+      <a href="{{ '/docs/getting-started/' | relative_url }}" class="btn-showcase" style="padding: 18px 50px; font-size: 1.3rem; border-radius: 100px; background-color: white; color: #c3002f; border: none; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+        🚀 Start Journey
       </a>
     </div>
   </div>
+
+  <div class="animate-text delay-2" style="width: 100%; max-width: 1200px; height: 600px; margin: 0 auto; opacity: 1; z-index: 1;">
+    {% include hero_animation.svg %}
+  </div>
+
 </div>
+
 <div style="margin-top: 80px; margin-bottom: 40px; text-align: center;">
   <h2 style="color: #3d4a54; font-weight: 700;">Why FoundByMe?</h2>
 </div>
@@ -40,6 +50,7 @@ permalink: /
     <p>단순 키워드 매칭이 아닙니다.<br>문맥을 이해하고 답변을 생성합니다.</p>
   </div>
 </div>
+
 <hr style="margin: 60px 0;">
 
 # Project Introduction
@@ -48,10 +59,10 @@ permalink: /
 개인 작업 환경에서도, 스터디나 팀 프로젝트에서도 필요한 자료를 즉시 찾을 수 있도록 설계되었습니다.
 
 ## 제작 배경
-- 시험 기간 시간 절약 : 여러 형태의 문서 파일을 매번 열어서 찾는데 시간이 많이 소요
-- 반복 탐색 : 자료가 여러 파일로 흩어져 있어 같은 용어가 어디에 있었는지 기억나지 않아 반복 탐색하게 됨.
-- 공부 집중력 감소 : 파일을 하나씩 열어보면서 흐름이 끊기고, 정신이 산만해져 집중력이 떨어짐.
-- 맥락 이해 불가 : 키워드 검색은 의미(맥락)을 이해하지 못해 정확한 내용을 못 찾는 문제가 발생
+- **시험 기간 시간 절약:** 여러 형태의 문서 파일을 매번 열어서 찾는데 시간이 많이 소요
+- **반복 탐색:** 자료가 여러 파일로 흩어져 있어 같은 용어가 어디에 있었는지 기억나지 않아 반복 탐색하게 됨.
+- **공부 집중력 감소:** 파일을 하나씩 열어보면서 흐름이 끊기고, 정신이 산만해져 집중력이 떨어짐.
+- **맥락 이해 불가:** 키워드 검색은 의미(맥락)을 이해하지 못해 정확한 내용을 못 찾는 문제가 발생
 
 ## 🚀 목적
 - 검색 시간을 줄이고, 학습 효율을 높이기 위한 개인용 로컬 지식 검색 도구  
@@ -72,7 +83,6 @@ permalink: /
 
 ## 🧩 프로젝트 구성 요소
 - 로컬 검색 시스템 / 사용 설명서 / 예제 페이지 / API 문서 제공
-
 - 백엔드용 RAG API 구현 
   → sentence-transformers 기반 embedding  
   → 문서 요약/검색 엔드포인트 제공
@@ -87,5 +97,6 @@ python indexer.py --path "C:/my-documents"
 python search.py "딥러닝 표준화"
 ```
 
-- 📘 Documentation(ReadTheDocs): https://foundbyme.readthedocs.io/en/latest/about.html
-- 💻 GitHub Repository: <https://github.com/KNaeon/foundbyme>
+- 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html
+
+- 💻 GitHub Repository: https://github.com/KNaeon/foundbyme
