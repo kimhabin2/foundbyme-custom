@@ -51,6 +51,19 @@ layout: table_wrappers
   {% if site.mermaid %}
     {% include components/mermaid.html %}
   {% endif %}
-<script src="{{ '/assets/js/backtotop.js' | relative_url }}"></script>
+{% include custom_footer.html %}
+        
+      </div>
+    </div>
+    {% if site.search_enabled != false %}
+      {% include components/search_footer.html %}
+    {% endif %}
+  </div>
+
+  {% if site.mermaid %}
+    {% include components/mermaid.html %}
+  {% endif %}
+
+  <script src="{{ '/assets/js/backtotop.js' | relative_url }}"></script>
 </body>
 </html>
