@@ -43,3 +43,49 @@
 .search-label .search-icon {
   color: #c3002f !important;
 }
+
+/* [추가] 경고/팁 박스 (Callouts) 커스텀 디자인 */
+
+// 1. 참고(Note) 박스 - 학교 그레이 색상
+.callout-note {
+  background-color: rgba(81, 98, 111, 0.08); /* 연한 그레이 배경 */
+  border-left: 4px solid #51626f;            /* 진한 그레이 테두리 */
+  color: #3d4a54;                            /* 글자색 */
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  font-size: 0.95rem;
+  
+  // 박스 안에 'Note'라는 작은 제목 달기
+  &::before {
+    content: "💡 Note";
+    display: block;
+    font-weight: bold;
+    color: #51626f;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+}
+
+// 2. 주의(Warning) 박스 - 학교 크림슨 레드 색상
+.callout-warning {
+  background-color: rgba(195, 0, 47, 0.08); /* 연한 레드 배경 */
+  border-left: 4px solid #c3002f;           /* 진한 레드 테두리 */
+  color: #8a0e25;                           /* 글자색 */
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  font-size: 0.95rem;
+
+  // 박스 안에 'Warning'이라는 작은 제목 달기
+  &::before {
+    content: "⚠️ Warning";
+    display: block;
+    font-weight: bold;
+    color: #c3002f;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+}
