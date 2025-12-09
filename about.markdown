@@ -12,6 +12,27 @@ permalink: /about/
 
 ---
 
+## 🏗️ Open Source Contribution Strategy
+
+FoundByMe는 기존의 거대 오픈소스 기술들을 **'개인화(Personalization)'**와 **'접근성(Accessibility)'** 관점에서 재해석하여 새로운 생태계를 구축했습니다.
+
+### 1. FAISS: 엔터프라이즈 기술의 경량화
+* **기여 포인트:** 고성능 벡터 검색 라이브러리인 FAISS를 **개인용 로컬 데스크탑 환경(Local Runtime)에 최적화**했습니다.
+* **상세:** 복잡한 서버 설정 없이도 일반 학생이 파이썬 스크립트만으로 인메모리 벡터 검색을 사용할 수 있도록 인덱싱 과정을 자동화하여 **기술의 대중화**에 기여했습니다.
+
+### 2. Milvus: 개인용 지식 관리(PKM) 확장
+* **기여 포인트:** 대규모 서버용 벡터 DB인 Milvus를 **Docker 기반의 개인용 영구 저장소**로 도입했습니다.
+* **상세:** 데이터가 기하급수적으로 늘어날 경우를 대비해 확장성 있는 아키텍처를 설계함으로써, Milvus가 엔터프라이즈를 넘어 **개인 데이터 관리(PKM)** 영역에서도 효율적임을 증명했습니다.
+
+### 3. Hybrid Architecture (유연한 설계)
+* **FAISS vs Milvus:** 사용자의 인프라 환경과 데이터 규모에 따라 **가벼운 엔진(FAISS)**과 **견고한 DB(Milvus)**를 선택적으로 사용할 수 있는 유연한 검색 아키텍처를 구현했습니다.
+
+### 4. Docker & DevOps: 배포 자동화
+* **기여 포인트:** `Node.js`, `Python`, `PostgreSQL`, `Milvus` 등 파편화된 기술 스택의 복잡한 의존성을 **Docker Compose** 하나로 통합했습니다.
+* **상세:** 누구나 명령어 한 줄로 **'나만의 로컬 검색 엔진'**을 즉시 배포할 수 있는 템플릿(Boilerplate)을 제공하여 오픈소스 진입 장벽을 획기적으로 낮췄습니다.
+
+---
+
 ## 🎨 Custom Theme Development Report
 
 이 웹사이트는 FoundByMe 프로젝트의 정체성을 나타내기 위해 **직접 제작 및 재설계한 커스텀 Jekyll 테마**를 사용하고 있습니다. 기존 테마를 단순히 적용하는 것에 그치지 않고, 구조와 디자인을 전면적으로 개편하여 독창성과 사용성을 높였습니다.
@@ -55,6 +76,6 @@ GitHub 저장소에서 코드를 확인하거나, 이슈를 등록해 주세요.
 
 * **GitHub:** [https://github.com/KNaeon/foundbyme](https://github.com/KNaeon/foundbyme)
 * **Team:** 세종대학교 데이터사이언스학과 오픈소스SW개론 팀
-## 📅 Project History
+### 📅 Project History
 * **기간:** 2025.10 ~ 2025.12
 * **목표:** 학습 효율을 극대화하는 로컬 RAG 검색 도구 개발
