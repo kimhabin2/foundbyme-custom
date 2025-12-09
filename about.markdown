@@ -14,22 +14,49 @@ permalink: /about/
 
 ## 🏗️ Open Source Contribution Strategy
 
-FoundByMe는 기존의 거대 오픈소스 기술들을 **'개인화(Personalization)'**와 **'접근성(Accessibility)'** 관점에서 재해석하여 새로운 생태계를 구축했습니다.
+FoundByMe는 혁신적인 오픈소스 기술인 **txtai**를 활용하여, 개발자가 아닌 일반 사용자도 쉽게 사용할 수 있는 **'Local-First Knowledge App'** 생태계를 제안합니다.
 
-### 1. FAISS: 엔터프라이즈 기술의 경량화
-* **기여 포인트:** 고성능 벡터 검색 라이브러리인 FAISS를 **개인용 로컬 데스크탑 환경(Local Runtime)에 최적화**했습니다.
-* **상세:** 복잡한 서버 설정 없이도 일반 학생이 파이썬 스크립트만으로 인메모리 벡터 검색을 사용할 수 있도록 인덱싱 과정을 자동화하여 **기술의 대중화**에 기여했습니다.
+### 1. txtai: Application Layer 확장 (Reference Implementation)
+* **기여 포인트:** 고성능 AI 인덱싱 프레임워크인 `txtai`를 실제 **엔드유저용 애플리케이션(End-User Application)**으로 구현했습니다.
+* **상세:** 기존 `txtai`는 주로 파이썬 개발자들의 라이브러리로 사용되었습니다. 우리는 이를 백엔드 코어로 활용하고, 사용자 친화적인 GUI와 결합하여 **"일반 학생을 위한 로컬 검색 도구"**라는 새로운 유즈 케이스(Use Case)를 만들어 오픈소스 커뮤니티에 공유했습니다.
 
-### 2. Milvus: 개인용 지식 관리(PKM) 확장
-* **기여 포인트:** 대규모 서버용 벡터 DB인 Milvus를 **Docker 기반의 개인용 영구 저장소**로 도입했습니다.
-* **상세:** 데이터가 기하급수적으로 늘어날 경우를 대비해 확장성 있는 아키텍처를 설계함으로써, Milvus가 엔터프라이즈를 넘어 **개인 데이터 관리(PKM)** 영역에서도 효율적임을 증명했습니다.
+### 2. Docker: 복잡한 AI 스택의 배포 자동화
+* **기여 포인트:** `Node.js`(프론트), `Python(txtai)`(백엔드), `PostgreSQL`(메타데이터) 등이 혼재된 복잡한 개발 환경을 **Docker Compose**로 표준화했습니다.
+* **상세:** AI 모델 설치와 데이터베이스 연동 과정을 명령어 한 줄로 자동화하여, 비전문가도 자신의 PC에 즉시 **독립적인 검색 엔진**을 구축할 수 있도록 진입 장벽을 획기적으로 낮췄습니다.
 
-### 3. Hybrid Architecture (유연한 설계)
-* **FAISS vs Milvus:** 사용자의 인프라 환경과 데이터 규모에 따라 **가벼운 엔진(FAISS)**과 **견고한 DB(Milvus)**를 선택적으로 사용할 수 있는 유연한 검색 아키텍처를 구현했습니다.
+### 3. PostgreSQL: 메타데이터 관리 최적화
+* **기여 포인트:** 벡터 검색만으로는 부족한 파일 메타데이터(경로, 수정일, 확장자) 관리를 위해 관계형 데이터베이스(RDBMS)를 효율적으로 통합했습니다.
+* **상세:** 벡터 DB와 RDBMS의 장점을 결합한 하이브리드 구조를 설계하여, 검색 정확도와 데이터 관리의 편의성을 동시에 확보했습니다.
 
-### 4. Docker & DevOps: 배포 자동화
-* **기여 포인트:** `Node.js`, `Python`, `PostgreSQL`, `Milvus` 등 파편화된 기술 스택의 복잡한 의존성을 **Docker Compose** 하나로 통합했습니다.
-* **상세:** 누구나 명령어 한 줄로 **'나만의 로컬 검색 엔진'**을 즉시 배포할 수 있는 템플릿(Boilerplate)을 제공하여 오픈소스 진입 장벽을 획기적으로 낮췄습니다.
+---
+
+## 💡 Why FoundByMe? (Innovation & Difference)
+
+FoundByMe는 기존 상용 소프트웨어들이 해결하지 못한 **'검색의 질적 한계'**를 극복하고, 무거운 오픈소스 AI 도구들의 **'진입장벽'**을 낮췄습니다.
+
+### 1. vs Traditional PDF Viewers (e.g., PDF-XChange)
+> **Reference:** [PDF-XChange Editor](https://www.tracker-software.com/product/pdf-xchange-editor), [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html)
+
+* **The Limitation:** 기존 뷰어들의 검색 기능은 단순한 **키워드 매칭(Ctrl+F)**에 불과합니다. 단어가 정확히 일치하지 않으면, 문서 내에 관련 내용이 있어도 찾을 수 없습니다.
+* **Our Solution:** FoundByMe는 **'문맥(Context)'**을 검색합니다. 사용자의 의도를 파악하여 키워드가 달라도 의미가 유사한 문서를 찾아주는 **차세대 시맨틱 검색**을 제공합니다.
+
+### 2. vs Cloud AI Services (e.g., ChatPDF)
+> **Reference:** [ChatPDF](https://www.chatpdf.com/), [AskYourPDF](https://askyourpdf.com/)
+
+* **The Limitation:** 대부분의 AI 문서 도구는 파일을 서버에 업로드해야 하므로 **데이터 유출 위험(Privacy Risk)**이 있고, 인터넷 연결과 구독료가 필요합니다.
+* **Our Solution:** **txtai**와 **Docker**를 활용한 **"100% 로컬 온프레미스"** 아키텍처입니다. 데이터가 PC 밖으로 나가지 않아 보안이 완벽하며, 오프라인 환경에서도 무료로 사용할 수 있습니다.
+
+### 3. vs Heavy Local LLMs (e.g., PrivateGPT)
+> **Reference:** [zylon-ai/private-gpt (GitHub)](https://github.com/zylon-ai/private-gpt), [LocalAI](https://github.com/mudler/LocalAI)
+
+* **The Limitation:** 기존의 로컬 RAG 서비스(PrivateGPT 등)는 무거운 LLM(거대언어모델)을 구동해야 해서 **고사양 GPU가 필수적**이고 속도가 느립니다.
+* **Our Solution:** 우리는 생성(Chat)보다 **'탐색(Search)'에 집중한 경량화 모델**을 채택했습니다. 무거운 LLM 의존성을 제거하여, 일반 학생용 노트북에서도 쾌적하게 돌아가는 **보급형 AI 검색 엔진**을 구현했습니다.
+
+### 4. vs Open Source DMS (e.g., Paperless-ngx)
+> **Reference:** [paperless-ngx/paperless-ngx (GitHub)](https://github.com/paperless-ngx/paperless-ngx)
+
+* **The Limitation:** 기존 문서 관리 시스템들은 OCR과 텍스트 일치 방식에 의존하여, 정확한 단어를 모르면 파일을 찾기 어려웠습니다.
+* **Our Solution:** FoundByMe는 **txtai 기반의 시맨틱 엔진**을 도입하여, 단순 보관을 넘어 **"문맥을 이해하는 지능형 문서 검색"** 경험을 제공합니다.
 
 ---
 
