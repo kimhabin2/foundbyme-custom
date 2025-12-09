@@ -8,44 +8,83 @@ permalink: /docs/getting-started/
 
 # Getting Started
 
-FoundByMe를 처음 사용하는 사용자들을 위해 설치와 기본 설정 방법을 안내합니다.
+FoundByMe를 처음 사용하는 사용자를 위해 설치, 실행, 그리고 전체 구조를 간단히 설명합니다.  
+FoundByMe는 **Docker Compose** 기반으로 손쉽게 실행할 수 있으며, PostgreSQL·txtai·FastAPI가 자동으로 구성됩니다.
 
-이것은 일반적인 텍스트입니다.
-
-여기에 중요한 참고 사항을 적습니다. 
-RAG 기술을 사용하려면 데이터베이스(PostgreSQL, ChromaDB) 설정이 필요합니다.
+**데이터베이스 설정 안내**
+FoundByMe는 **PostgreSQL**(메타데이터)과 **txtai**(벡터 인덱스)를 사용합니다.
+Docker Compose가 이 모든 환경을 자동으로 구축해주므로 별도의 설치가 필요 없습니다.
 {: .callout-note }
 
-이것은 주의 사항입니다.
-API 키나 DB 접속 정보가 노출되지 않도록 조심하세요!
-{: .callout-warning }
 
-## 1. 설치 및 환경 구성
+## 1. 전제 조건 (Prerequisites)
 
-<div class="button">
-  <a href="https://github.com/KNaeon/foundbyme" target="_blank">GitHub Repository에서 설치 파일 다운로드</a>
+설치를 시작하기 전에 다음 도구가 설치되어 있어야 합니다.
+
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) (Windows/Mac)
+* Git
+
+## 2. 설치 및 실행
+
+GitHub 저장소를 복제하고 Docker Compose를 실행하면 모든 준비가 끝납니다.
+
+```bash
+# 1. 저장소 복제
+git clone [https://github.com/KNaeon/foundbyme.git](https://github.com/KNaeon/foundbyme.git)
+cd foundbyme
+
+# 2. 컨테이너 실행 (백그라운드 모드)
+docker-compose up -d
+```
+**초기 실행 시 주의사항** 
+모델(txtai embeddings) 다운로드 · PostgreSQL 초기화 때문에 첫 실행은 1–3분 정도 걸릴 수 있습니다.
+{: .callout-note }
+
+## 3. 접속하기
+설치가 완료되면 아래 주소로 접속하여 FoundByMe에 접속할 수 있습니다.
+
+<div style="margin: 20px 0;">
+  <a href="http://localhost:3000" target="_blank" class="btn btn-primary" style="text-decoration: none; padding: 10px 20px; font-weight: bold;">
+    🚀 FoundByMe 실행 (http://localhost:3000)
+  </a>
 </div>
 
-### 필수 요구사항
-* Python 3.8+
-* PostgreSQL Database
+* **Frontend:** [http://localhost:3000](http://localhost:3000)
+* **Backend API:** [http://localhost:8000/docs](http://localhost:8000/docs) (Swagger UI)
 
-```bash
-pip install -r requirements.txt
-```
-Python 가상환경(Virtualenv) 사용을 권장합니다. db/db.py 등에서 PostgreSQL 접속 정보를 본인의 환경에 맞게 수정해야 할 수 있습니다. 
-{: .callout-note }
+---
 
-2. 로컬 파일 인덱싱
+## 4. 시스템 구조 (Architecture Overview)
 
-```bash
-python indexer.py --path "C:/my-documents"
-```
-파일을 세그먼트 단위로 분할(Chunking)하고 벡터화하는 과정이 포함되어 있어, 대용량 파일이 많을 경우 시간이 소요될 수 있습니다. 
+아래 그림은 FoundByMe 전체 구성요소가 어떻게 연결되는지를 보여줍니다.
+
+<img src="{{ '/assets/images/architecture.png' | relative_url }}" alt="FoundByMe Architecture Diagram" style="max-width: 100%; height: auto; display: block; margin: 30px auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+
+# 핵심 구성 요약
+## 🔍 검색 처리 흐름
+
+- 사용자가 검색 요청을 보내면 FastAPI가 이를 처리
+
+- ChromaDB가 kNN을 이용해 유사도 기반 검색 수행
+
+- PostgreSQL은 문서 내용/로그/메타데이터 저장
+
+- 결과는 프론트엔드로 JSON 형태로 응답
+
+## 🧱 별도 인덱싱 파이프라인
+
+- Loader.py → 텍스트 추출(.txt/.md/.pdf/.pptx 등)
+
+- Indexer : 데이터를 청크(Chunk) 단위로 분할하여 처리
+
+- 벡터 인덱스 : txtai
+
+- Storage: * 문서 원본/메타데이터 -> PostgreSQL
+
+## 5. 보안 주의사항**
+로컬 환경에서 동작하더라도 `.env`, API 키 또는 DB 접속 정보가 외부에 노출되지 않도록 주의하세요.
 {: .callout-warning }
 
-3. 서버 실행 및 검색
-```bash
-uvicorn app:app --reload
-```
-브라우저에서 http://localhost:8000/docs로 접속하여 API를 테스트하거나, 프론트엔드 대시보드를 통해 검색을 수행하세요.
+
+파일을 세그먼트 단위로 분할(Chunking)하고 벡터화하는 과정이 포함되어 있어, 대용량 파일이 많을 경우 시간이 소요될 수 있습니다. 
+{: .callout-warning }

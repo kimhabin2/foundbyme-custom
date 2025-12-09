@@ -8,93 +8,49 @@ permalink: /docs/usage/
 
 # 사용법 (Usage)
 
-FoundByMe의 상세 기능들과 실제 활용 방법을 설명합니다.
+FoundByMe의 웹 인터페이스(Web UI)를 통해 로컬 파일을 검색하고 활용하는 방법을 안내합니다.
 
 ---
 
-## 1️⃣ 기본 사용
+## 1️⃣ 파일 인덱싱 (Indexing)
 
-### 로컬 폴더 인덱싱 및 서버 실행
+검색을 하려면 먼저 내 컴퓨터의 파일을 FoundByMe에 등록해야 합니다.
 
-인덱싱을 먼저 수행하여 데이터를 ChromaDB와 PostgreSQL에 적재해야 합니다.
+1. **설정 페이지**로 이동합니다.
+2. **'폴더 경로(Path)'** 입력창에 검색하고 싶은 로컬 폴더 경로를 입력합니다. (예: `C:/Users/Name/Documents`)
+3. **'인덱싱 시작'** 버튼을 클릭합니다.
+4. 진행률 바가 100%가 될 때까지 기다립니다.
 
-```bash
-# 데이터 인덱싱
-python indexer.py --path "C:/my-documents"
-```
-# 검색 서버 실행 (FastAPI)
-uvicorn app:app --reload
-2️⃣ RAG API 사용하기
-<div class="link-box"> <a href="http://localhost:8000/docs" target="_blank">Swagger API 문서 보기</a> </div>
+**지원하는 파일 형식**
+PDF(`.pdf`), 텍스트(`.txt`, `.md`), 소스 코드(`.py`, `.js`, `.java`), 이미지(`.png`, `.jpg`) 등을 지원합니다.
+{: .callout-note }
 
-FoundByMe RAG API는 문서의 내용을 세그먼트(Chunk) 단위로 검색하여 파일명, 페이지, 유사도 점수, 3D 벡터 좌표를 반환합니다. {: .callout-note }
+---
 
-Python 요청 예시
+## 2️⃣ 검색하기 (Search)
 
-```Python
-import requests
+메인 화면의 검색창을 통해 자료를 찾을 수 있습니다.
 
-url = "http://localhost:8000/search"
-params = {"q": "딥러닝 표준화"}
-response = requests.get(url, params=params)
+### 🔍 자연어 검색 (Natural Language)
+단순한 키워드뿐만 아니라, **문장 형태의 질문**도 가능합니다.
+* 예: *"딥러닝에서 과적합을 막는 방법이 뭐지?"*
+* 예: *"지난주 회의록 내용 찾아줘"*
 
-print(response.json())
-```
+### 📂 필터링 (Filtering)
+검색 결과가 너무 많다면 필터를 사용하세요.
+* **파일 형식:** PDF만 보기, 코드만 보기 등
+* **날짜:** 특정 기간 내 생성된 파일만 검색
 
-API Response 예시 (JSON)
-검색 결과는 쿼리의 3D 좌표(query_vector_3d)와 상위 5개의 문서 세그먼트 정보를 포함합니다.
+---
 
-```JSON
-{
-  "query": "딥러닝 표준화",
-  "query_vector_3d": [0.12, -0.56, 0.89],
-  "results": [
-    {
-      "id": "550e8400-e29b...",
-      "filename": "deep_learning_standard.pdf",
-      "ext": "pdf",
-      "page": 15,
-      "score": 0.4512,
-      "vector_3d": [0.10, -0.54, 0.91]
-    },
-    {
-      "id": "713f9511-a31c...",
-      "filename": "lecture_note_03.pptx",
-      "ext": "pptx",
-      "page": 7,
-      "score": 0.5123,
-      "vector_3d": [0.33, -0.12, 0.45]
-    }
-  ]
-}
-```
+## 3️⃣ 결과 활용
 
-- page: 해당 내용이 위치한 문서의 페이지 번호
-- score: 질문과의 유사도 거리 (낮을수록 유사함, L2 Distance 등 설정에 따름)
-- vector_3d: PCA로 축소된 3차원 좌표 (시각화용)
+검색 결과 카드에는 다음과 같은 정보가 표시됩니다.
 
-3️⃣ 검색 기능과 결과 활용
-🔍 정밀 검색 (Segment Search)
-단순히 파일을 찾아주는 것이 아니라, 파일 내부의 **특정 구간(Segment)**을 찾아줍니다.
+* **요약(Summary):** 해당 문서가 어떤 내용을 담고 있는지 AI가 요약해 줍니다.
+* **미리보기(Preview):** 파일을 열지 않고도 핵심 내용을 확인할 수 있습니다.
+* **유사도(Score):** 내 질문과 얼마나 관련이 있는지 점수로 보여줍니다.
 
-Input: 자연어 질문 ("트랜스포머 모델의 어텐션 메커니즘 설명해줘")
-
-Process: 질문을 벡터화(Embedding)하여 ChromaDB 내의 문서 청크와 비교
-
-Output: 가장 가까운 벡터(Nearest Neighbor)의 스칼라 값과 메타데이터 반환
-
-📄 결과 확인
-검색 결과에는 다음 정보가 포함되어 있어 즉시 원문을 찾아갈 수 있습니다.
-
-파일명 (Filename)
-
-페이지 번호 (Page Number): PDF나 PPT의 경우 슬라이드 번호
-
-문서 ID (Doc ID): 내부 관리용 고유 식별자
-
-4️⃣ 고급 기능: 3D 벡터 시각화
-API가 반환하는 query_vector_3d와 vector_3d 데이터를 활용하여 검색 결과를 3차원 공간에 시각화합니다.
-
-사용자는 질문(점)과 문서(점) 사이의 거리를 눈으로 확인할 수 있습니다.
-
-관련된 문서들이 군집(Cluster)을 이루는 형태를 관찰할 수 있습니다.
+**바로 열기**
+결과 카드를 클릭하면 해당 파일이 기본 뷰어로 즉시 열립니다.
+{: .callout-note }

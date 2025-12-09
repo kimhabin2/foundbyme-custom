@@ -36,6 +36,10 @@ permalink: /
   <h2 style="color: #3d4a54; font-weight: 700;">🚀 Why Use FoundByMe?</h2>
 </div>
 
+<div style="margin-top: 80px; margin-bottom: 40px; text-align: center;">
+  <h2 style="color: #3d4a54; font-weight: 700;">🚀 Why Use FoundByMe?</h2>
+</div>
+
 <div class="feature-grid">
   <div class="feature-card">
     <h3>⚡ Fast Indexing</h3>
@@ -51,47 +55,55 @@ permalink: /
   </div>
   <div class="feature-card">
     <h3>👀 Vector Visualization</h3>
-    <p>원리를 파악하기 쉽습니다.<br>흥미로운 관찰!</p>
+    <p>검색 결과와 문서 간의 관계를<br>시각적으로 확인하고 이해하세요.</p>
   </div>
 </div>
 
 <hr style="margin: 60px 0;">
-| 기능 | PDF-X change(viewer) | AI 챗봇 서비스 | **FoundByMe** |
+
+<h2 style="text-align: center; margin-bottom: 30px; color: #3d4a54;">Feature Comparison</h2>
+
+| 기능 | PDF 뷰어 (Adobe) | AI 챗봇 (Cloud) | **FoundByMe** |
 | :--- | :---: | :---: | :---: |
 | **로컬 완전 실행 (보안)** | O | X | **O** |
 | **의미(맥락) 기반 검색** | X | O | **O** |
-| **여러 파일 통합 검색** | △ | O(업로드 필요) | **O** |
+| **여러 파일 통합 검색** | △ | △ | **O** |
 | **벡터 시각화 (원리 파악)** | X | X | **O** |
 | **멀티 포맷 지원** | X | △ | **O** |
-| **완전 오픈소스** | X | X | **O** |
+| **오픈소스 (무료)** | △ | X | **O** |
+{: .table .table-striped }
+
+<br>
 
 # Project Introduction
 로컬에 흩어져 있는 강의 자료, PDF, 코드 파일, 과제 문서 등을 빠르게 검색하고 학습에 활용할 수 있도록 돕는 프로젝트입니다.  
 
 개인 작업 환경에서도, 스터디나 팀 프로젝트에서도 필요한 자료를 즉시 찾을 수 있도록 설계되었습니다.
 
-## 제작 배경
-- **시험 기간 시간 절약:** 여러 형태의 문서 파일을 매번 열어서 찾는데 시간이 많이 소요
-- **반복 탐색:** 자료가 여러 파일로 흩어져 있어 같은 용어가 어디에 있었는지 기억나지 않아 반복 탐색하게 됨.
-- **공부 집중력 감소:** 파일을 하나씩 열어보면서 흐름이 끊기고, 정신이 산만해져 집중력이 떨어짐.
-- **맥락 이해 불가:** 키워드 검색은 의미(맥락)을 이해하지 못해 정확한 내용을 못 찾는 문제가 발생
+## 🚀 One-Line Installation
+복잡한 설정 없이 Docker로 바로 시작할 수 있습니다.
+```bash
+git clone [https://github.com/KNaeon/foundbyme.git](https://github.com/KNaeon/foundbyme.git)
+cd foundbyme
+docker-compose up -d
+```
 
-## 🚀 목적
-- 검색 시간을 줄이고, 학습 효율을 높이기 위한 개인용 로컬 지식 검색 도구  
-- 자료 이름을 정확히 기억하지 않아도, 자연어 기반으로 필요한 자료를 찾아주는 시스템  
-- 텍스트뿐 아니라 PDF, 이미지, 코드 등 다양한 파일까지 찾을 수 있는 통합 검색
+## 🎯 제작 배경 및 목적
+- Time Saving: 시험 기간 중 수많은 자료 속에서 특정 내용을 찾는 시간을 절약합니다.
+
+- Context Search: 파일명이나 정확한 키워드를 몰라도, 문맥(의미)만으로 자료를 찾아줍니다.
+
+- Focus: 파일을 하나씩 열어보는 번거로움을 없애 공부 집중력을 유지시켜 줍니다.
+
+## 🔍 주요 기능
+### 1) 로컬 파일 인덱싱: 폴더 전체를 스캔해 문서·이미지·코드 등의 메타데이터를 자동으로 정리합니다.
+
+### 2) RAG 기반 검색: 자연어로 질문하면 가장 관련 있는 내용을 찾아 요약해 줍니다.
+
+### 3) 벡터 시각화(Embedding Visualization): 임베딩된 데이터들의 관계를 3차원 그래프로 시각화합니다.
 
 ---
 
-## 🔍 주요 기능
-### 1) 로컬 파일 인덱싱  
-폴더 전체를 스캔해 문서·이미지·코드 등의 메타데이터를 자동으로 정리합니다.
-
-### 2) RAG 기반 검색  
-- 프로젝트에서 구현 중인 API와 연동하여 자연어로 질문하면  
-- 로컬 파일 중 가장 관련 있는 내용을 찾고 요약하거나 문맥 기반으로 정리해 제공합니다.
-
-### 3) 벡터 시각화(Embedding Visualization)
 
 ## 🧩 프로젝트 구성 요소
 - 로컬 검색 시스템 / 사용 설명서 / 예제 페이지 / API 문서 제공
@@ -110,17 +122,11 @@ permalink: /
 
 ---
 
-## 📁 빠른 시작
-
-```bash
-pip install -r requirements.txt
-python indexer.py --path "C:/my-documents"
-python search.py "딥러닝 표준화"
-```
-
 - 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html
 
 - 💻 GitHub Repository: https://github.com/KNaeon/foundbyme
+
+<div style="text-align: center; margin-top: 40px;"> <a href="https://github.com/KNaeon/foundbyme" class="btn btn-outline" style="border: 2px solid #c3002f; color: #c3002f; font-weight: bold; padding: 15px 30px; border-radius: 50px; text-decoration: none;"> View on GitHub </a> </div>
 
 [View on GitHub](https://github.com/KNaeon/foundbyme){: .btn .btn-outline-primary .fs-5 .mb-4 .mb-md-0 }
 
