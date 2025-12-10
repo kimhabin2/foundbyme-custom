@@ -54,7 +54,7 @@ payload = {
 response = requests.post(url, json=payload)
 print(response.json())
 ```
-결과 예시 (JSON)
+### 결과 예시 (JSON)
 ```json
 [
   {

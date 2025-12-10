@@ -10,23 +10,33 @@ permalink: /about/
 
 단순한 키워드 매칭을 넘어, 문맥을 이해하는 **RAG(Retrieval-Augmented Generation)** 기술을 통해 강의 자료, PDF, 코드 조각 등 흩어진 지식을 자연어로 쉽게 찾을 수 있습니다.
 
+### 📅 Project History
+* **기간:** 2025.10 ~ 2025.12
+* **목표:** 학습 효율을 극대화하는 로컬 RAG 검색 도구 개발
+* **Team:** 세종대학교 데이터사이언스학과 오픈소스SW개론 팀
+
 ---
 
 ## 🏗️ Open Source Contribution Strategy
 
 FoundByMe는 혁신적인 오픈소스 기술인 **txtai**를 활용하여, 개발자가 아닌 일반 사용자도 쉽게 사용할 수 있는 **'Local-First Knowledge App'** 생태계를 제안합니다.
 
-### 1. txtai: Application Layer 확장 (Reference Implementation)
-* **기여 포인트:** 고성능 AI 인덱싱 프레임워크인 `txtai`를 실제 **엔드유저용 애플리케이션(End-User Application)**으로 구현했습니다.
-* **상세:** 기존 `txtai`는 주로 파이썬 개발자들의 라이브러리로 사용되었습니다. 우리는 이를 백엔드 코어로 활용하고, 사용자 친화적인 GUI와 결합하여 **"일반 학생을 위한 로컬 검색 도구"**라는 새로운 유즈 케이스(Use Case)를 만들어 오픈소스 커뮤니티에 공유했습니다.
+### 1. txtai: From Library to Application (Service-fication)
+* **Target Repo:** [neuml/txtai](https://github.com/neuml/txtai)
+* **기여 포인트:** **"User-Friendly Local Service Implementation"**
+* **상세:** 기존 `txtai`는 훌륭한 라이브러리지만, 주로 파이썬 개발자들의 도구로 사용되었습니다. 우리는 이를 백엔드 코어로 활용하고, **Node.js 기반의 사용자 친화적인 GUI**와 결합하여 **"일반 학생을 위한 완성형 로컬 검색 도구"**라는 새로운 유즈 케이스(Use Case)를 만들어 오픈소스 커뮤니티에 공유했습니다.
 
-### 2. Docker: 복잡한 AI 스택의 배포 자동화
+### 2. Hybrid Storage Architecture (vs paperai)
+* **Target Repo:** [neuml/paperai](https://github.com/neuml/paperai)
+* **기여 포인트:** **"Hybrid Storage Pattern (SQLite → PostgreSQL)"**
+* **상세:**
+    * **Problem:** 기존 `txtai` 활용 사례(`paperai` 등)는 내장 SQLite에 의존하여, 파일 관리나 복잡한 조건 검색(날짜, 타입 등) 확장에 한계가 있었습니다.
+    * **Solution:** 우리는 벡터 검색은 `txtai`에, 파일 메타데이터 관리는 **PostgreSQL**에 위임하는 **하이브리드 아키텍처**를 구현했습니다.
+    * **Impact:** 이를 통해 대량의 로컬 파일 관리 시 **데이터 무결성**과 **검색 유연성**을 동시에 확보하는 아키텍처 모범 사례를 제시했습니다.
+
+### 3. Docker: 복잡한 AI 스택의 배포 자동화
 * **기여 포인트:** `Node.js`(프론트), `Python(txtai)`(백엔드), `PostgreSQL`(메타데이터) 등이 혼재된 복잡한 개발 환경을 **Docker Compose**로 표준화했습니다.
 * **상세:** AI 모델 설치와 데이터베이스 연동 과정을 명령어 한 줄로 자동화하여, 비전문가도 자신의 PC에 즉시 **독립적인 검색 엔진**을 구축할 수 있도록 진입 장벽을 획기적으로 낮췄습니다.
-
-### 3. PostgreSQL: 메타데이터 관리 최적화
-* **기여 포인트:** 벡터 검색만으로는 부족한 파일 메타데이터(경로, 수정일, 확장자) 관리를 위해 관계형 데이터베이스(RDBMS)를 효율적으로 통합했습니다.
-* **상세:** 벡터 DB와 RDBMS의 장점을 결합한 하이브리드 구조를 설계하여, 검색 정확도와 데이터 관리의 편의성을 동시에 확보했습니다.
 
 ---
 
@@ -102,7 +112,3 @@ FoundByMe는 여러분의 기여를 환영합니다.
 GitHub 저장소에서 코드를 확인하거나, 이슈를 등록해 주세요.
 
 * **GitHub:** [https://github.com/KNaeon/foundbyme](https://github.com/KNaeon/foundbyme)
-* **Team:** 세종대학교 데이터사이언스학과 오픈소스SW개론 팀
-### 📅 Project History
-* **기간:** 2025.10 ~ 2025.12
-* **목표:** 학습 효율을 극대화하는 로컬 RAG 검색 도구 개발

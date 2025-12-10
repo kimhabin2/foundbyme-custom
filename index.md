@@ -36,10 +36,6 @@ permalink: /
   <h2 style="color: #3d4a54; font-weight: 700;">🚀 Why Use FoundByMe?</h2>
 </div>
 
-<div style="margin-top: 80px; margin-bottom: 40px; text-align: center;">
-  <h2 style="color: #3d4a54; font-weight: 700;">🚀 Why Use FoundByMe?</h2>
-</div>
-
 <div class="feature-grid">
   <div class="feature-card">
     <h3>⚡ Fast Indexing</h3>
@@ -127,6 +123,4 @@ docker-compose up -d
 - 💻 GitHub Repository: https://github.com/KNaeon/foundbyme
 
 <div style="text-align: center; margin-top: 40px;"> <a href="https://github.com/KNaeon/foundbyme" class="btn btn-outline" style="border: 2px solid #c3002f; color: #c3002f; font-weight: bold; padding: 15px 30px; border-radius: 50px; text-decoration: none;"> View on GitHub </a> </div>
-
-[View on GitHub](https://github.com/KNaeon/foundbyme){: .btn .btn-outline-primary .fs-5 .mb-4 .mb-md-0 }
 
