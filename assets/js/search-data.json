@@ -106,7 +106,7 @@
   },"15": {
     "doc": "Contact",
     "title": "Contact",
-    "content": "아래 채널을 통해 프로젝트 관련 문의나 제안을 전달할 수 있습니다. ",
+    "content": "📧 Contact Channels . 문의 목적에 따라 해당 담당자의깃허브로 연락해 주세요. 🖥️ Website &amp; Docs 홈페이지/문서 관련 문의 👉 @kimhabin2 GitHub ⚙️ Usage &amp; Project 기능/사용법 관련 문의 👉 @KNaeon GitHub ",
     "url": "/foundbyme-custom/docs/contact.html",
     
     "relUrl": "/docs/contact.html"
@@ -118,314 +118,356 @@
     
     "relUrl": "/docs/contact.html#문의-종류"
   },"17": {
-    "doc": "Contact",
-    "title": "연락처",
-    "content": ". | GitHub: https://github.com/kimhabin2 | Email: kimhabin5@sju.ac.kr | . ",
-    "url": "/foundbyme-custom/docs/contact.html#%EC%97%B0%EB%9D%BD%EC%B2%98",
-    
-    "relUrl": "/docs/contact.html#연락처"
-  },"18": {
     "doc": "Documentation",
     "title": "Documentation",
-    "content": "프로젝트 문서 페이지입니다. ",
+    "content": "환영합니다! FoundByMe의 공식 기술 문서 페이지입니다. 여기서는 설치부터 고급 사용법, 아키텍처 설계 원칙까지 프로젝트의 모든 기술적 세부 사항을 다룹니다. ",
     "url": "/foundbyme-custom/docs/",
     
     "relUrl": "/docs/"
+  },"18": {
+    "doc": "Documentation",
+    "title": "📚 문서 구성 (Table of Contents)",
+    "content": "이 문서는 다음과 같은 순서로 구성되어 있습니다. | Getting Started: Docker를 이용한 설치 및 실행 가이드. | Features: txtai 기반의 시맨틱 검색, 하이브리드 아키텍처 등 핵심 기술 소개. | Usage: 웹 인터페이스 사용법 및 검색 팁. | Examples: 실제 검색 시나리오와 API 활용 예제. | Community: 기여 가이드라인 및 코드 관리 원칙. | . ",
+    "url": "/foundbyme-custom/docs/#-%EB%AC%B8%EC%84%9C-%EA%B5%AC%EC%84%B1-table-of-contents",
+    
+    "relUrl": "/docs/#-문서-구성-table-of-contents"
   },"19": {
+    "doc": "Documentation",
+    "title": "🛠️ 기술 스택 요약 (Tech Stack)",
+    "content": "FoundByMe는 최고의 오픈소스 기술들을 조합하여 설계되었습니다. | 구분 | 기술 스택 | 설명 | . | Frontend | Node.js (React) | 사용자 친화적인 웹 인터페이스 | . | Backend | Python (FastAPI) | REST API 서버 및 비즈니스 로직 | . | Search Engine | txtai | 시맨틱 벡터 검색 및 임베딩 엔진 | . | Metadata DB | PostgreSQL | 파일 정보 및 로그 관리 (RDBMS) | . | Infra | Docker Compose | 컨테이너 기반 배포 자동화 | . 더 자세한 아키텍처 설명은 Features 페이지를 참고하세요. ",
+    "url": "/foundbyme-custom/docs/#%EF%B8%8F-%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D-%EC%9A%94%EC%95%BD-tech-stack",
+    
+    "relUrl": "/docs/#️-기술-스택-요약-tech-stack"
+  },"20": {
     "doc": "Examples",
     "title": "Examples &amp; Use Cases",
     "content": "FoundByMe를 200% 활용하는 구체적인 사용 예시와 시나리오를 소개합니다. 모든 기능은 웹 인터페이스(Web UI)에서 간편하게 사용할 수 있습니다. ",
     "url": "/foundbyme-custom/docs/example/#examples--use-cases",
     
     "relUrl": "/docs/example/#examples--use-cases"
-  },"20": {
+  },"21": {
     "doc": "Examples",
     "title": "🔍 시나리오 1: 시험 공부 중 자료 찾기 (Natural Language Search)",
     "content": "단순히 파일명이 기억나지 않을 때, 문맥(Context)으로 검색해보세요. | 상황: “딥러닝 과적합(Overfitting) 해결 방법이 적힌 PDF가 어디 있더라?” | 검색어: How to prevent overfitting? 또는 과적합 해결 방법 | 결과: 제목에 ‘과적합’이라는 단어가 없더라도, 내용 중에 ‘Dropout’, ‘Regularization’ 등이 포함된 Deep_Learning_Week05.pdf 파일을 찾아냅니다. | . 💡 Tip: 질문하듯이 문장으로 검색하면 txtai가 의미를 파악하여 더 정확한 결과를 보여줍니다. ",
     "url": "/foundbyme-custom/docs/example/#-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-1-%EC%8B%9C%ED%97%98-%EA%B3%B5%EB%B6%80-%EC%A4%91-%EC%9E%90%EB%A3%8C-%EC%B0%BE%EA%B8%B0-natural-language-search",
     
     "relUrl": "/docs/example/#-시나리오-1-시험-공부-중-자료-찾기-natural-language-search"
-  },"21": {
+  },"22": {
     "doc": "Examples",
     "title": "💻 시나리오 2: 개발 중 코드 검색 (Code Search)",
     "content": "수많은 프로젝트 폴더 속에서 특정 로직을 찾을 때 유용합니다. | 상황: “작년에 짰던 파이썬 크롤링 코드가 필요한데…” | 필터 설정: 파일 형식 Code (.py, .js) 선택 | 검색어: beautifulsoup crawling example | 결과: project_v1/utils.py 등 관련 코드가 포함된 파일을 찾아내고, 해당 코드 블록을 미리 보여줍니다. | . ",
     "url": "/foundbyme-custom/docs/example/#-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-2-%EA%B0%9C%EB%B0%9C-%EC%A4%91-%EC%BD%94%EB%93%9C-%EA%B2%80%EC%83%89-code-search",
     
     "relUrl": "/docs/example/#-시나리오-2-개발-중-코드-검색-code-search"
-  },"22": {
+  },"23": {
     "doc": "Examples",
     "title": "🔌 시나리오 3: API 연동 (Developer)",
     "content": "FoundByMe의 검색 엔진을 다른 서비스나 스크립트에 연동하고 싶다면 REST API를 사용하세요. Python으로 검색 요청하기 . import requests url = \"http://localhost:8000/api/search\" payload = { \"query\": \"데이터베이스 설계 패턴\", \"limit\": 5 } response = requests.post(url, json=payload) print(response.json()) . 결과 예시 (JSON) . [ { \"id\": \"file_123\", \"score\": 0.89, \"text\": \"데이터베이스 정규화 과정에 대한 설명...\", \"metadata\": { \"filename\": \"DB_Design.docx\", \"path\": \"/data/docs/DB_Design.docx\" } } ] . ",
     "url": "/foundbyme-custom/docs/example/#-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-3-api-%EC%97%B0%EB%8F%99-developer",
     
     "relUrl": "/docs/example/#-시나리오-3-api-연동-developer"
-  },"23": {
+  },"24": {
     "doc": "Examples",
     "title": "📊 시나리오 4: 지식 시각화 (Vector Visualization)",
     "content": "내 PC에 있는 문서들이 서로 어떻게 연결되어 있는지 눈으로 확인해보세요. 웹 UI 상단의 ‘Visualization’ 탭을 클릭합니다. 2D/3D 그래프에서 문서들이 점으로 표시됩니다. 비슷한 주제(예: ‘머신러닝’, ‘통계학’)의 문서들이 서로 가깝게 뭉쳐있는 클러스터(Cluster)를 확인하여, 내 지식의 지도를 그려볼 수 있습니다. ",
     "url": "/foundbyme-custom/docs/example/#-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-4-%EC%A7%80%EC%8B%9D-%EC%8B%9C%EA%B0%81%ED%99%94-vector-visualization",
     
     "relUrl": "/docs/example/#-시나리오-4-지식-시각화-vector-visualization"
-  },"24": {
+  },"25": {
     "doc": "Examples",
     "title": "Examples",
     "content": " ",
     "url": "/foundbyme-custom/docs/example/",
     
     "relUrl": "/docs/example/"
-  },"25": {
+  },"26": {
     "doc": "Features",
     "title": "Feature Showcase",
-    "content": "FoundByMe는 txtai의 강력한 임베딩 기술과 Node.js의 유연함을 결합하여 최적의 검색 경험을 제공합니다. 🔍 Semantic Indexing (txtai) . 단순 키워드가 아닌 의미(Semantic)를 분석하여 인덱싱합니다. 사용자가 \"차량\"이라고 검색해도 \"자동차\", \"Bus\" 등이 포함된 문서를 찾아냅니다. ⚛️ Interactive Web UI . CLI의 불편함을 해소했습니다. Node.js로 구축된 웹 인터페이스를 통해 직관적으로 파일을 검색하고, 필터링하고, 미리볼 수 있습니다. 📊 Hybrid Data Management . 벡터 데이터는 txtai 인덱스로, 파일 메타데이터는 PostgreSQL로 관리하여 검색 속도와 데이터 무결성을 모두 잡았습니다. 📂 Multi-Format Support . PDF, Markdown, 텍스트 파일뿐만 아니라 소스 코드(Python, JS 등)까지 분석하여 검색 결과에 포함시킵니다. ",
+    "content": "FoundByMe는 txtai의 강력한 임베딩 기술과 Node.js의 유연함을 결합하여 최적의 검색 경험을 제공합니다. 🔍 Semantic Indexing (txtai) . 문서를 통째로 저장하지 않고 문맥(Context) 단위로 인덱싱합니다. 단순 키워드 매칭이 아닌 의미 기반 검색을 통해, 사용자가 개떡같이 말해도 찰떡같이 알아듣습니다. 📊 Hybrid Architecture . txtai(벡터)와 PostgreSQL(메타데이터)을 결합했습니다. 벡터 검색의 유연함과 관계형 DB의 무결성을 동시에 보장하는 엔터프라이즈급 구조입니다. 🐳 Dockerized Service . 복잡한 AI 환경 설정 없이, docker-compose up 명령어 한 줄로 프론트엔드, 백엔드, DB를 즉시 실행할 수 있습니다. 📉 3D Visualization . 임베딩된 문서 벡터들을 차원 축소(PCA)하여 3차원 공간에 시각화합니다. 내 지식들이 어떻게 군집을 이루고 있는지 눈으로 확인하세요. ",
     "url": "/foundbyme-custom/docs/features/#feature-showcase",
     
     "relUrl": "/docs/features/#feature-showcase"
-  },"26": {
+  },"27": {
+    "doc": "Features",
+    "title": "🧩 핵심 기술 상세 (Core Technologies)",
+    "content": "1. txtai 기반 시맨틱 검색 . 기존의 키워드 검색(Ctrl+F)은 단어가 정확히 일치해야만 찾을 수 있었습니다. FoundByMe는 Sentence-Transformers 모델을 내장한 txtai를 사용하여, 문장의 의미를 벡터로 변환합니다. | Example: “과제 제출일이 언제지?” 라고 물으면 -&gt; “12월 15일 마감” 이 포함된 문서를 찾아냅니다. | . 2. 하이브리드 저장소 전략 (Hybrid Storage) . 대량의 파일을 효율적으로 관리하기 위해 저장소를 이원화했습니다. | Vector Index (txtai): 문서의 내용(Semantic)을 저장하여 빠른 유사도 검색을 담당합니다. | Relational DB (PostgreSQL): 파일 경로, 확장자, 수정 날짜 등 정형 데이터를 저장하여 정교한 필터링을 담당합니다. | . 3. 반응형 웹 인터페이스 (Node.js) . CLI(터미널) 환경이 익숙하지 않은 사용자를 위해, 직관적인 웹 UI를 제공합니다. | 다크 모드 지원: 야간 학습 시 눈의 피로를 줄여줍니다. | 미리보기: 파일을 열지 않고도 핵심 내용을 요약해서 볼 수 있습니다. | 멀티 포맷 지원: PDF, Markdown, 텍스트 파일뿐만 아니라 소스 코드(Python, JS 등)까지 분석합니다. | . (기존 상단 내용 유지) . ",
+    "url": "/foundbyme-custom/docs/features/#-%ED%95%B5%EC%8B%AC-%EA%B8%B0%EC%88%A0-%EC%83%81%EC%84%B8-core-technologies",
+    
+    "relUrl": "/docs/features/#-핵심-기술-상세-core-technologies"
+  },"28": {
+    "doc": "Features",
+    "title": "🛠 Technical Deep Dive (기술 상세)",
+    "content": "1. Hybrid Storage Strategy . 우리는 PostgreSQL과 ChromaDB를 결합한 하이브리드 전략을 사용합니다. | ChromaDB (Vector Store): 텍스트의 의미(Vector)를 저장하여 고속 유사도 검색을 수행합니다. | PostgreSQL (RDBMS): 파일 메타데이터(경로, 날짜 등)를 저장하여 데이터 무결성을 보장합니다. | Why? 단순 벡터 DB만으로는 구현하기 힘든 ‘정교한 필터링’과 ‘파일 관리’를 위해 RDBMS를 함께 구성했습니다. | . 2. Core Features (핵심 기능 4선) . ① Universal Indexing (만능 인덱싱) . | .txt, .pdf, .docx, .pptx는 물론 이미지까지 지원합니다. | 이미지 내 텍스트는 pytesseract(OCR)를 통해 추출하며, 긴 문서는 의미 단위(Chunk)로 쪼개어 처리합니다. | . ② Semantic Search &amp; Embedding . | SentenceTransformers를 사용하여 문장을 고차원 벡터로 변환합니다. 키워드가 달라도 의미가 같으면 찾아냅니다. | . ③ High-Precision Re-Ranking (재정렬) . | 1차 검색된 문서들을 CrossEncoder (BAAI/bge-reranker-v2-m3) 모델로 다시 채점합니다. | 이를 통해 검색 정확도를 획기적으로 높였습니다. | . ④ 3D Galaxy Visualization . | PCA(주성분 분석)를 통해 고차원 벡터를 3차원으로 축소하여 시각화합니다. | 내 질문(Query)은 노란색 점으로 표시되어, 지식 공간 내 위치를 직관적으로 보여줍니다. | . 3. API Specification . FastAPI로 구현된 주요 엔드포인트는 다음과 같습니다. | Method | Endpoint | 설명 | . | POST | /upload | 파일 업로드 및 자동 인덱싱 (OCR 포함) | . | POST | /search | 벡터 검색 + 리랭킹 + PCA 좌표 반환 | . | POST | /chat | RAG 기반 답변 생성 | . | GET | /galaxy | 임베딩 3D 시각화 데이터 반환 | . | DELETE | /session | 세션 초기화 | . ",
+    "url": "/foundbyme-custom/docs/features/#-technical-deep-dive-%EA%B8%B0%EC%88%A0-%EC%83%81%EC%84%B8",
+    
+    "relUrl": "/docs/features/#-technical-deep-dive-기술-상세"
+  },"29": {
     "doc": "Features",
     "title": "Features",
     "content": " ",
     "url": "/foundbyme-custom/docs/features/",
     
     "relUrl": "/docs/features/"
-  },"27": {
+  },"30": {
     "doc": "Getting Started",
     "title": "Getting Started",
     "content": "FoundByMe를 처음 사용하는 사용자를 위해 설치, 실행, 그리고 전체 구조를 간단히 설명합니다. FoundByMe는 Docker Compose 기반으로 손쉽게 실행할 수 있으며, PostgreSQL·txtai·FastAPI가 자동으로 구성됩니다. 데이터베이스 설정 안내 FoundByMe는 PostgreSQL(메타데이터)과 txtai(벡터 인덱스)를 사용합니다. Docker Compose가 이 모든 환경을 자동으로 구축해주므로 별도의 설치가 필요 없습니다. ",
     "url": "/foundbyme-custom/docs/getting-started/",
     
     "relUrl": "/docs/getting-started/"
-  },"28": {
+  },"31": {
     "doc": "Getting Started",
     "title": "1. 전제 조건 (Prerequisites)",
     "content": "설치를 시작하기 전에 다음 도구가 설치되어 있어야 합니다. | Docker Desktop (Windows/Mac) | Git | . ",
     "url": "/foundbyme-custom/docs/getting-started/#1-%EC%A0%84%EC%A0%9C-%EC%A1%B0%EA%B1%B4-prerequisites",
     
     "relUrl": "/docs/getting-started/#1-전제-조건-prerequisites"
-  },"29": {
+  },"32": {
     "doc": "Getting Started",
     "title": "2. 설치 및 실행",
     "content": "GitHub 저장소를 복제하고 Docker Compose를 실행하면 모든 준비가 끝납니다. # 1. 저장소 복제 git clone [https://github.com/KNaeon/foundbyme.git](https://github.com/KNaeon/foundbyme.git) cd foundbyme # 2. 컨테이너 실행 (백그라운드 모드) docker-compose up -d . 초기 실행 시 주의사항 모델(txtai embeddings) 다운로드 · PostgreSQL 초기화 때문에 첫 실행은 1–3분 정도 걸릴 수 있습니다. ",
     "url": "/foundbyme-custom/docs/getting-started/#2-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%8B%A4%ED%96%89",
     
     "relUrl": "/docs/getting-started/#2-설치-및-실행"
-  },"30": {
+  },"33": {
     "doc": "Getting Started",
     "title": "3. 접속하기",
     "content": "설치가 완료되면 아래 주소로 접속하여 FoundByMe에 접속할 수 있습니다. 🚀 FoundByMe 실행 (http://localhost:3000) . | Frontend: http://localhost:3000 | Backend API: http://localhost:8000/docs (Swagger UI) | . ",
     "url": "/foundbyme-custom/docs/getting-started/#3-%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0",
     
     "relUrl": "/docs/getting-started/#3-접속하기"
-  },"31": {
+  },"34": {
     "doc": "Getting Started",
     "title": "4. 시스템 구조 (Architecture Overview)",
     "content": "아래 그림은 FoundByMe 전체 구성요소가 어떻게 연결되는지를 보여줍니다. ",
     "url": "/foundbyme-custom/docs/getting-started/#4-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%A1%B0-architecture-overview",
     
     "relUrl": "/docs/getting-started/#4-시스템-구조-architecture-overview"
-  },"32": {
+  },"35": {
     "doc": "Getting Started",
     "title": "핵심 구성 요약",
     "content": " ",
     "url": "/foundbyme-custom/docs/getting-started/#%ED%95%B5%EC%8B%AC-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%95%BD",
     
     "relUrl": "/docs/getting-started/#핵심-구성-요약"
-  },"33": {
+  },"36": {
     "doc": "Getting Started",
     "title": "🔍 검색 처리 흐름",
     "content": ". | 사용자가 검색 요청을 보내면 FastAPI가 이를 처리 . | ChromaDB가 kNN을 이용해 유사도 기반 검색 수행 . | PostgreSQL은 문서 내용/로그/메타데이터 저장 . | 결과는 프론트엔드로 JSON 형태로 응답 . | . ",
     "url": "/foundbyme-custom/docs/getting-started/#-%EA%B2%80%EC%83%89-%EC%B2%98%EB%A6%AC-%ED%9D%90%EB%A6%84",
     
     "relUrl": "/docs/getting-started/#-검색-처리-흐름"
-  },"34": {
+  },"37": {
     "doc": "Getting Started",
     "title": "🧱 별도 인덱싱 파이프라인",
     "content": ". | Loader.py → 텍스트 추출(.txt/.md/.pdf/.pptx 등) . | Indexer : 데이터를 청크(Chunk) 단위로 분할하여 처리 . | 벡터 인덱스 : txtai . | Storage: * 문서 원본/메타데이터 -&gt; PostgreSQL . | . ",
     "url": "/foundbyme-custom/docs/getting-started/#-%EB%B3%84%EB%8F%84-%EC%9D%B8%EB%8D%B1%EC%8B%B1-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8",
     
     "relUrl": "/docs/getting-started/#-별도-인덱싱-파이프라인"
-  },"35": {
+  },"38": {
     "doc": "Getting Started",
     "title": "5. 보안 주의사항**",
     "content": "로컬 환경에서 동작하더라도 .env, API 키 또는 DB 접속 정보가 외부에 노출되지 않도록 주의하세요. 파일을 세그먼트 단위로 분할(Chunking)하고 벡터화하는 과정이 포함되어 있어, 대용량 파일이 많을 경우 시간이 소요될 수 있습니다. ",
     "url": "/foundbyme-custom/docs/getting-started/#5-%EB%B3%B4%EC%95%88-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD",
     
     "relUrl": "/docs/getting-started/#5-보안-주의사항"
-  },"36": {
+  },"39": {
     "doc": "Home",
     "title": "\n      FoundByMe\n    ",
     "content": "Connect scattered knowledge on your PC. Next-Gen RAG Search Engine. 🚀 Start Journey | | | | PDF DOCS &lt;/&gt; CODE IMG TXT ",
     "url": "/foundbyme-custom/en/",
     
     "relUrl": "/en/"
-  },"37": {
+  },"40": {
     "doc": "Home",
     "title": "🚀 Why Use FoundByMe?",
     "content": "⚡ Fast Indexing . Real-time indexing for local files.From PDFs to images and code. 🔒 Private &amp; Secure . No data leaves your device.100% local processing. 🧠 Context Aware . Beyond keyword matching.Understand context and generate answers. 👀 Vector Visualization . Visually explore relationshipsbetween documents and results. ",
     "url": "/foundbyme-custom/en/",
     
     "relUrl": "/en/"
-  },"38": {
+  },"41": {
     "doc": "Home",
     "title": "Feature Comparison",
     "content": "| Feature | PDF Viewer (Adobe) | AI Chatbot (Cloud) | FoundByMe | . | Local Execution (Secure) | O | X | O | . | Semantic Search | X | O | O | . | Multi-file Search | △ | △ | O | . | Vector Visualization | X | X | O | . | Multi-format Support | X | △ | O | . | Open Source (Free) | △ | X | O | . ",
     "url": "/foundbyme-custom/en/",
     
     "relUrl": "/en/"
-  },"39": {
+  },"42": {
     "doc": "Home",
     "title": "Project Introduction",
     "content": "FoundByMe is an open-source tool designed to help you quickly search and utilize scattered local learning materials—such as lecture notes, PDFs, code files, and assignments. It is designed to instantly locate necessary materials for individual study sessions or team projects. ",
     "url": "/foundbyme-custom/en/#project-introduction",
     
     "relUrl": "/en/#project-introduction"
-  },"40": {
+  },"43": {
     "doc": "Home",
     "title": "🚀 One-Line Installation",
     "content": "Get started immediately with Docker—no complex setup required. git clone [https://github.com/KNaeon/foundbyme.git](https://github.com/KNaeon/foundbyme.git) cd foundbyme docker-compose up -d . ",
     "url": "/foundbyme-custom/en/#-one-line-installation",
     
     "relUrl": "/en/#-one-line-installation"
-  },"41": {
+  },"44": {
     "doc": "Home",
     "title": "🎯 Background &amp; Objectives",
-    "content": ". | Time Saving: Drastically reduce the time spent searching for specific content across numerous files during exam periods. | Context Search: Find materials based on meaning (context) even if you don’t recall the exact filename or keywords. | Focus: Maintain concentration by eliminating the distraction of manually opening files one by one. | . ",
+    "content": ". | Time Saving: Drastically reduce time spent searching for specific content across numerous files during exams. | Context Search: Find materials by context (meaning) even without knowing the exact filename or keywords. | Focus: Maintain concentration by eliminating the hassle of manually opening files one by one. | . ",
     "url": "/foundbyme-custom/en/#-background--objectives",
     
     "relUrl": "/en/#-background--objectives"
-  },"42": {
+  },"45": {
     "doc": "Home",
-    "title": "🔍 Core Features",
-    "content": "1) Local File Indexing . Automatically scans folders to organize metadata for documents, images, and code. 2) RAG-based Search . Ask questions in natural language, and the system finds and summarizes the most relevant content for you. 3) Vector Visualization (Embedding Visualization) . Visualizes relationships between embedded data points in a 3D graph. ",
-    "url": "/foundbyme-custom/en/#-core-features",
+    "title": "🔍 Key Features",
+    "content": "1) Local File Indexing . Automatically scans folders to organize metadata for documents, images, code, and more. 2) RAG-based Search . Ask questions in natural language, and the system finds and summarizes the most relevant content for you. 3) Vector Visualization (Embedding Visualization) . Visualizes the relationships between embedded data points in a 3D graph (Galaxy View). ",
+    "url": "/foundbyme-custom/en/#-key-features",
     
-    "relUrl": "/en/#-core-features"
-  },"43": {
+    "relUrl": "/en/#-key-features"
+  },"46": {
     "doc": "Home",
     "title": "🧩 Project Components",
     "content": ". | Local Search System / User Manual / Example Pages / API Documentation provided | RAG API Backend Implementation: . | sentence-transformers based embedding | Endpoints for document summarization and search | . | . ",
     "url": "/foundbyme-custom/en/#-project-components",
     
     "relUrl": "/en/#-project-components"
-  },"44": {
+  },"47": {
+    "doc": "Home",
+    "title": "🧰 Tech Stack",
+    "content": ". | FastAPI: API Server . | PostgreSQL: Document list &amp; metadata storage . | ChromaDB: Vector storage &amp; semantic search . | SentenceTransformers: Text-to-vector conversion . | CrossEncoder: Search result re-ranking (Accuracy improvement) . | Docker Compose: Integrated execution environment . | . ",
+    "url": "/foundbyme-custom/en/#-tech-stack",
+    
+    "relUrl": "/en/#-tech-stack"
+  },"48": {
     "doc": "Home",
     "title": "💡 Key Highlights",
     "content": ". | 🔒 Secure: Runs safely offline without an internet connection. | 🧠 Smart: Provides Semantic Search that understands context, rather than just simple word matching. | 📂 Universal: Search across PDFs, PPTs, and Word files all at once. | 📊 Visual: Visually verify relationships between search results and documents. | . ",
     "url": "/foundbyme-custom/en/#-key-highlights",
     
     "relUrl": "/en/#-key-highlights"
-  },"45": {
+  },"49": {
     "doc": "Home",
     "title": "🔗 Links",
-    "content": ". | 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html . | 💻 GitHub Repository: https://github.com/KNaeon/foundbyme . | . View on GitHub ",
+    "content": ". | 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html . | 💻 GitHub Repository: https://github.com/KNaeon/foundbyme . | . ",
     "url": "/foundbyme-custom/en/#-links",
     
     "relUrl": "/en/#-links"
-  },"46": {
+  },"50": {
+    "doc": "Home",
+    "title": "👥 Contributors",
+    "content": "| Name | Role | Responsibilities | . | 강나언 | Project Leader, Dev | Text processing pipeline, Testing, Debugging | . | 김하빈 | Docs Lead, PPT | User documentation (Web, Docs), Presentation materials &amp; guides | . | 이진호 | Design Lead, Dev | UI/UX Design, Frontend Dev | . View on GitHub ",
+    "url": "/foundbyme-custom/en/#-contributors",
+    
+    "relUrl": "/en/#-contributors"
+  },"51": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/foundbyme-custom/en/",
     
     "relUrl": "/en/"
-  },"47": {
+  },"52": {
     "doc": "Home",
     "title": "\n      FoundByMe\n    ",
     "content": "내 PC의 흩어진 지식을 하나로 연결하는 차세대 RAG 검색 엔진 . 🚀 Start Journey | | | | PDF DOCS &lt;/&gt; CODE IMG TXT ",
     "url": "/foundbyme-custom/",
     
     "relUrl": "/"
-  },"48": {
+  },"53": {
     "doc": "Home",
     "title": "🚀 Why Use FoundByMe?",
     "content": "⚡ Fast Indexing . PDF, 이미지, 코드까지.로컬 파일을 실시간으로 인덱싱합니다. 🔒 Private &amp; Secure . 데이터가 외부로 전송되지 않습니다.모든 처리는 당신의 PC에서. 🧠 Context Aware . 단순 키워드 매칭이 아닙니다.문맥을 이해하고 답변을 생성합니다. 👀 Vector Visualization . 검색 결과와 문서 간의 관계를시각적으로 확인하고 이해하세요. ",
     "url": "/foundbyme-custom/",
     
     "relUrl": "/"
-  },"49": {
+  },"54": {
     "doc": "Home",
     "title": "Feature Comparison",
     "content": "| 기능 | PDF 뷰어 (Adobe) | AI 챗봇 (Cloud) | FoundByMe | . | 로컬 완전 실행 (보안) | O | X | O | . | 의미(맥락) 기반 검색 | X | O | O | . | 여러 파일 통합 검색 | △ | △ | O | . | 벡터 시각화 (원리 파악) | X | X | O | . | 멀티 포맷 지원 | X | △ | O | . | 오픈소스 (무료) | △ | X | O | . ",
     "url": "/foundbyme-custom/",
     
     "relUrl": "/"
-  },"50": {
+  },"55": {
     "doc": "Home",
     "title": "Project Introduction",
     "content": "로컬에 흩어져 있는 강의 자료, PDF, 코드 파일, 과제 문서 등을 빠르게 검색하고 학습에 활용할 수 있도록 돕는 프로젝트입니다. 개인 작업 환경에서도, 스터디나 팀 프로젝트에서도 필요한 자료를 즉시 찾을 수 있도록 설계되었습니다. ",
     "url": "/foundbyme-custom/#project-introduction",
     
     "relUrl": "/#project-introduction"
-  },"51": {
+  },"56": {
     "doc": "Home",
     "title": "🚀 One-Line Installation",
     "content": "복잡한 설정 없이 Docker로 바로 시작할 수 있습니다. git clone [https://github.com/KNaeon/foundbyme.git](https://github.com/KNaeon/foundbyme.git) cd foundbyme docker-compose up -d . ",
     "url": "/foundbyme-custom/#-one-line-installation",
     
     "relUrl": "/#-one-line-installation"
-  },"52": {
+  },"57": {
     "doc": "Home",
     "title": "🎯 제작 배경 및 목적",
     "content": ". | Time Saving: 시험 기간 중 수많은 자료 속에서 특정 내용을 찾는 시간을 절약합니다. | Context Search: 파일명이나 정확한 키워드를 몰라도, 문맥(의미)만으로 자료를 찾아줍니다. | Focus: 파일을 하나씩 열어보는 번거로움을 없애 공부 집중력을 유지시켜 줍니다. | . ",
     "url": "/foundbyme-custom/#-%EC%A0%9C%EC%9E%91-%EB%B0%B0%EA%B2%BD-%EB%B0%8F-%EB%AA%A9%EC%A0%81",
     
     "relUrl": "/#-제작-배경-및-목적"
-  },"53": {
+  },"58": {
     "doc": "Home",
     "title": "🔍 주요 기능",
     "content": "1) 로컬 파일 인덱싱: 폴더 전체를 스캔해 문서·이미지·코드 등의 메타데이터를 자동으로 정리합니다. 2) RAG 기반 검색: 자연어로 질문하면 가장 관련 있는 내용을 찾아 요약해 줍니다. 3) 벡터 시각화(Embedding Visualization): 임베딩된 데이터들의 관계를 3차원 그래프로 시각화합니다. ",
     "url": "/foundbyme-custom/#-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5",
     
     "relUrl": "/#-주요-기능"
-  },"54": {
+  },"59": {
     "doc": "Home",
-    "title": "🧩 프로젝트 구성 요소",
-    "content": ". | 로컬 검색 시스템 / 사용 설명서 / 예제 페이지 / API 문서 제공 | 백엔드용 RAG API 구현 → sentence-transformers 기반 embedding → 문서 요약/검색 엔드포인트 제공 | . ",
-    "url": "/foundbyme-custom/#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C",
+    "title": "🧰 Tech Stack",
+    "content": ". | FastAPI: API 서버 | PostgreSQL: 문서 목록 및 메타데이터 저장 | ChromaDB: 벡터 저장 &amp; 의미 검색 | SentenceTransformers: 문장을 벡터로 변환 | CrossEncoder: 검색 결과 재정렬 (정확도 향상) | Docker Compose: 모든 환경 통합 실행 | . ",
+    "url": "/foundbyme-custom/#-tech-stack",
     
-    "relUrl": "/#-프로젝트-구성-요소"
-  },"55": {
+    "relUrl": "/#-tech-stack"
+  },"60": {
     "doc": "Home",
     "title": "💡 Key Highlights",
-    "content": ". | 🔒 Secure: 인터넷 연결 없이 로컬에서 안전하게 작동합니다. | 🧠 Smart: 단순 단어 매칭이 아닌, 문맥을 이해하는 Semantic Search를 제공합니다. | 📂 Universal: PDF뿐만 아니라 PPT, Word 파일까지 한 번에 검색하세요. | 📊 Visual: 검색 결과와 문서 간의 관계를 시각적으로 확인하세요. | . | 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html . | 💻 GitHub Repository: https://github.com/KNaeon/foundbyme . | . View on GitHub ",
+    "content": ". | 🔒 Secure: 인터넷 연결 없이 로컬에서 안전하게 작동합니다. | 🧠 Smart: 단순 단어 매칭이 아닌, 문맥을 이해하는 Semantic Search를 제공합니다. | 📂 Universal: PDF뿐만 아니라 PPT, Word 파일까지 한 번에 검색하세요. | 📊 Visual: 검색 결과와 문서 간의 관계를 시각적으로 확인하세요. | . 🔗 Links . | 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html . | 💻 GitHub Repository: https://github.com/KNaeon/ . | . ",
     "url": "/foundbyme-custom/#-key-highlights",
     
     "relUrl": "/#-key-highlights"
-  },"56": {
+  },"61": {
+    "doc": "Home",
+    "title": "👥 Contributors",
+    "content": "| Name | Role | Responsibilities | . | 강나언 | Project Leader, Dev | 텍스트 처리 파이프라인, 테스팅, 디버깅 | . | 김하빈 | Docs Lead, PPT | 사용자 문서화(Web, Docs), 발표 자료 및 가이드 제작 | . | 이진호 | Design Lead, Dev | UI/UX 디자인, 프론트엔드 개발 | . View on GitHub ",
+    "url": "/foundbyme-custom/#-contributors",
+    
+    "relUrl": "/#-contributors"
+  },"62": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/foundbyme-custom/",
     
     "relUrl": "/"
-  },"57": {
+  },"63": {
     "doc": "Usage",
     "title": "사용법 (Usage)",
     "content": "FoundByMe의 웹 인터페이스(Web UI)를 통해 로컬 파일을 검색하고 활용하는 방법을 안내합니다. ",
     "url": "/foundbyme-custom/docs/usage/#%EC%82%AC%EC%9A%A9%EB%B2%95-usage",
     
     "relUrl": "/docs/usage/#사용법-usage"
-  },"58": {
+  },"64": {
     "doc": "Usage",
     "title": "1️⃣ 파일 인덱싱 (Indexing)",
     "content": "검색을 하려면 먼저 내 컴퓨터의 파일을 FoundByMe에 등록해야 합니다. | 설정 페이지로 이동합니다. | ‘폴더 경로(Path)’ 입력창에 검색하고 싶은 로컬 폴더 경로를 입력합니다. (예: C:/Users/Name/Documents) | ‘인덱싱 시작’ 버튼을 클릭합니다. | 진행률 바가 100%가 될 때까지 기다립니다. | . 지원하는 파일 형식 PDF(.pdf), 텍스트(.txt, .md), 소스 코드(.py, .js, .java), 이미지(.png, .jpg) 등을 지원합니다. ",
     "url": "/foundbyme-custom/docs/usage/#1%EF%B8%8F%E2%83%A3-%ED%8C%8C%EC%9D%BC-%EC%9D%B8%EB%8D%B1%EC%8B%B1-indexing",
     
     "relUrl": "/docs/usage/#1️⃣-파일-인덱싱-indexing"
-  },"59": {
+  },"65": {
     "doc": "Usage",
     "title": "2️⃣ 검색하기 (Search)",
     "content": "메인 화면의 검색창을 통해 자료를 찾을 수 있습니다. 🔍 자연어 검색 (Natural Language) . 단순한 키워드뿐만 아니라, 문장 형태의 질문도 가능합니다. | 예: “딥러닝에서 과적합을 막는 방법이 뭐지?” | 예: “지난주 회의록 내용 찾아줘” | . 📂 필터링 (Filtering) . 검색 결과가 너무 많다면 필터를 사용하세요. | 파일 형식: PDF만 보기, 코드만 보기 등 | 날짜: 특정 기간 내 생성된 파일만 검색 | . ",
     "url": "/foundbyme-custom/docs/usage/#2%EF%B8%8F%E2%83%A3-%EA%B2%80%EC%83%89%ED%95%98%EA%B8%B0-search",
     
     "relUrl": "/docs/usage/#2️⃣-검색하기-search"
-  },"60": {
+  },"66": {
     "doc": "Usage",
     "title": "3️⃣ 결과 활용",
     "content": "검색 결과 카드에는 다음과 같은 정보가 표시됩니다. | 요약(Summary): 해당 문서가 어떤 내용을 담고 있는지 AI가 요약해 줍니다. | 미리보기(Preview): 파일을 열지 않고도 핵심 내용을 확인할 수 있습니다. | 유사도(Score): 내 질문과 얼마나 관련이 있는지 점수로 보여줍니다. | . 바로 열기 결과 카드를 클릭하면 해당 파일이 기본 뷰어로 즉시 열립니다. ",
     "url": "/foundbyme-custom/docs/usage/#3%EF%B8%8F%E2%83%A3-%EA%B2%B0%EA%B3%BC-%ED%99%9C%EC%9A%A9",
     
     "relUrl": "/docs/usage/#3️⃣-결과-활용"
-  },"61": {
+  },"67": {
     "doc": "Usage",
     "title": "Usage",
     "content": " ",

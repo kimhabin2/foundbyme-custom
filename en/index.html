@@ -152,9 +152,9 @@
   <nav aria-label="Main" id="site-nav" class="site-nav">
   
   
-    <ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/" class="nav-list-link">Home</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/features/" class="nav-list-link">Features</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Documentation category" aria-pressed="false">
+    <ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Documentation category" aria-pressed="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/foundbyme-custom/docs/" class="nav-list-link">Documentation</a><ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/docs/getting-started/" class="nav-list-link">Getting Started</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/usage/" class="nav-list-link">Usage</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/example/" class="nav-list-link">Examples</a></li></ul></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/contact.html" class="nav-list-link">Contact</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/community.html" class="nav-list-link">Community</a></li><li class="nav-list-item"><a href="/foundbyme-custom/about/" class="nav-list-link">About</a></li></ul>
+      </button><a href="/foundbyme-custom/docs/" class="nav-list-link">Documentation</a><ul class="nav-list"><li class="nav-list-item"><a href="/foundbyme-custom/docs/getting-started/" class="nav-list-link">Getting Started</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/features/" class="nav-list-link">Features</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/usage/" class="nav-list-link">Usage</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/example/" class="nav-list-link">Examples</a></li></ul></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/contact.html" class="nav-list-link">Contact</a></li><li class="nav-list-item"><a href="/foundbyme-custom/docs/community.html" class="nav-list-link">Community</a></li><li class="nav-list-item"><a href="/foundbyme-custom/about/" class="nav-list-link">About</a></li></ul>
   
 </nav>
 
@@ -501,14 +501,14 @@ docker-compose up <span class="nt">-d</span>
 </h2>
     
 <ul>
-  <li><strong>Time Saving:</strong> Drastically reduce the time spent searching for specific content across numerous files during exam periods.</li>
-  <li><strong>Context Search:</strong> Find materials based on meaning (context) even if you don’t recall the exact filename or keywords.</li>
-  <li><strong>Focus:</strong> Maintain concentration by eliminating the distraction of manually opening files one by one.</li>
+  <li><strong>Time Saving:</strong> Drastically reduce time spent searching for specific content across numerous files during exams.</li>
+  <li><strong>Context Search:</strong> Find materials by context (meaning) even without knowing the exact filename or keywords.</li>
+  <li><strong>Focus:</strong> Maintain concentration by eliminating the hassle of manually opening files one by one.</li>
 </ul>
-<h2 id="-core-features">
+<h2 id="-key-features">
   
   
-    <a href="#-core-features" class="anchor-heading" aria-labelledby="-core-features"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🔍 Core Features
+    <a href="#-key-features" class="anchor-heading" aria-labelledby="-key-features"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🔍 Key Features
   
   
 </h2>
@@ -521,7 +521,7 @@ docker-compose up <span class="nt">-d</span>
   
 </h3>
     
-<p>Automatically scans folders to organize metadata for documents, images, and code.</p>
+<p>Automatically scans folders to organize metadata for documents, images, code, and more.</p>
 <h3 id="2-rag-based-search">
   
   
@@ -539,7 +539,7 @@ docker-compose up <span class="nt">-d</span>
   
 </h3>
     
-<p>Visualizes relationships between embedded data points in a 3D graph.</p><hr />
+<p>Visualizes the relationships between embedded data points in a 3D graph (Galaxy View).</p><hr />
 <h2 id="-project-components">
   
   
@@ -555,6 +555,35 @@ docker-compose up <span class="nt">-d</span>
       <li><code class="language-plaintext highlighter-rouge">sentence-transformers</code> based embedding</li>
       <li>Endpoints for document summarization and search</li>
     </ul>
+  </li>
+</ul><hr />
+<h2 id="-tech-stack">
+  
+  
+    <a href="#-tech-stack" class="anchor-heading" aria-labelledby="-tech-stack"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🧰 Tech Stack
+  
+  
+</h2>
+    
+
+<ul>
+  <li>
+    <p><strong>FastAPI:</strong> API Server</p>
+  </li>
+  <li>
+    <p><strong>PostgreSQL:</strong> Document list &amp; metadata storage</p>
+  </li>
+  <li>
+    <p><strong>ChromaDB:</strong> Vector storage &amp; semantic search</p>
+  </li>
+  <li>
+    <p><strong>SentenceTransformers:</strong> Text-to-vector conversion</p>
+  </li>
+  <li>
+    <p><strong>CrossEncoder:</strong> Search result re-ranking (Accuracy improvement)</p>
+  </li>
+  <li>
+    <p><strong>Docker Compose:</strong> Integrated execution environment</p>
   </li>
 </ul><hr />
 <h2 id="-key-highlights">
@@ -588,7 +617,42 @@ docker-compose up <span class="nt">-d</span>
   <li>
     <p>💻 GitHub Repository: https://github.com/KNaeon/foundbyme</p>
   </li>
-</ul>
+</ul><hr />
+<h2 id="-contributors">
+  
+  
+    <a href="#-contributors" class="anchor-heading" aria-labelledby="-contributors"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 👥 Contributors
+  
+  
+</h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Name</th>
+      <th style="text-align: center">Role</th>
+      <th style="text-align: left">Responsibilities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>강나언</strong></td>
+      <td style="text-align: center">Project Leader, Dev</td>
+      <td style="text-align: left">Text processing pipeline, Testing, Debugging</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>김하빈</strong></td>
+      <td style="text-align: center">Docs Lead, PPT</td>
+      <td style="text-align: left">User documentation (Web, Docs), Presentation materials &amp; guides</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>이진호</strong></td>
+      <td style="text-align: center">Design Lead, Dev</td>
+      <td style="text-align: left">UI/UX Design, Frontend Dev</td>
+    </tr>
+  </tbody>
+</table></div><hr />
 
 <div style="text-align: center; margin-top: 40px;"> <a href="https://github.com/KNaeon/foundbyme" class="btn btn-outline" style="border: 2px solid #c3002f; color: #c3002f; font-weight: bold; padding: 15px 30px; border-radius: 50px; text-decoration: none;"> View on GitHub </a> </div>
 
