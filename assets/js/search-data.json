@@ -86,23 +86,23 @@
     "doc": "Community",
     "title": "Community",
     "content": "A space to communicate and grow with FoundByMe users and developers. We welcome any topics including feature suggestions, bug reports, and code contributions! . 💬 Discussions . Have a new idea? Feel free to share opinions and suggest features. Join Discussions &rarr; 🛠️ Contribute . Found a bug or want to improve the code? Issue registration and PRs are always welcome. Open an Issue &rarr; 👾 Discord Server . Ask questions and communicate in real-time. Share tips with other users. Join Server &rarr; 📧 Contact Team . Have a private inquiry or collaboration proposal? Please email the project team directly. Send Email &rarr; . ",
-    "url": "/foundbyme-custom/en/community.html",
+    "url": "/foundbyme-custom/en/docs/community.html",
     
-    "relUrl": "/en/community.html"
+    "relUrl": "/en/docs/community.html"
   },"13": {
     "doc": "Community",
     "title": "👥 Project Team",
     "content": ". | Project Lead: iameon@sju.ac.kr | Project member: kimhabin5@sju.ac.kr | Project member: leejh00610@gmail.com | . ",
-    "url": "/foundbyme-custom/en/community.html#-project-team",
+    "url": "/foundbyme-custom/en/docs/community.html#-project-team",
     
-    "relUrl": "/en/community.html#-project-team"
+    "relUrl": "/en/docs/community.html#-project-team"
   },"14": {
     "doc": "Community",
     "title": "Community",
     "content": " ",
-    "url": "/foundbyme-custom/en/community.html",
+    "url": "/foundbyme-custom/en/docs/community.html",
     
-    "relUrl": "/en/community.html"
+    "relUrl": "/en/docs/community.html"
   },"15": {
     "doc": "Community",
     "title": "Community",
@@ -128,16 +128,16 @@
     "doc": "Contact",
     "title": "Contact",
     "content": "📧 Contact Channels . Please contact the respective person via GitHubdepending on the purpose of your inquiry. 🖥️ Website &amp; Docs Homepage/Documentation Inquiries 👉 @kimhabin2 GitHub ⚙️ Usage &amp; Project Feature/Usage Inquiries 👉 @KNaeon GitHub ",
-    "url": "/foundbyme-custom/en/contact.html",
+    "url": "/foundbyme-custom/en/docs/contact.html",
     
-    "relUrl": "/en/contact.html"
+    "relUrl": "/en/docs/contact.html"
   },"19": {
     "doc": "Contact",
     "title": "Types of Inquiries",
     "content": ". | Feature-related questions | Installation/Usage issues | Collaboration proposals | Documentation contribution inquiries | . ",
-    "url": "/foundbyme-custom/en/contact.html#types-of-inquiries",
+    "url": "/foundbyme-custom/en/docs/contact.html#types-of-inquiries",
     
-    "relUrl": "/en/contact.html#types-of-inquiries"
+    "relUrl": "/en/docs/contact.html#types-of-inquiries"
   },"20": {
     "doc": "Contact",
     "title": "Contact",
@@ -162,7 +162,7 @@
   },"23": {
     "doc": "Documentation",
     "title": "📚 Table of Contents",
-    "content": "This documentation is organized as follows: . | Getting Started: Installation and execution guide using Docker. | Features: Introduction to core technologies like txtai-based semantic search and hybrid architecture. | Usage: How to use the Web Interface and search tips. | Examples: Real-world search scenarios and API usage examples. | Community: Contribution guidelines and code management principles. | . ",
+    "content": "This documentation is organized as follows: . | Getting Started: Installation and execution guide using Docker. | Features: Introduction to core technologies like txtai-based semantic search and hybrid architecture. | Usage: How to use the Web Interface and search tips. | Examples: Real-world search scenarios and API usage examples. | . ",
     "url": "/foundbyme-custom/en/docs#-table-of-contents",
     
     "relUrl": "/en/docs#-table-of-contents"
@@ -183,7 +183,7 @@
   },"26": {
     "doc": "Documentation",
     "title": "📚 문서 구성 (Table of Contents)",
-    "content": "이 문서는 다음과 같은 순서로 구성되어 있습니다. | Getting Started: Docker를 이용한 설치 및 실행 가이드. | Features: txtai 기반의 시맨틱 검색, 하이브리드 아키텍처 등 핵심 기술 소개. | Usage: 웹 인터페이스 사용법 및 검색 팁. | Examples: 실제 검색 시나리오와 API 활용 예제. | Community: 기여 가이드라인 및 코드 관리 원칙. | . ",
+    "content": "이 문서는 다음과 같은 순서로 구성되어 있습니다. | Getting Started: Docker를 이용한 설치 및 실행 가이드. | Features: txtai 기반의 시맨틱 검색, 하이브리드 아키텍처 등 핵심 기술 소개. | Usage: 웹 인터페이스 사용법 및 검색 팁. | Examples: 실제 검색 시나리오와 API 활용 예제. | . ",
     "url": "/foundbyme-custom/docs/#-%EB%AC%B8%EC%84%9C-%EA%B5%AC%EC%84%B1-table-of-contents",
     
     "relUrl": "/docs/#-문서-구성-table-of-contents"
