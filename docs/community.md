@@ -37,6 +37,17 @@ nav_order: 5
   </div>
 
   <div class="feature-card" style="text-align: center;">
+    <h3 style="color: #c3002f;">👾 Discord Server</h3>
+    <p style="margin-bottom: 20px; color: #51626f;">
+      실시간으로 질문하고 소통하세요.<br>
+      다른 사용자들과 팁을 공유할 수 있습니다.
+    </p>
+    <a href="https://discord.gg/GWtD7WBJyv" target="_blank" class="btn-outline" style="border-color: #c3002f; color: #c3002f; font-weight: bold; padding: 8px 16px; border-radius: 4px; text-decoration: none;">
+      서버 참여하기 &rarr;
+    </a>
+  </div>
+
+  <div class="feature-card" style="text-align: center;">
     <h3 style="color: #c3002f;">📧 Contact Team</h3>
     <p style="margin-bottom: 20px; color: #51626f;">
       비공개 문의나 협업 제안이 있으신가요?<br>

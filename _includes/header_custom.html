@@ -1,6 +1,6 @@
 <div style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); z-index: 9999;">
   {% if page.url contains '/en/' %}
-    <a href="{{ site.baseurl }}/" style="
+    <a href="{{ page.url | replace_first: '/en', '' | relative_url }}" style="
         display: inline-block;
         background-color: white;
         color: #c3002f !important; /* 빨간 글씨 */
@@ -18,7 +18,7 @@
       🇰🇷 한국어
     </a>
   {% else %}
-    <a href="{{ site.baseurl }}/en/" style="
+    <a href="{{ '/en' | append: page.url | relative_url }}" style="
         display: inline-block;
         background-color: white;
         color: #c3002f !important; /* 빨간 글씨 */

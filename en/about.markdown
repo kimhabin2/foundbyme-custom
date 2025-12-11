@@ -36,10 +36,6 @@ FoundByMe leverages the innovative open-source technology **txtai** to propose a
     * **Solution:** We implemented a **Hybrid Architecture** where vector search is delegated to `txtai`, and file metadata management is handled by **PostgreSQL**.
     * **Impact:** This presents a best-practice architecture that simultaneously secures **data integrity** and **search flexibility** when managing large volumes of local files.
 
-### 3. Docker: Automated Deployment of Complex AI Stack
-* **Contribution Point:** Standardized a complex development environment consisting of `Node.js` (Frontend), `Python(txtai)` (Backend), and `PostgreSQL` (Metadata) using **Docker Compose**.
-* **Details:** By automating the AI model installation and database connection processes into a single command, we significantly lowered the barrier to entry, allowing non-experts to instantly build an **independent search engine** on their own PCs.
-
 ---
 
 ## 💡 Why FoundByMe? (Innovation & Difference)
