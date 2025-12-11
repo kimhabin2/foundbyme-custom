@@ -13,26 +13,10 @@
 
   <style id="jtd-nav-activation">
   
-
-    
-    .site-nav > ul.nav-list:first-child > li:not(:nth-child(6)) > a,
-    .site-nav > ul.nav-list:first-child > li > ul > li a {
+    .site-nav ul li a {
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:not(:first-child) a,
-    .site-nav li.external a {
-      background-image: none;
-    }
-
-    .site-nav > ul.nav-list:first-child > li:nth-child(6) > a {
-      font-weight: 600;
-      text-decoration: none;
-    }.site-nav > ul.nav-list:first-child > li:nth-child(6) > button svg {
-      transform: rotate(-90deg);
-    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(6) > ul.nav-list {
-      display: block;
-    }
   </style>
 
   
@@ -53,17 +37,17 @@
 <title>About | FoundByMe</title>
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="About" />
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content="en" />
 <meta name="description" content="FoundByMe Documentation" />
 <meta property="og:description" content="FoundByMe Documentation" />
-<link rel="canonical" href="https://kimhabin2.github.io/foundbyme-custom/about/" />
-<meta property="og:url" content="https://kimhabin2.github.io/foundbyme-custom/about/" />
+<link rel="canonical" href="https://kimhabin2.github.io/foundbyme-custom/en/about/" />
+<meta property="og:url" content="https://kimhabin2.github.io/foundbyme-custom/en/about/" />
 <meta property="og:site_name" content="FoundByMe" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="About" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"FoundByMe Documentation","headline":"About","name":"FoundByMe","url":"https://kimhabin2.github.io/foundbyme-custom/about/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"FoundByMe Documentation","headline":"About","url":"https://kimhabin2.github.io/foundbyme-custom/en/about/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -199,7 +183,7 @@
 
   <div style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); z-index: 9999;">
   
-    <a href="/foundbyme-custom/en/" style="
+    <a href="/foundbyme-custom/" style="
         display: inline-block;
         background-color: white;
         color: #c3002f !important; /* 빨간 글씨 */
@@ -214,7 +198,7 @@
         transition: all 0.2s ease;"
        onmouseover="this.style.backgroundColor='#fff0f3'" 
        onmouseout="this.style.backgroundColor='white'">
-      🇺🇸 English
+      🇰🇷 한국어
     </a>
   
 </div>
@@ -235,9 +219,9 @@
 </h1>
     
 
-<p><strong>FoundByMe</strong>는 개인의 로컬 학습 자료를 효율적으로 관리하고 검색할 수 있도록 돕는 <strong>오픈소스 시맨틱 검색 엔진</strong>입니다.</p>
+<p><strong>FoundByMe</strong> is an <strong>open-source semantic search engine</strong> designed to efficiently manage and retrieve personal local study materials.</p>
 
-<p>단순한 키워드 매칭을 넘어, 문맥을 이해하는 <strong>RAG(Retrieval-Augmented Generation)</strong> 기술을 통해 강의 자료, PDF, 코드 조각 등 흩어진 지식을 자연어로 쉽게 찾을 수 있습니다.</p>
+<p>Going beyond simple keyword matching, it utilizes <strong>RAG (Retrieval-Augmented Generation)</strong> technology to understand context, allowing users to easily find scattered knowledge—such as lecture notes, PDFs, and code snippets—using natural language.</p>
 <h3 id="-project-history">
   
   
@@ -247,9 +231,9 @@
 </h3>
     
 <ul>
-  <li><strong>기간:</strong> 2025.10 ~ 2025.12</li>
-  <li><strong>목표:</strong> 학습 효율을 극대화하는 로컬 RAG 검색 도구 개발</li>
-  <li><strong>Team:</strong> 세종대학교 데이터사이언스학과 오픈소스SW개론 팀</li>
+  <li><strong>Duration:</strong> 2025.10 ~ 2025.12</li>
+  <li><strong>Goal:</strong> Development of a local RAG search tool to maximize learning efficiency.</li>
+  <li><strong>Team:</strong> Sejong University, Dept. of Data Science, Open Source SW Course Team.</li>
 </ul><hr />
 <h2 id="️-open-source-contribution-strategy">
   
@@ -260,7 +244,7 @@
 </h2>
     
 
-<p>FoundByMe는 혁신적인 오픈소스 기술인 <strong>txtai</strong>를 활용하여, 개발자가 아닌 일반 사용자도 쉽게 사용할 수 있는 <strong>‘Local-First Knowledge App’</strong> 생태계를 제안합니다.</p>
+<p>FoundByMe leverages the innovative open-source technology <strong>txtai</strong> to propose a <strong>‘Local-First Knowledge App’</strong> ecosystem that is easily accessible to general users, not just developers.</p>
 <h3 id="1-txtai-from-library-to-application-service-fication">
   
   
@@ -271,8 +255,8 @@
     
 <ul>
   <li><strong>Target Repo:</strong> <a href="https://github.com/neuml/txtai">neuml/txtai</a></li>
-  <li><strong>기여 포인트:</strong> <strong>“User-Friendly Local Service Implementation”</strong></li>
-  <li><strong>상세:</strong> 기존 <code class="language-plaintext highlighter-rouge">txtai</code>는 훌륭한 라이브러리지만, 주로 파이썬 개발자들의 도구로 사용되었습니다. 우리는 이를 백엔드 코어로 활용하고, <strong>Node.js 기반의 사용자 친화적인 GUI</strong>와 결합하여 <strong>“일반 학생을 위한 완성형 로컬 검색 도구”</strong>라는 새로운 유즈 케이스(Use Case)를 만들어 오픈소스 커뮤니티에 공유했습니다.</li>
+  <li><strong>Contribution Point:</strong> <strong>“User-Friendly Local Service Implementation”</strong></li>
+  <li><strong>Details:</strong> While <code class="language-plaintext highlighter-rouge">txtai</code> is an excellent library, it has primarily been used as a tool for Python developers. We utilized it as the backend core and combined it with a <strong>Node.js-based user-friendly GUI</strong>, creating a new Use Case: <strong>“A complete local search tool for students,”</strong> and shared it with the open-source community.</li>
 </ul>
 <h3 id="2-hybrid-storage-architecture-vs-paperai">
   
@@ -284,26 +268,26 @@
     
 <ul>
   <li><strong>Target Repo:</strong> <a href="https://github.com/neuml/paperai">neuml/paperai</a></li>
-  <li><strong>기여 포인트:</strong> <strong>“Hybrid Storage Pattern (SQLite → PostgreSQL)”</strong></li>
-  <li><strong>상세:</strong>
+  <li><strong>Contribution Point:</strong> <strong>“Hybrid Storage Pattern (SQLite → PostgreSQL)”</strong></li>
+  <li><strong>Details:</strong>
     <ul>
-      <li><strong>Problem:</strong> 기존 <code class="language-plaintext highlighter-rouge">txtai</code> 활용 사례(<code class="language-plaintext highlighter-rouge">paperai</code> 등)는 내장 SQLite에 의존하여, 파일 관리나 복잡한 조건 검색(날짜, 타입 등) 확장에 한계가 있었습니다.</li>
-      <li><strong>Solution:</strong> 우리는 벡터 검색은 <code class="language-plaintext highlighter-rouge">txtai</code>에, 파일 메타데이터 관리는 <strong>PostgreSQL</strong>에 위임하는 <strong>하이브리드 아키텍처</strong>를 구현했습니다.</li>
-      <li><strong>Impact:</strong> 이를 통해 대량의 로컬 파일 관리 시 <strong>데이터 무결성</strong>과 <strong>검색 유연성</strong>을 동시에 확보하는 아키텍처 모범 사례를 제시했습니다.</li>
+      <li><strong>Problem:</strong> Existing <code class="language-plaintext highlighter-rouge">txtai</code> use cases (like <code class="language-plaintext highlighter-rouge">paperai</code>) relied on built-in SQLite, which had limitations in file management and expanding complex conditional searches (date, type, etc.).</li>
+      <li><strong>Solution:</strong> We implemented a <strong>Hybrid Architecture</strong> where vector search is delegated to <code class="language-plaintext highlighter-rouge">txtai</code>, and file metadata management is handled by <strong>PostgreSQL</strong>.</li>
+      <li><strong>Impact:</strong> This presents a best-practice architecture that simultaneously secures <strong>data integrity</strong> and <strong>search flexibility</strong> when managing large volumes of local files.</li>
     </ul>
   </li>
 </ul>
-<h3 id="3-docker-복잡한-ai-스택의-배포-자동화">
+<h3 id="3-docker-automated-deployment-of-complex-ai-stack">
   
   
-    <a href="#3-docker-복잡한-ai-스택의-배포-자동화" class="anchor-heading" aria-labelledby="3-docker-복잡한-ai-스택의-배포-자동화"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. Docker: 복잡한 AI 스택의 배포 자동화
+    <a href="#3-docker-automated-deployment-of-complex-ai-stack" class="anchor-heading" aria-labelledby="3-docker-automated-deployment-of-complex-ai-stack"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. Docker: Automated Deployment of Complex AI Stack
   
   
 </h3>
     
 <ul>
-  <li><strong>기여 포인트:</strong> <code class="language-plaintext highlighter-rouge">Node.js</code>(프론트), <code class="language-plaintext highlighter-rouge">Python(txtai)</code>(백엔드), <code class="language-plaintext highlighter-rouge">PostgreSQL</code>(메타데이터) 등이 혼재된 복잡한 개발 환경을 <strong>Docker Compose</strong>로 표준화했습니다.</li>
-  <li><strong>상세:</strong> AI 모델 설치와 데이터베이스 연동 과정을 명령어 한 줄로 자동화하여, 비전문가도 자신의 PC에 즉시 <strong>독립적인 검색 엔진</strong>을 구축할 수 있도록 진입 장벽을 획기적으로 낮췄습니다.</li>
+  <li><strong>Contribution Point:</strong> Standardized a complex development environment consisting of <code class="language-plaintext highlighter-rouge">Node.js</code> (Frontend), <code class="language-plaintext highlighter-rouge">Python(txtai)</code> (Backend), and <code class="language-plaintext highlighter-rouge">PostgreSQL</code> (Metadata) using <strong>Docker Compose</strong>.</li>
+  <li><strong>Details:</strong> By automating the AI model installation and database connection processes into a single command, we significantly lowered the barrier to entry, allowing non-experts to instantly build an <strong>independent search engine</strong> on their own PCs.</li>
 </ul><hr />
 <h2 id="-why-foundbyme-innovation--difference">
   
@@ -314,7 +298,7 @@
 </h2>
     
 
-<p>FoundByMe는 기존 상용 소프트웨어들이 해결하지 못한 <strong>‘검색의 질적 한계’</strong>를 극복하고, 무거운 오픈소스 AI 도구들의 <strong>‘진입장벽’</strong>을 낮췄습니다.</p>
+<p>FoundByMe overcomes the <strong>‘qualitative limitations of search’</strong> in existing commercial software and lowers the <strong>‘barriers to entry’</strong> of heavy open-source AI tools.</p>
 <h3 id="1-vs-traditional-pdf-viewers-eg-pdf-xchange">
   
   
@@ -328,8 +312,8 @@
 </blockquote>
 
 <ul>
-  <li><strong>The Limitation:</strong> 기존 뷰어들의 검색 기능은 단순한 <strong>키워드 매칭(Ctrl+F)</strong>에 불과합니다. 단어가 정확히 일치하지 않으면, 문서 내에 관련 내용이 있어도 찾을 수 없습니다.</li>
-  <li><strong>Our Solution:</strong> FoundByMe는 <strong>‘문맥(Context)’</strong>을 검색합니다. 사용자의 의도를 파악하여 키워드가 달라도 의미가 유사한 문서를 찾아주는 <strong>차세대 시맨틱 검색</strong>을 제공합니다.</li>
+  <li><strong>The Limitation:</strong> Search functions in existing viewers are limited to simple <strong>keyword matching (Ctrl+F)</strong>. If the exact word is not remembered, relevant content within the document cannot be found.</li>
+  <li><strong>Our Solution:</strong> FoundByMe searches for <strong>‘Context’</strong>. It provides <strong>Next-Gen Semantic Search</strong> that understands the user’s intent and finds documents with similar meanings, even if the keywords differ.</li>
 </ul>
 <h3 id="2-vs-cloud-ai-services-eg-chatpdf">
   
@@ -344,8 +328,8 @@
 </blockquote>
 
 <ul>
-  <li><strong>The Limitation:</strong> 대부분의 AI 문서 도구는 파일을 서버에 업로드해야 하므로 <strong>데이터 유출 위험(Privacy Risk)</strong>이 있고, 인터넷 연결과 구독료가 필요합니다.</li>
-  <li><strong>Our Solution:</strong> <strong>txtai</strong>와 <strong>Docker</strong>를 활용한 <strong>“100% 로컬 온프레미스”</strong> 아키텍처입니다. 데이터가 PC 밖으로 나가지 않아 보안이 완벽하며, 오프라인 환경에서도 무료로 사용할 수 있습니다.</li>
+  <li><strong>The Limitation:</strong> Most AI document tools require uploading files to a server, posing <strong>Privacy Risks</strong> and requiring internet connectivity and subscription fees.</li>
+  <li><strong>Our Solution:</strong> A <strong>“100% Local On-Premise”</strong> architecture utilizing <strong>txtai</strong> and <strong>Docker</strong>. Data never leaves the user’s PC, ensuring perfect security, and it can be used for free in offline environments.</li>
 </ul>
 <h3 id="3-vs-heavy-local-llms-eg-privategpt">
   
@@ -360,8 +344,8 @@
 </blockquote>
 
 <ul>
-  <li><strong>The Limitation:</strong> 기존의 로컬 RAG 서비스(PrivateGPT 등)는 무거운 LLM(거대언어모델)을 구동해야 해서 <strong>고사양 GPU가 필수적</strong>이고 속도가 느립니다.</li>
-  <li><strong>Our Solution:</strong> 우리는 생성(Chat)보다 <strong>‘탐색(Search)’에 집중한 경량화 모델</strong>을 채택했습니다. 무거운 LLM 의존성을 제거하여, 일반 학생용 노트북에서도 쾌적하게 돌아가는 <strong>보급형 AI 검색 엔진</strong>을 구현했습니다.</li>
+  <li><strong>The Limitation:</strong> Existing local RAG services (like PrivateGPT) require running heavy LLMs (Large Language Models), making <strong>high-spec GPUs essential</strong> and resulting in slow speeds.</li>
+  <li><strong>Our Solution:</strong> We adopted a <strong>lightweight model focused on ‘Search’</strong> rather than Generation (Chat). By removing the dependency on heavy LLMs, we implemented an <strong>entry-level AI search engine</strong> that runs smoothly on standard student laptops.</li>
 </ul>
 <h3 id="4-vs-open-source-dms-eg-paperless-ngx">
   
@@ -376,8 +360,8 @@
 </blockquote>
 
 <ul>
-  <li><strong>The Limitation:</strong> 기존 문서 관리 시스템들은 OCR과 텍스트 일치 방식에 의존하여, 정확한 단어를 모르면 파일을 찾기 어려웠습니다.</li>
-  <li><strong>Our Solution:</strong> FoundByMe는 <strong>txtai 기반의 시맨틱 엔진</strong>을 도입하여, 단순 보관을 넘어 <strong>“문맥을 이해하는 지능형 문서 검색”</strong> 경험을 제공합니다.</li>
+  <li><strong>The Limitation:</strong> Existing Document Management Systems rely on OCR and text matching, making it difficult to find files without knowing the exact words.</li>
+  <li><strong>Our Solution:</strong> FoundByMe introduces a <strong>txtai-based semantic engine</strong>, providing an <strong>“Intelligent Document Search”</strong> experience that understands context beyond simple storage.</li>
 </ul><hr />
 <h2 id="-custom-theme-development-report">
   
@@ -388,92 +372,92 @@
 </h2>
     
 
-<p>이 웹사이트는 FoundByMe 프로젝트의 정체성을 나타내기 위해 <strong>직접 제작 및 재설계한 커스텀 Jekyll 테마</strong>를 사용하고 있습니다. 기존 테마를 단순히 적용하는 것에 그치지 않고, 구조와 디자인을 전면적으로 개편하여 독창성과 사용성을 높였습니다.</p>
-<h3 id="1-테마-독립화-및-구조-재설계-theme-ejection--restructuring">
+<p>This website uses a <strong>custom Jekyll theme designed and re-engineered</strong> to reflect the identity of the FoundByMe project. Rather than simply applying an existing theme, we completely overhauled the structure and design to enhance originality and usability.</p>
+<h3 id="1-theme-ejection--restructuring">
   
   
-    <a href="#1-테마-독립화-및-구조-재설계-theme-ejection--restructuring" class="anchor-heading" aria-labelledby="1-테마-독립화-및-구조-재설계-theme-ejection--restructuring"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. 테마 독립화 및 구조 재설계 (Theme Ejection &amp; Restructuring)
+    <a href="#1-theme-ejection--restructuring" class="anchor-heading" aria-labelledby="1-theme-ejection--restructuring"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. Theme Ejection &amp; Restructuring
   
   
 </h3>
     
 <ul>
-  <li>기존의 <code class="language-plaintext highlighter-rouge">remote_theme</code> 의존 방식을 제거하고, <code class="language-plaintext highlighter-rouge">Just the Docs</code>의 원본 소스 코드(<code class="language-plaintext highlighter-rouge">_layouts</code>, <code class="language-plaintext highlighter-rouge">_includes</code>, <code class="language-plaintext highlighter-rouge">_sass</code>, <code class="language-plaintext highlighter-rouge">assets</code>)를 로컬 환경으로 이관하여 <strong>직접 수정 가능한 독립적인 테마 구조</strong>를 구축했습니다.</li>
-  <li><code class="language-plaintext highlighter-rouge">_config.yml</code> 및 <code class="language-plaintext highlighter-rouge">Gemfile</code>의 불필요한 외부 의존성을 최적화하고, 로컬 개발 환경에 맞게 설정을 재구성했습니다.</li>
+  <li>We removed the dependency on <code class="language-plaintext highlighter-rouge">remote_theme</code> and migrated the source code (<code class="language-plaintext highlighter-rouge">_layouts</code>, <code class="language-plaintext highlighter-rouge">_includes</code>, <code class="language-plaintext highlighter-rouge">_sass</code>, <code class="language-plaintext highlighter-rouge">assets</code>) of <code class="language-plaintext highlighter-rouge">Just the Docs</code> to the local environment to build an <strong>independent theme structure capable of direct modification</strong>.</li>
+  <li>Optimized unnecessary external dependencies in <code class="language-plaintext highlighter-rouge">_config.yml</code> and <code class="language-plaintext highlighter-rouge">Gemfile</code>, and reconfigured settings for the local development environment.</li>
 </ul>
-<h3 id="2-타이포그래피-고도화-typography">
+<h3 id="2-advanced-typography">
   
   
-    <a href="#2-타이포그래피-고도화-typography" class="anchor-heading" aria-labelledby="2-타이포그래피-고도화-typography"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. 타이포그래피 고도화 (Typography)
+    <a href="#2-advanced-typography" class="anchor-heading" aria-labelledby="2-advanced-typography"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. Advanced Typography
   
   
 </h3>
     
 <ul>
-  <li><strong>폰트 변경:</strong> 가독성이 뛰어나고 현대적인 느낌을 주는 구글 폰트 <strong>‘Inter’</strong>를 적용하여 전문적인 기술 문서의 느낌을 강화했습니다.</li>
-  <li><strong>적용 파일:</strong> <code class="language-plaintext highlighter-rouge">_includes/head.html</code> (CDN 링크 추가), <code class="language-plaintext highlighter-rouge">_sass/support/_variables.scss</code> (SCSS 변수 재정의)</li>
+  <li><strong>Font Change:</strong> Applied the Google Font <strong>‘Inter’</strong>, which offers excellent readability and a modern feel, to reinforce the impression of professional technical documentation.</li>
+  <li><strong>Applied Files:</strong> <code class="language-plaintext highlighter-rouge">_includes/head.html</code> (CDN link added), <code class="language-plaintext highlighter-rouge">_sass/support/_variables.scss</code> (SCSS variable redefinition).</li>
 </ul>
-<h3 id="3-브랜드-아이덴티티-확립-color-system">
+<h3 id="3-establishing-brand-identity-color-system">
   
   
-    <a href="#3-브랜드-아이덴티티-확립-color-system" class="anchor-heading" aria-labelledby="3-브랜드-아이덴티티-확립-color-system"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. 브랜드 아이덴티티 확립 (Color System)
+    <a href="#3-establishing-brand-identity-color-system" class="anchor-heading" aria-labelledby="3-establishing-brand-identity-color-system"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. Establishing Brand Identity (Color System)
   
   
 </h3>
     
 <ul>
-  <li><strong>색상 변경:</strong> 기존 테마의 기본 색상(Purple)을 <strong>학교 상징색인 ‘크림슨 레드(#c3002f)’</strong>와 <strong>슬레이트 그레이(#51626f)</strong>로 전면 수정하여 프로젝트의 브랜드 정체성을 통일했습니다.</li>
-  <li><strong>적용 파일:</strong> <code class="language-plaintext highlighter-rouge">_sass/support/_variables.scss</code> (메인 테마 컬러 및 링크 색상 변수 수정)</li>
+  <li><strong>Color Change:</strong> Completely revised the default theme color (Purple) to <strong>Crimson Red (#c3002f)</strong>, the school’s symbolic color, and <strong>Slate Grey (#51626f)</strong> to unify the project’s brand identity.</li>
+  <li><strong>Applied Files:</strong> <code class="language-plaintext highlighter-rouge">_sass/support/_variables.scss</code> (Main theme color and link color variable modification).</li>
 </ul>
-<h3 id="4-레이아웃-커스터마이징-layout-customization">
+<h3 id="4-layout-customization">
   
   
-    <a href="#4-레이아웃-커스터마이징-layout-customization" class="anchor-heading" aria-labelledby="4-레이아웃-커스터마이징-layout-customization"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 4. 레이아웃 커스터마이징 (Layout Customization)
+    <a href="#4-layout-customization" class="anchor-heading" aria-labelledby="4-layout-customization"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 4. Layout Customization
   
   
 </h3>
     
 <ul>
-  <li><strong>상단 공지 배너 추가:</strong> <code class="language-plaintext highlighter-rouge">_layouts/default.html</code> 뼈대 코드를 직접 수정하여, 사이트 전역에 중요한 메시지를 전달할 수 있는 <strong>상단 배너 영역</strong>을 신설했습니다.</li>
-  <li><strong>확장형 푸터(Footer) 개발:</strong> 기존의 단순한 푸터를 제거하고, 학교 정보, 팀원 연락처, GitHub 링크 등을 포함한 <strong>커스텀 푸터 컴포넌트(<code class="language-plaintext highlighter-rouge">_includes/custom_footer.html</code>)</strong>를 직접 코딩하여 적용했습니다.</li>
+  <li><strong>Top Banner:</strong> Directly modified the <code class="language-plaintext highlighter-rouge">_layouts/default.html</code> skeleton code to establish a <strong>top banner area</strong> capable of delivering important messages site-wide.</li>
+  <li><strong>Expanded Footer:</strong> Removed the simple default footer and directly coded/applied a <strong>custom footer component (<code class="language-plaintext highlighter-rouge">_includes/custom_footer.html</code>)</strong> containing school information, team contacts, and GitHub links.</li>
 </ul>
-<h3 id="5-uxui-구조-혁신-ui-innovation">
+<h3 id="5-uxui-innovation">
   
   
-    <a href="#5-uxui-구조-혁신-ui-innovation" class="anchor-heading" aria-labelledby="5-uxui-구조-혁신-ui-innovation"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 5. UX/UI 구조 혁신 (UI Innovation)
+    <a href="#5-uxui-innovation" class="anchor-heading" aria-labelledby="5-uxui-innovation"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 5. UX/UI Innovation
   
   
 </h3>
     
 <ul>
-  <li><strong>Dynamic Landing Page (홈페이지 전면 개편):</strong> 기존의 정적인 텍스트 위주 대문을 탈피하고, <strong>데이터의 연결성을 시각화한 커스텀 SVG 애니메이션</strong>(<code class="language-plaintext highlighter-rouge">hero_animation.svg</code>)을 메인 화면(<code class="language-plaintext highlighter-rouge">index.md</code>)에 구현했습니다. 중앙 정렬 레이아웃과 브랜드 컬러 그라데이션을 적용하여 몰입감을 극대화했습니다.</li>
-  <li><strong>Card UI (카드형 디자인):</strong> 밋밋한 텍스트 리스트 대신 <code class="language-plaintext highlighter-rouge">Grid</code> 레이아웃 기반의 <strong>카드형 디자인</strong>을 기능 소개 및 커뮤니티 페이지에 적용하여 정보 전달력과 심미성을 높였습니다. <em>(Django Community 디자인 영감)</em></li>
+  <li><strong>Dynamic Landing Page:</strong> Moved away from the static text-based landing page and implemented a <strong>custom SVG animation</strong> (<code class="language-plaintext highlighter-rouge">hero_animation.svg</code>) visualizing <strong>data connectivity</strong> on the main screen (<code class="language-plaintext highlighter-rouge">index.md</code>). Applied a center-aligned layout and brand color gradients to maximize immersion.</li>
+  <li><strong>Card UI:</strong> Applied a <strong>Card Design</strong> based on <code class="language-plaintext highlighter-rouge">Grid</code> layout to the features and community pages instead of plain text lists to improve information delivery and aesthetics. <em>(Inspired by Django Community design)</em>.</li>
 </ul>
-<h3 id="6-디테일-및-사용자-경험-강화-detail--ux-enhancement">
+<h3 id="6-detail--ux-enhancement">
   
   
-    <a href="#6-디테일-및-사용자-경험-강화-detail--ux-enhancement" class="anchor-heading" aria-labelledby="6-디테일-및-사용자-경험-강화-detail--ux-enhancement"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 6. 디테일 및 사용자 경험 강화 (Detail &amp; UX Enhancement)
+    <a href="#6-detail--ux-enhancement" class="anchor-heading" aria-labelledby="6-detail--ux-enhancement"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 6. Detail &amp; UX Enhancement
   
   
 </h3>
     
 <ul>
-  <li><strong>기능 모듈화 (JS Modularization):</strong> ‘맨 위로 가기(Back to Top)’ 기능의 자바스크립트 로직을 별도 파일(<code class="language-plaintext highlighter-rouge">assets/js/backtotop.js</code>)로 분리하여 유지보수성과 코드 재사용성을 높였습니다.</li>
-  <li><strong>파비콘(Favicon) 적용:</strong> 브라우저 탭에서도 서비스의 정체성(검색)을 드러낼 수 있도록 돋보기(🔍) 아이콘을 적용했습니다. (<code class="language-plaintext highlighter-rouge">_includes/head.html</code>)</li>
-  <li><strong>검색창 디자인 고도화:</strong> 프로젝트의 핵심 기능인 ‘검색’을 강조하기 위해 검색창에 둥근 모서리와 브랜드 컬러 포커스 효과를 추가했습니다. (<code class="language-plaintext highlighter-rouge">_sass/custom/custom.scss</code>)</li>
-  <li><strong>404 페이지 커스터마이징:</strong> 단순한 에러 메시지 대신, 사용자 친화적인 안내 문구와 홈으로 돌아가기 버튼을 배치한 커스텀 404 페이지를 제작했습니다. (<code class="language-plaintext highlighter-rouge">404.html</code>)</li>
+  <li><strong>Modularization (JS):</strong> Separated the logic for the ‘Back to Top’ function into a separate file (<code class="language-plaintext highlighter-rouge">assets/js/backtotop.js</code>) to improve maintainability and code reusability.</li>
+  <li><strong>Favicon:</strong> Applied a magnifying glass (🔍) icon to reveal the service’s identity (Search) even in browser tabs. (<code class="language-plaintext highlighter-rouge">_includes/head.html</code>)</li>
+  <li><strong>Search Bar Design:</strong> Added rounded corners and brand color focus effects to the search bar to emphasize the project’s core feature, ‘Search’. (<code class="language-plaintext highlighter-rouge">_sass/custom/custom.scss</code>)</li>
+  <li><strong>Custom 404 Page:</strong> Created a custom 404 page featuring user-friendly guidance text and a ‘Return Home’ button instead of a simple error message. (<code class="language-plaintext highlighter-rouge">404.html</code>)</li>
 </ul>
-<h3 id="7-헤더-디자인-전면-개편-header-redesign">
+<h3 id="7-header-redesign">
   
   
-    <a href="#7-헤더-디자인-전면-개편-header-redesign" class="anchor-heading" aria-labelledby="7-헤더-디자인-전면-개편-header-redesign"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 7. 헤더 디자인 전면 개편 (Header Redesign)
+    <a href="#7-header-redesign" class="anchor-heading" aria-labelledby="7-header-redesign"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 7. Header Redesign
   
   
 </h3>
     
 <ul>
-  <li><strong>상단바 스타일 변경:</strong> 기존의 평범한 흰색 헤더를 <strong>학교 상징색(Crimson Red)</strong> 배경으로 과감하게 변경하여 사이트의 첫인상을 강렬하게 만들고 브랜드 정체성을 극대화했습니다.</li>
-  <li><strong>검색창 및 아이콘 최적화:</strong> 붉은 배경에 어울리도록 헤더 내 검색창을 <strong>반투명한 흰색 스타일</strong>로 변경하고, 로고와 아이콘 색상을 흰색으로 통일하여 가독성과 심미성을 동시에 확보했습니다.</li>
+  <li><strong>Top Bar Style:</strong> Boldly changed the plain white header to a <strong>Crimson Red</strong> background to create a strong first impression and maximize brand identity.</li>
+  <li><strong>Search &amp; Icon Optimization:</strong> Changed the search bar within the header to a <strong>translucent white style</strong> to match the red background, and unified logo and icon colors to white to ensure both readability and aesthetics.</li>
 </ul><hr />
 <h3 id="-contact--contribute">
   
@@ -484,11 +468,12 @@
 </h3>
     
 
-<p>FoundByMe는 여러분의 기여를 환영합니다.
-GitHub 저장소에서 코드를 확인하거나, 이슈를 등록해 주세요.</p>
+<p>FoundByMe welcomes your contributions.
+Check out the code or open an issue on our GitHub repository.</p>
 
 <ul>
   <li><strong>GitHub:</strong> <a href="https://github.com/KNaeon/foundbyme">https://github.com/KNaeon/foundbyme</a></li>
+  <li><strong>Team:</strong> Sejong University, Dept. of Data Science, Open Source SW Course Team</li>
 </ul>
 
           
