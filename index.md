@@ -120,10 +120,10 @@ docker-compose up -d
 ---
 
 🔗 Links
-- 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html
 
-- 💻 GitHub Repository: https://github.com/KNaeon/
+- 📘 Documentation: <a href="https://foundbyme.readthedocs.io/en/latest/index.html" target="_blank">https://foundbyme.readthedocs.io/en/latest/index.html</a>
 
+- 💻 GitHub Repository: <a href="https://github.com/KNaeon/foundbyme" target="_blank">https://github.com/KNaeon/foundbyme</a>
 
 ---
 

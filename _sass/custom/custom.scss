@@ -1,4 +1,8 @@
-// 기능 소개 카드 그리드 레이아웃
+/* =========================================
+   [FoundByMe] Custom Style Overrides (Hardcoded Fix)
+   ========================================= */
+
+// 1. 기능 소개 카드 스타일
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -6,10 +10,11 @@
   margin-top: 40px;
 }
 
-// 기능 소개 카드 디자인 (애니메이션 포함)
 .feature-card {
-  background: $body-background-color; // 배경색 테마 따라가기
-  border: 1px solid $border-color;    // 테두리도 테마 따라가기
+  background: #ffffff; /* 기본 흰색 */
+  @if $color-scheme == "dark" { background: #2b2b2b; } /* 다크모드 회색 */
+  
+  border: 1px solid $border-color;
   border-radius: 8px;
   padding: 25px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -17,7 +22,7 @@
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-color: #c3002f; /* 학교 상징색 */
+    border-color: #c3002f;
   }
 
   h3 {
@@ -26,12 +31,16 @@
   }
 }
 
-// [검색창 디자인 업그레이드]
+// 2. 검색창 디자인
 .search-input {
   border: 2px solid $border-color !important;
   border-radius: 50px !important;
   transition: all 0.3s ease !important;
-  background-color: $body-background-color !important; // 다크모드 대응
+  
+  // 배경색 강제 지정
+  background-color: #ffffff !important;
+  @if $color-scheme == "dark" { background-color: #2b2b2b !important; }
+  
   color: $body-text-color !important;
   
   &:focus {
@@ -40,56 +49,49 @@
   }
 }
 
-// 검색 아이콘 색상 변경
 .search-label .search-icon {
   color: #c3002f !important;
 }
 
-/* [추가] 경고/팁 박스 (Callouts) - 다크 모드 대응 추가 */
-
-// 1. 참고(Note) 박스
+// 3. 경고/팁 박스
 .callout-note {
   border-left: 4px solid #51626f;
   border-radius: 4px;
   padding: 15px 20px;
   margin: 20px 0;
   font-size: 0.95rem;
+  background-color: rgba(81, 98, 111, 0.08);
+  color: #3d4a54;
 
-  // 다크 모드인지 확인하여 색상 분기 처리
   @if $color-scheme == "dark" {
-    background-color: rgba(81, 98, 111, 0.2); // 다크모드에선 배경을 좀 더 진하게
-    color: #e2e2e2; // 글자색 밝게 (흰색 계열)
-  } @else {
-    background-color: rgba(81, 98, 111, 0.08);
-    color: #3d4a54; // 라이트모드에선 어둡게
+    background-color: rgba(81, 98, 111, 0.2);
+    color: #e2e2e2;
   }
   
   &::before {
     content: "💡 Note";
     display: block;
     font-weight: bold;
-    color: #51626f; // 다크모드에서도 잘 보이는 회색
-    @if $color-scheme == "dark" { color: #aebdc7; } // 다크모드에선 조금 더 밝게
+    color: #51626f;
+    @if $color-scheme == "dark" { color: #aebdc7; }
     margin-bottom: 5px;
     text-transform: uppercase;
     font-size: 0.8rem;
   }
 }
 
-// 2. 주의(Warning) 박스
 .callout-warning {
   border-left: 4px solid #c3002f;
   border-radius: 4px;
   padding: 15px 20px;
   margin: 20px 0;
   font-size: 0.95rem;
+  background-color: rgba(195, 0, 47, 0.08);
+  color: #8a0e25;
 
   @if $color-scheme == "dark" {
     background-color: rgba(195, 0, 47, 0.15);
-    color: #ffcdd2; // 다크모드에선 옅은 붉은색 글씨
-  } @else {
-    background-color: rgba(195, 0, 47, 0.08);
-    color: #8a0e25;
+    color: #ffcdd2;
   }
 
   &::before {
@@ -97,58 +99,43 @@
     display: block;
     font-weight: bold;
     color: #c3002f;
-    @if $color-scheme == "dark" { color: #ff5252; } // 다크모드에선 밝은 빨강
+    @if $color-scheme == "dark" { color: #ff5252; }
     margin-bottom: 5px;
     text-transform: uppercase;
     font-size: 0.8rem;
   }  
 }
-/* [추가] 상단 헤더 디자인 전면 수정 (학교 테마 적용) */
 
-// 1. 헤더 배경을 크림슨 레드로 변경
+// 4. 헤더 최상위 배치 (절대 방어)
 .site-header {
-  background-color: #c3002f !important; /* 학교 상징색 */
-  border-bottom: none !important;       /* 지저분한 밑줄 제거 */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 살짝 그림자 줘서 입체감 */
+  position: relative;
+  z-index: 9999 !important; /* 무조건 맨 위 */
+  background-color: #c3002f !important;
+  border-bottom: none !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-// 2. 사이트 제목(로고) 글씨를 흰색으로
 .site-title {
   color: #ffffff !important;
-  font-weight: 700; /* 좀 더 굵게 */
+  font-weight: 700;
 }
 
-// 3. 헤더 안의 검색창 디자인 변경 (배경에 맞춰서)
+// 헤더 내부 검색창 스타일
 .site-header .search-input {
-  background-color: rgba(255, 255, 255, 0.15) !important; /* 반투명 흰색 */
+  background-color: rgba(255, 255, 255, 0.15) !important;
   border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  color: #ffffff !important; /* 글씨 흰색 */
-  border-radius: 4px !important;
-}
-
-// 4. 검색창 플레이스홀더(안내 문구) 색상
-.site-header .search-input::placeholder {
-  color: rgba(255, 255, 255, 0.7) !important;
-}
-
-// 5. 검색 아이콘 색상 변경
-.site-header .search-label .search-icon {
   color: #ffffff !important;
 }
+.site-header .search-input::placeholder { color: rgba(255, 255, 255, 0.7) !important; }
+.site-header .search-label .search-icon { color: #ffffff !important; }
+.aux-nav-list-item { color: #ffffff !important; }
 
-// 6. 우측 상단 링크(GitHub 등)가 있다면 흰색으로
-.aux-nav-list-item {
-  color: #ffffff !important;
-}
-
-/* [Showcase] 애니메이션 페이지 전용 스타일 */
-
-// 1. 움직이는 배경 (Animated Gradient)
+// 5. 쇼케이스 애니메이션 (헤더보다 아래로)
 .showcase-hero {
   background: linear-gradient(-45deg, #1a1c23, #51626f, #c3002f, #3d000b);
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite; /* 15초 동안 색상이 천천히 흐름 */
-  height: 80vh; /* 화면 높이의 80% */
+  animation: gradientBG 15s ease infinite;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,34 +146,28 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   position: relative;
   overflow: hidden;
+  z-index: 1; /* 낮은 우선순위 */
 }
 
-// 배경 움직임 키프레임
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-// 2. 텍스트 등장 애니메이션 (Fade In Up)
 .animate-text {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 1s ease-out forwards;
 }
-
-.delay-1 { animation-delay: 0.3s; } /* 첫 줄 0.3초 뒤 등장 */
-.delay-2 { animation-delay: 0.6s; } /* 둘째 줄 0.6초 뒤 등장 */
-.delay-3 { animation-delay: 0.9s; } /* 버튼 0.9초 뒤 등장 */
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
 
 @keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-// 3. 쇼케이스 전용 버튼
 .btn-showcase {
   display: inline-block;
   margin-top: 30px;
@@ -207,4 +188,71 @@
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
   }
+}
+
+/* ========================================================
+   [Fix] 검색 결과창 불투명화 & 겹침 해결 (색상 코드 직접 지정)
+   ======================================================== */
+
+.search-results {
+  // 1. 최상위 레이어 설정
+  z-index: 999999 !important; 
+  
+  // 2. [핵심] 변수 대신 '색상 코드' 직접 입력 (비침 방지)
+  // 라이트 모드 (기본)
+  background-color: #ffffff !important; 
+  border: 1px solid #ddd !important;
+  
+  // 다크 모드 (조건부 적용)
+  @if $color-scheme == "dark" {
+    background-color: #1a1c23 !important; // 아주 진한 남색/회색
+    border-color: #444 !important;
+  }
+  
+  // 3. 그림자와 모양
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 8px !important;
+  opacity: 1 !important; /* 투명도 0% 방지 */
+}
+
+// 검색 결과 항목
+.search-result {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover,
+  &.active {
+    background-color: rgba(195, 0, 47, 0.1) !important; // 호버 시 연한 붉은색
+    
+    .search-result-title {
+      color: #c3002f !important;
+      font-weight: bold;
+    }
+  }
+/* 검색창 + 검색결과 최상단 고정 (stacking context 탈출) */
+.search-input,
+.search-results {
+  position: fixed !important;
+  z-index: 99999999 !important;
+}
+
+/* 검색창 위치 조정 – 필요하면 top 값 바꿔 */
+.search-input {
+  top: 15px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: 400px !important; /* 원하는 크기 */
+}
+
+/* 검색 결과창 위치 조정 */
+.search-results {
+  top: 60px !important; /* 검색창 아래로 */
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: 600px !important; /* 너비 조절 */
+}
+  
 }
