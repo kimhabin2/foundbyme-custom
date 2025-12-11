@@ -100,12 +100,13 @@ docker-compose up -d
 
 ---
 
-
-## 🧩 프로젝트 구성 요소
-- 로컬 검색 시스템 / 사용 설명서 / 예제 페이지 / API 문서 제공
-- 백엔드용 RAG API 구현 
-  → sentence-transformers 기반 embedding  
-  → 문서 요약/검색 엔드포인트 제공
+## 🧰 Tech Stack
+- **FastAPI**: API 서버
+- **PostgreSQL**: 문서 목록 및 메타데이터 저장
+- **ChromaDB**: 벡터 저장 & 의미 검색
+- **SentenceTransformers**: 문장을 벡터로 변환
+- **CrossEncoder**: 검색 결과 재정렬 (정확도 향상)
+- **Docker Compose**: 모든 환경 통합 실행
 
 ---
 
@@ -118,9 +119,23 @@ docker-compose up -d
 
 ---
 
+🔗 Links
 - 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html
 
-- 💻 GitHub Repository: https://github.com/KNaeon/foundbyme
+- 💻 GitHub Repository: https://github.com/KNaeon/
+
+
+---
+
+## 👥 Contributors 
+
+| Name | Role | Responsibilities |
+|:---:|:---:|:---|
+| **강나언** | Project Leader, Dev | 텍스트 처리 파이프라인, 테스팅, 디버깅 |
+| **김하빈** | Docs Lead, PPT | 사용자 문서화(Web, Docs), 발표 자료 및 가이드 제작 |
+| **이진호** | Design Lead, Dev | UI/UX 디자인, 프론트엔드 개발 |
+
+---
 
 <div style="text-align: center; margin-top: 40px;"> <a href="https://github.com/KNaeon/foundbyme" class="btn btn-outline" style="border: 2px solid #c3002f; color: #c3002f; font-weight: bold; padding: 15px 30px; border-radius: 50px; text-decoration: none;"> View on GitHub </a> </div>
 

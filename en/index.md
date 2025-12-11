@@ -88,19 +88,19 @@ docker-compose up -d
 ```
 
 ## 🎯 Background & Objectives
-- **Time Saving:** Drastically reduce the time spent searching for specific content across numerous files during exam periods.
-- **Context Search:** Find materials based on meaning (context) even if you don't recall the exact filename or keywords.
-- **Focus:** Maintain concentration by eliminating the distraction of manually opening files one by one.
+- **Time Saving:** Drastically reduce time spent searching for specific content across numerous files during exams.
+- **Context Search:** Find materials by context (meaning) even without knowing the exact filename or keywords.
+- **Focus:** Maintain concentration by eliminating the hassle of manually opening files one by one.
 
-## 🔍 Core Features
+## 🔍 Key Features
 ### 1) Local File Indexing
-Automatically scans folders to organize metadata for documents, images, and code.
+Automatically scans folders to organize metadata for documents, images, code, and more.
 
 ### 2) RAG-based Search
 Ask questions in natural language, and the system finds and summarizes the most relevant content for you.
 
 ### 3) Vector Visualization (Embedding Visualization)
-Visualizes relationships between embedded data points in a 3D graph.
+Visualizes the relationships between embedded data points in a 3D graph (Galaxy View).
 
 ---
 
@@ -109,6 +109,22 @@ Visualizes relationships between embedded data points in a 3D graph.
 - **RAG API Backend Implementation:**
   - `sentence-transformers` based embedding
   - Endpoints for document summarization and search
+
+---
+
+## 🧰 Tech Stack
+
+* **FastAPI:** API Server
+
+* **PostgreSQL:** Document list & metadata storage
+
+* **ChromaDB:** Vector storage & semantic search
+
+* **SentenceTransformers:** Text-to-vector conversion
+
+* **CrossEncoder:** Search result re-ranking (Accuracy improvement)
+
+* **Docker Compose:** Integrated execution environment
 
 ---
 
@@ -126,6 +142,18 @@ Visualizes relationships between embedded data points in a 3D graph.
 - 📘 Documentation: https://foundbyme.readthedocs.io/en/latest/index.html
 
 - 💻 GitHub Repository: https://github.com/KNaeon/foundbyme
+
+---
+
+## 👥 Contributors 
+
+| Name | Role | Responsibilities |
+|:---:|:---:|:---|
+| **강나언** | Project Leader, Dev | Text processing pipeline, Testing, Debugging |
+| **김하빈** | Docs Lead, PPT | User documentation (Web, Docs), Presentation materials & guides |
+| **이진호** | Design Lead, Dev | UI/UX Design, Frontend Dev |
+
+---
 
 <div style="text-align: center; margin-top: 40px;"> <a href="https://github.com/KNaeon/foundbyme" class="btn btn-outline" style="border: 2px solid #c3002f; color: #c3002f; font-weight: bold; padding: 15px 30px; border-radius: 50px; text-decoration: none;"> View on GitHub </a> </div>
 
