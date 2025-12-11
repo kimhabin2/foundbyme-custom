@@ -2,7 +2,7 @@
 
 .search {
   position: relative;
-  z-index: 2;
+  z-index: 100;
   flex-grow: 1;
   height: $sp-10;
   padding: $sp-2;
@@ -90,8 +90,10 @@
 
 .search-results {
   position: absolute;
+  z-index: 99999 !important; /* [추가] 무조건 맨 위로 오도록 강제 */
   left: 0;
   display: none;
+  // ...
   width: 100%;
   max-height: calc(100% - #{$sp-10});
   overflow-y: auto;

@@ -1,7 +1,11 @@
 // The basic two column layout
 
 .side-bar {
-  z-index: 0;
+  /* [수정됨] 모바일에서도 z-index가 작동하도록 relative 추가 */
+  position: relative; 
+  /* [수정됨] 본문(z-index: 10)보다 무조건 위에 오도록 압도적으로 높은 값 설정 */
+  z-index: 9999;
+  
   display: flex;
   flex-wrap: wrap;
   background-color: $sidebar-color;
@@ -58,6 +62,10 @@
 .main {
   margin: auto;
 
+  /* [수정됨] 본문 영역을 낮은 z-index로 가두어 내부 요소들이 튀어나오지 못하게 함 */
+  position: relative; 
+  z-index: 10; 
+
   @include mq(md) {
     position: relative;
     max-width: $content-width;
@@ -77,7 +85,8 @@
 }
 
 .main-header {
-  z-index: 0;
+  position: relative; /* 필수 추가 */
+  z-index: 50;        /* 0 -> 50으로 변경 (본문보다 높게 설정) */
   border-bottom: $border $border-color;
 
   @include mq(md) {
