@@ -7474,7 +7474,7 @@ a.skip-to-main:active {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
-  z-index: 1; /* 낮은 우선순위 */
+  z-index: 0; /* 검색창보다 훨씬 낮음 */
 }
 
 @keyframes gradientBG {
@@ -7492,6 +7492,8 @@ a.skip-to-main:active {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 1s ease-out forwards;
+  position: relative;
+  z-index: 1;
 }
 
 .delay-1 {
@@ -7714,7 +7716,7 @@ a.skip-to-main:active {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
-  z-index: 1; /* 낮은 우선순위 */
+  z-index: 0; /* 검색창보다 훨씬 낮음 */
 }
 
 @keyframes gradientBG {
@@ -7732,6 +7734,8 @@ a.skip-to-main:active {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 1s ease-out forwards;
+  position: relative;
+  z-index: 1;
 }
 
 .delay-1 {
