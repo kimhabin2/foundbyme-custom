@@ -383,16 +383,18 @@ FoundByMe는 <strong>Sentence-Transformers</strong> 모델을 내장한 <code cl
   <li><code class="language-plaintext highlighter-rouge">.txt</code>, <code class="language-plaintext highlighter-rouge">.pdf</code>, <code class="language-plaintext highlighter-rouge">.docx</code>, <code class="language-plaintext highlighter-rouge">.pptx</code>는 물론 <strong>이미지</strong>까지 지원합니다.</li>
   <li>이미지 내 텍스트는 <code class="language-plaintext highlighter-rouge">pytesseract</code>(OCR)를 통해 추출하며, 긴 문서는 의미 단위(Chunk)로 쪼개어 처리합니다.</li>
 </ul>
-<h4 id="-semantic-search--embedding">
+<h4 id="-semantic-search--embedding-다국어-지원">
   
   
-    <a href="#-semantic-search--embedding" class="anchor-heading" aria-labelledby="-semantic-search--embedding"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ② Semantic Search &amp; Embedding
+    <a href="#-semantic-search--embedding-다국어-지원" class="anchor-heading" aria-labelledby="-semantic-search--embedding-다국어-지원"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ② Semantic Search &amp; Embedding (다국어 지원)
   
   
 </h4>
     
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">SentenceTransformers</code>를 사용하여 문장을 고차원 벡터로 변환합니다. 키워드가 달라도 의미가 같으면 찾아냅니다.</li>
+  <li><strong>Model:</strong> <code class="language-plaintext highlighter-rouge">Multilingual-MiniLM-L12-v2</code> 모델을 탑재했습니다.</li>
+  <li><strong>Capability:</strong> 한국어를 포함한 <strong>50개 이상의 언어</strong>를 지원하며, 언어가 섞여 있어도 문맥을 정확히 파악합니다.</li>
+  <li><strong>Process:</strong> 사용자의 자연어 질문을 고차원 벡터로 변환하여, 키워드가 일치하지 않아도 의미가 통하는 문서를 찾아냅니다.</li>
 </ul>
 <h4 id="-high-precision-re-ranking-재정렬">
   
