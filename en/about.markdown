@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /en/about/  
 lang: en
+nav_order: 2
 nav_exclude: true
 ---
 

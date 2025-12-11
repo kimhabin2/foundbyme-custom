@@ -1,0 +1,27 @@
+{% comment %}
+  현재 페이지의 짝이 되는 반대 언어 페이지를 ref 속성을 이용해 찾습니다.
+{% endcomment %}
+
+{% if page.ref %}
+  {% assign target_lang = 'ko' %}
+  {% if page.lang == 'ko' %}
+    {% assign target_lang = 'en' %}
+  {% endif %}
+
+  {% assign translated_page = site.pages 
+    | where: "ref", page.ref 
+    | where: "lang", target_lang 
+    | first %}
+
+  {% if translated_page %}
+    <a href="{{ translated_page.url | relative_url }}" class="site-button btn-reset">
+      {% if target_lang == 'en' %}
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-language"></use></svg>
+        English
+      {% else %}
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-language"></use></svg>
+        한국어
+      {% endif %}
+    </a>
+  {% endif %}
+{% endif %}

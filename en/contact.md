@@ -3,13 +3,13 @@ layout: default
 title: Contact
 nav_order: 5
 lang: en
-permalink: /en/docs/contact.html   # [수정] Jekyll이 만든 주소로 통일!
-parent: ""                         # [핵심]
+permalink: /en/docs/contact.html
 nav_exclude: true
+parent: false   # [핵심] 부모 없음 선언 (Breadcrumbs 비활성화)
+# has_parent: false # 이 속성은 제거해도 무방합니다.
 ---
 
 # Contact
-
 <div class="feature-card" style="text-align: center;">
     <h3 style="color: #c3002f;">📧 Contact Channels</h3>
     <p style="margin-bottom: 20px; color: #51626f; font-size: 0.9rem;">
