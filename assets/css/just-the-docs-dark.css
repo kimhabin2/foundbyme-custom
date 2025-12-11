@@ -689,7 +689,10 @@ blockquote {
 }
 
 .side-bar {
-  z-index: 0;
+  /* [수정됨] 모바일에서도 z-index가 작동하도록 relative 추가 */
+  position: relative;
+  /* [수정됨] 본문(z-index: 10)보다 무조건 위에 오도록 압도적으로 높은 값 설정 */
+  z-index: 9999;
   display: flex;
   flex-wrap: wrap;
   background-color: #3d4a54;
@@ -741,6 +744,9 @@ blockquote {
 
 .main {
   margin: auto;
+  /* [수정됨] 본문 영역을 낮은 z-index로 가두어 내부 요소들이 튀어나오지 못하게 함 */
+  position: relative;
+  z-index: 10;
 }
 @media (min-width: 50rem) {
   .main {
@@ -769,7 +775,8 @@ blockquote {
 }
 
 .main-header {
-  z-index: 0;
+  position: relative; /* 필수 추가 */
+  z-index: 50; /* 0 -> 50으로 변경 (본문보다 높게 설정) */
   border-bottom: 1px solid #44434d;
 }
 @media (min-width: 50rem) {
@@ -1675,7 +1682,7 @@ h6,
 
 .search {
   position: relative;
-  z-index: 2;
+  z-index: 100;
   flex-grow: 1;
   height: 4rem;
   padding: 0.5rem;
@@ -1762,6 +1769,7 @@ h6,
 
 .search-results {
   position: absolute;
+  z-index: 99999 !important; /* [추가] 무조건 맨 위로 오도록 강제 */
   left: 0;
   display: none;
   width: 100%;
