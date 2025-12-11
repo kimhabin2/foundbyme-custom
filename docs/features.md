@@ -65,8 +65,10 @@ CLI(터미널) 환경이 익숙하지 않은 사용자를 위해, 직관적인 �
 - `.txt`, `.pdf`, `.docx`, `.pptx`는 물론 **이미지**까지 지원합니다.
 - 이미지 내 텍스트는 `pytesseract`(OCR)를 통해 추출하며, 긴 문서는 의미 단위(Chunk)로 쪼개어 처리합니다.
 
-#### ② Semantic Search & Embedding
-- `SentenceTransformers`를 사용하여 문장을 고차원 벡터로 변환합니다. 키워드가 달라도 의미가 같으면 찾아냅니다.
+#### ② Semantic Search & Embedding (다국어 지원)
+- **Model:** `Multilingual-MiniLM-L12-v2` 모델을 탑재했습니다.
+- **Capability:** 한국어를 포함한 **50개 이상의 언어**를 지원하며, 언어가 섞여 있어도 문맥을 정확히 파악합니다.
+- **Process:** 사용자의 자연어 질문을 고차원 벡터로 변환하여, 키워드가 일치하지 않아도 의미가 통하는 문서를 찾아냅니다.
 
 #### ③ High-Precision Re-Ranking (재정렬)
 - 1차 검색된 문서들을 **CrossEncoder (BAAI/bge-reranker-v2-m3)** 모델로 다시 채점합니다.
