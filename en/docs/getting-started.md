@@ -5,6 +5,7 @@ nav_order: 1
 parent: Documentation
 permalink: /en/docs/getting-started/
 lang: en
+nav_exclude: true
 ---
 
 # Getting Started

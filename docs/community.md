@@ -1,7 +1,10 @@
 ---
 layout: default
 title: Community
-nav_order: 5
+nav_order: 4
+permalink: /docs/community.html
+ref: community_page
+en_url: /en/docs/community.html
 ---
 
 <div class="hero-section" style="text-align: center; padding: 40px 0;">

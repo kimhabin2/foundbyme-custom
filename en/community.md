@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Community
-nav_order: 5
-parent: Documentation
+nav_order: 4
 lang: en
+permalink: /en/docs/community.html # [수정] Jekyll이 만든 주소로 통일!
+parent: ""
+nav_exclude: true
 ---
 
 <div class="hero-section" style="text-align: center; padding: 40px 0;">

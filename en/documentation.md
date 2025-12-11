@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Documentation  # [변경] 영어 제목 (이게 중요합니다! 자식들이 이 이름을 참조함)
-nav_order: 2
-has_children: true
-parent: Home          # [변경] Home이 부모라면 영어 Home 제목으로
+nav_order: 3
+has_children: true        
 permalink: /en/docs   # [변경] 주소 겹치지 않게
 lang: en              # [추가] 언어 설정
+nav_exclude: true
 ---
 
 # Documentation
@@ -21,7 +21,6 @@ This documentation is organized as follows:
 * **[Features]({{ '/en/docs/features/' | relative_url }})**: Introduction to core technologies like txtai-based semantic search and hybrid architecture.
 * **[Usage]({{ '/en/docs/usage/' | relative_url }})**: How to use the Web Interface and search tips.
 * **[Examples]({{ '/en/docs/example/' | relative_url }})**: Real-world search scenarios and API usage examples.
-* **[Community]({{ '/en/docs/community/' | relative_url }})**: Contribution guidelines and code management principles.
 
 ---
 

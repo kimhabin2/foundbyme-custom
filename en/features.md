@@ -5,6 +5,7 @@ nav_order: 2
 parent: Documentation
 permalink: /en/docs/features/
 lang: en
+nav_exclude: true
 ---
 
 # Feature Showcase

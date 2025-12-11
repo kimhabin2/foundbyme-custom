@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Contact
-nav_order: 4
-parent: Documentation
+nav_order: 5
 lang: en
+permalink: /en/docs/contact.html   # [수정] Jekyll이 만든 주소로 통일!
+parent: ""                         # [핵심]
+nav_exclude: true
 ---
 
 # Contact

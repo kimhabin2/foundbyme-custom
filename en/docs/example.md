@@ -5,6 +5,7 @@ nav_order: 3
 parent: Documentation
 permalink: /en/docs/example/
 lang: en
+nav_exclude: true
 ---
 
 # Examples & Use Cases

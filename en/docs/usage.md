@@ -5,6 +5,7 @@ nav_order: 2
 parent: Documentation
 permalink: /en/docs/usage/
 lang: en
+nav_exclude: true
 ---
 
 # Usage

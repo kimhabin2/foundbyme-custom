@@ -19,7 +19,6 @@ permalink: /docs/
 * **[Features]({{ '/docs/features/' | relative_url }})**: txtai 기반의 시맨틱 검색, 하이브리드 아키텍처 등 핵심 기술 소개.
 * **[Usage]({{ '/docs/usage/' | relative_url }})**: 웹 인터페이스 사용법 및 검색 팁.
 * **[Examples]({{ '/docs/example/' | relative_url }})**: 실제 검색 시나리오와 API 활용 예제.
-* **[Community]({{ '/docs/community/' | relative_url }})**: 기여 가이드라인 및 코드 관리 원칙.
 
 ---
 

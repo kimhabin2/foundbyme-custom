@@ -1,7 +1,10 @@
 ---
 layout: default
 title: Contact
-nav_order: 4
+nav_order: 5
+permalink: /docs/contact.html
+ref: contact_page
+en_url: /en/docs/contact.html
 ---
 
 # Contact
