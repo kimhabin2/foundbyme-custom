@@ -3,7 +3,7 @@ layout: default
 title: Documentation  # [변경] 영어 제목 (이게 중요합니다! 자식들이 이 이름을 참조함)
 nav_order: 3
 has_children: true        
-permalink: /en/docs   # [변경] 주소 겹치지 않게
+permalink: /en/docs/   # [변경] 주소 겹치지 않게
 lang: en              # [추가] 언어 설정
 nav_exclude: true
 ---
