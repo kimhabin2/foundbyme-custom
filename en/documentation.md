@@ -17,10 +17,14 @@ Here, we cover all technical details of the project, from installation to advanc
 
 This documentation is organized as follows:
 
-* **[Getting Started]({{ '/en/docs/getting-started/' | relative_url }})**: Installation and execution guide using Docker.
-* **[Features]({{ '/en/docs/features/' | relative_url }})**: Introduction to core technologies like txtai-based semantic search and hybrid architecture.
-* **[Usage]({{ '/en/docs/usage/' | relative_url }})**: How to use the Web Interface and search tips.
-* **[Examples]({{ '/en/docs/example/' | relative_url }})**: Real-world search scenarios and API usage examples.
+* **[Getting Started]({{ '/en/docs/getting-started/' | relative_url }})**
+  <br>Installation and execution guide using Docker.
+* **[Features]({{ '/en/docs/features/' | relative_url }})**
+  <br>Introduction to core technologies like txtai-based semantic search.
+* **[Usage]({{ '/en/docs/usage/' | relative_url }})**
+  <br>How to use the Web Interface and search tips.
+* **[Examples]({{ '/en/docs/example/' | relative_url }})**
+  <br>Real-world search scenarios and API usage examples.
 
 ---
 

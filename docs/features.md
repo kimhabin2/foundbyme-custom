@@ -4,7 +4,6 @@ title: Features
 nav_order: 2
 parent: Documentation
 permalink: /docs/features/
-lang: en
 ---
 
 # Feature Showcase

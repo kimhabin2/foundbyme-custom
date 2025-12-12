@@ -81,9 +81,12 @@
 {% include toc_heading_custom.html %}
 <ul>
   {% for nav_child in nav_children %}
-  <li>
-    <a href="{{ nav_child.url | relative_url }}">{{ nav_child.title }}</a>{% if nav_child.summary %} - {{ nav_child.summary }}{% endif %}
-  </li>
+    {% comment %} [수정] 현재 페이지와 언어가 같은 자식만 표시 {% endcomment %}
+    {% if nav_child.lang == page.lang %}
+      <li>
+        <a href="{{ nav_child.url | relative_url }}">{{ nav_child.title }}</a>{% if nav_child.summary %} - {{ nav_child.summary }}{% endif %}
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
 
