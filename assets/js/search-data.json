@@ -162,7 +162,7 @@
   },"23": {
     "doc": "Documentation",
     "title": "📚 Table of Contents",
-    "content": "This documentation is organized as follows: . | Getting Started: Installation and execution guide using Docker. | Features: Introduction to core technologies like txtai-based semantic search and hybrid architecture. | Usage: How to use the Web Interface and search tips. | Examples: Real-world search scenarios and API usage examples. | . ",
+    "content": "This documentation is organized as follows: . | Getting Started Installation and execution guide using Docker. | Features Introduction to core technologies like txtai-based semantic search. | Usage How to use the Web Interface and search tips. | Examples Real-world search scenarios and API usage examples. | . ",
     "url": "/foundbyme-custom/en/docs/#-table-of-contents",
     
     "relUrl": "/en/docs/#-table-of-contents"
