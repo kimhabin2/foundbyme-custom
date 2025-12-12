@@ -357,11 +357,11 @@
     "relUrl": "/en/docs/getting-started/#1-prerequisites"
   },"51": {
     "doc": "Getting Started",
-    "title": "2. Installation and Execution",
-    "content": "Clone the GitHub repository and run Docker Compose to get everything ready. # 1. Clone repository git clone [https://github.com/KNaeon/foundbyme.git](https://github.com/KNaeon/foundbyme.git) cd foundbyme # 2. Run containers (Background mode) docker-compose up -d . ** Note on First Execution The initial run may take 1–3 minutes for model (txtai embeddings) download and PostgreSQL initialization. ",
-    "url": "/foundbyme-custom/en/docs/getting-started/#2-installation-and-execution",
+    "title": "2. Installation &amp; Execution",
+    "content": "Simply clone the GitHub repository and run Docker Compose to get everything ready. 1) Clone Repository . First, clone the project code to your local environment. git clone [https://github.com/KNaeon/foundbyme.git](https://github.com/KNaeon/foundbyme.git) cd foundbyme . 2) Run with Docker (Recommended) 🐳 . This is the easiest way to get started. ① Build &amp; Start Containers . # Run in background mode (includes image build) docker compose up --build -d . ② Stop Containers . # Stop and remove containers docker compose down . ** Note on First Execution The initial run may take 1–3 minutes for model (txtai embeddings) download and PostgreSQL initialization. ",
+    "url": "/foundbyme-custom/en/docs/getting-started/#2-installation--execution",
     
-    "relUrl": "/en/docs/getting-started/#2-installation-and-execution"
+    "relUrl": "/en/docs/getting-started/#2-installation--execution"
   },"52": {
     "doc": "Getting Started",
     "title": "3. Accessing",
@@ -421,7 +421,7 @@
   },"60": {
     "doc": "Getting Started",
     "title": "2. 설치 및 실행",
-    "content": "GitHub 저장소를 복제하고 Docker Compose를 실행하면 모든 준비가 끝납니다. # 1. 저장소 복제 git clone [https://github.com/KNaeon/foundbyme.git](https://github.com/KNaeon/foundbyme.git) cd foundbyme # 2. 컨테이너 실행 (백그라운드 모드) docker-compose up -d . 초기 실행 시 주의사항 모델(txtai embeddings) 다운로드 · PostgreSQL 초기화 때문에 첫 실행은 1–3분 정도 걸릴 수 있습니다. ",
+    "content": "GitHub 저장소를 복제하고 Docker Compose를 실행하면 모든 준비가 끝납니다. 1) 저장소 복제(Clone Repository) . 먼저 프로젝트 코드를 로컬 환경으로 가져옵니다. git clone [https://github.com/KNaeon/foundbyme.git](https://github.com/KNaeon/foundbyme.git) cd foundbyme . 2) Docker로 실행 (Recommended) 🐳 . 가장 간편한 실행 방법입니다. ① 컨테이너 빌드 및 시작 (Build &amp; Start) . #백그라운드 모드로 실행 docker compose up --build -d . ② 컨테이너 중지 (Stop) . #컨테이너 중지 및 삭제 docker compose down . 초기 실행 시 주의사항 모델(txtai embeddings) 다운로드 · PostgreSQL 초기화 때문에 첫 실행은 1–3분 정도 걸릴 수 있습니다. ",
     "url": "/foundbyme-custom/docs/getting-started/#2-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%8B%A4%ED%96%89",
     
     "relUrl": "/docs/getting-started/#2-설치-및-실행"
