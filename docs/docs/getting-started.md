@@ -28,14 +28,31 @@ Docker Compose가 이 모든 환경을 자동으로 구축해주므로 별도의
 
 GitHub 저장소를 복제하고 Docker Compose를 실행하면 모든 준비가 끝납니다.
 
+
+### 1) 저장소 복제(Clone Repository)
+먼저 프로젝트 코드를 로컬 환경으로 가져옵니다.
+
 ```bash
-# 1. 저장소 복제
 git clone [https://github.com/KNaeon/foundbyme.git](https://github.com/KNaeon/foundbyme.git)
 cd foundbyme
-
-# 2. 컨테이너 실행 (백그라운드 모드)
-docker-compose up -d
 ```
+
+### 2) Docker로 실행 (Recommended) 🐳
+가장 간편한 실행 방법입니다.
+
+#### ① 컨테이너 빌드 및 시작 (Build & Start)
+
+```bash
+#백그라운드 모드로 실행
+docker compose up --build -d
+```
+#### ② 컨테이너 중지 (Stop)
+
+```bash
+#컨테이너 중지 및 삭제
+docker compose down
+```
+
 **초기 실행 시 주의사항** 
 모델(txtai embeddings) 다운로드 · PostgreSQL 초기화 때문에 첫 실행은 1–3분 정도 걸릴 수 있습니다.
 {: .callout-note }

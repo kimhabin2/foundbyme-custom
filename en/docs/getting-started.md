@@ -26,17 +26,33 @@ Before starting the installation, the following tools must be installed:
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) (Windows/Mac)
 * Git
 
-## 2. Installation and Execution
+## 2. Installation & Execution
 
-Clone the GitHub repository and run Docker Compose to get everything ready.
+Simply clone the GitHub repository and run Docker Compose to get everything ready.
+
+### 1) Clone Repository
+First, clone the project code to your local environment.
 
 ```bash
-# 1. Clone repository
 git clone [https://github.com/KNaeon/foundbyme.git](https://github.com/KNaeon/foundbyme.git)
 cd foundbyme
+```
 
-# 2. Run containers (Background mode)
-docker-compose up -d
+### 2) Run with Docker (Recommended) 🐳
+This is the easiest way to get started.
+
+#### ① Build & Start Containers
+
+```bash
+# Run in background mode (includes image build)
+docker compose up --build -d
+```
+
+#### ② Stop Containers
+
+```bash
+# Stop and remove containers
+docker compose down
 ```
 
 ** Note on First Execution The initial run may take 1–3 minutes for model (txtai embeddings) download and PostgreSQL initialization. 
