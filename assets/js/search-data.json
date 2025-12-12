@@ -156,23 +156,23 @@
     "doc": "Documentation",
     "title": "Documentation",
     "content": "Welcome! This is the official technical documentation page for FoundByMe. Here, we cover all technical details of the project, from installation to advanced usage and architecture design principles. ",
-    "url": "/foundbyme-custom/en/docs",
+    "url": "/foundbyme-custom/en/docs/",
     
-    "relUrl": "/en/docs"
+    "relUrl": "/en/docs/"
   },"23": {
     "doc": "Documentation",
     "title": "📚 Table of Contents",
     "content": "This documentation is organized as follows: . | Getting Started: Installation and execution guide using Docker. | Features: Introduction to core technologies like txtai-based semantic search and hybrid architecture. | Usage: How to use the Web Interface and search tips. | Examples: Real-world search scenarios and API usage examples. | . ",
-    "url": "/foundbyme-custom/en/docs#-table-of-contents",
+    "url": "/foundbyme-custom/en/docs/#-table-of-contents",
     
-    "relUrl": "/en/docs#-table-of-contents"
+    "relUrl": "/en/docs/#-table-of-contents"
   },"24": {
     "doc": "Documentation",
     "title": "🛠️ Tech Stack Summary",
     "content": "FoundByMe is designed by combining the best open-source technologies. | Category | Tech Stack | Description | . | Frontend | Node.js (React) | User-friendly Web Interface | . | Backend | Python (FastAPI) | REST API Server and Business Logic | . | Search Engine | txtai | Semantic Vector Search &amp; Embedding Engine | . | Metadata DB | PostgreSQL | File Information &amp; Log Management (RDBMS) | . | Infra | Docker Compose | Container-based Deployment Automation | . For a more detailed architecture description, please refer to the Features page. ",
-    "url": "/foundbyme-custom/en/docs#%EF%B8%8F-tech-stack-summary",
+    "url": "/foundbyme-custom/en/docs/#%EF%B8%8F-tech-stack-summary",
     
-    "relUrl": "/en/docs#️-tech-stack-summary"
+    "relUrl": "/en/docs/#️-tech-stack-summary"
   },"25": {
     "doc": "Documentation",
     "title": "Documentation",
